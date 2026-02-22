@@ -1,8 +1,9 @@
 <h1 align="center">Repots-Dots</h1>
 
 
-The only Repo for my hyprland dots, includes an script to automatically install (almost) everything
-this dots isn't my creation, i grab a bunch of code of people and changed to apply pywal (yeah like a material you based on your wallpaper) and adjusted to my likings
+The only Repo for my hyprland dots, includes an script to automatically install (almost) everything!
+
+this dots isn't my creation, i grab a bunch of code of people and changed to apply pywal (yeah like a material you based on your wallpaper) and adjusted to my likings, the codes i remember ill put in the end with some links
 
 Only avaiable for Arch-based distros using hyprland, can be installed in other distros, but youll need to download manually each app
 
