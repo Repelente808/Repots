@@ -29,4 +29,7 @@ yay hyprquickframe
 yay quicksnip
 sudo pacman -S swww
 ```
-(these are already installed during the process, but for some reason, they only work after installing manually
+(these are already installed during the process, but for some reason, they only work after installing manually)
+
+<details>
+<summary>Search Bar (Rofi)</summary>
