@@ -9,7 +9,7 @@ Only avaiable for Arch-based distros using hyprland, can be installed in other d
 
 # Instalation
 
-git clone https://github.com/Repelente808/Repots.git
+```git clone https://github.com/Repelente808/Repots.git```
 
 cd Repots
 
