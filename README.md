@@ -1,7 +1,7 @@
 Only avaiable for Arch (prob arch based too, not tested yet, i'm a little dumb in this area) using hyprland, can be installed in other distros, but youll need to download manually each app
 
 
-## Instalation
+# Instalation
 
 git clone https://github.com/Repelente808/Repots.git
 
