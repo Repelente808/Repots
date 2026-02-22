@@ -58,15 +58,18 @@ Take a look at each element of the dotfiles!
 <details>
 <summary>🔌 Power Options (WLogout)</summary>
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9add75b2-572b-4164-86b3-0d0c957a9961" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b4e9d05a-2a6b-4a55-9e6c-14f377692e0a" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/994ec556-a9bb-4496-a3ac-a6619bea390c" />
+
 
 </details>
 
 <details>
 <summary>🔔 Notifications/Control Center (SwayNC)</summary>
 <img width="590" height="1080" alt="image" src="https://github.com/user-attachments/assets/840f79a9-22ba-47b8-ba15-3490496feb0b" />
-  <img width="414" height="141" alt="image" src="https://github.com/user-attachments/assets/9d46bbab-b95e-49d3-8536-1c8e088aedfd" />
+  
 <img width="513" height="1080" alt="image" src="https://github.com/user-attachments/assets/a74ab953-9ad3-4561-8506-22b9ef363e88" />
-
+  <img width="414" height="141" alt="image" src="https://github.com/user-attachments/assets/9d46bbab-b95e-49d3-8536-1c8e088aedfd" />
 
 </details>
 
@@ -74,6 +77,8 @@ Take a look at each element of the dotfiles!
 <summary>🧭 Topbar (Waybar)</summary>
 <img width="1913" height="62" alt="image" src="https://github.com/user-attachments/assets/a3a166a6-f1d0-4f17-8bd3-9f7662e09d82" />
 <img width="1918" height="54" alt="image" src="https://github.com/user-attachments/assets/0612a31c-031e-4068-b985-f838fab5698d" />
+<img width="1920" height="62" alt="image" src="https://github.com/user-attachments/assets/60b6960b-6905-4f49-9fbd-61b167550d2d" />
+<img width="1920" height="56" alt="image" src="https://github.com/user-attachments/assets/379fec3b-9535-483c-9b55-289a6ee166dc" />
 
 </details>
 
