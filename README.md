@@ -77,7 +77,7 @@ testestestes
 <details>
 <summary>⌨️ Take a look to know how to use the dots!</summary>
 
-Open App Launcher (Rofi) - ```Super```
+- Open App Launcher (Rofi) - ```Super```
 
 Open Terminal - ```Super``` + ```T```
 
