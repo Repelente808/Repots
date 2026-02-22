@@ -1,4 +1,4 @@
-# Repots!
+# :Repots!:
 
 The only Repo for my hyprland dots, includes an script to automatically install (almost) everything
 this dots isn't my creation, i grab a bunch of code of people and changed to apply pywal (yeah like a material you based on your wallpaper) and adjusted to my likings
