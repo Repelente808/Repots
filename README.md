@@ -31,5 +31,34 @@ sudo pacman -S swww
 ```
 (these are already installed during the process, but for some reason, they only work after installing manually)
 
+## Preview
+
 <details>
 <summary>Search Bar (Rofi)</summary>
+testestestes
+</details>
+
+<details>
+<summary>Power Options (WLogout)</summary>
+testestestes
+</details>
+
+<details>
+<summary>Notifications/Control Center (SwayNC)</summary>
+testestestes
+</details>
+
+<details>
+<summary>Topbar (Waybar)</summary>
+testestestes
+</details>
+
+<details>
+<summary>Lock Screen (Hyprlock)</summary>
+testestestes
+</details>
+
+<details>
+<summary>Terminal (Kitty W/Fish and starship)</summary>
+testestestes
+</details>
