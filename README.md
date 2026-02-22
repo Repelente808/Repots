@@ -47,8 +47,10 @@ Take a look at each element of the dotfiles!
 <summary>⚙️Options menu and Wallpaper picker (Rofi)</summary>
 <img width="580" height="334" alt="image" src="https://github.com/user-attachments/assets/cda9ebbc-f042-4b69-b60b-6c49b78bd2eb" />
 System Customization Tab
+  
   <img width="583" height="409" alt="image" src="https://github.com/user-attachments/assets/b296c3ab-4e27-4252-bb4d-85884a3a2d85" />
 Wallpaper Picker
+
   <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a69131be-7286-461e-bd9a-51912e30550e" />
 </details>
   
