@@ -1,0 +1,21 @@
+set $wallpaper /home/repelente808/Imagens/Wallpapers/wallpaper6.jpg
+
+set $background #1e212b
+set $foreground #c6c7ca
+
+set $color0 #1e212b
+set $color1 #9EA0A0
+set $color2 #D9CBA3
+set $color3 #A6AECA
+set $color4 #92D8DA
+set $color5 #DDDDDD
+set $color6 #F6F8FC
+set $color7 #c6c7ca
+set $color8 #656a7b
+set $color9 #9EA0A0
+set $color10 #D9CBA3
+set $color11 #A6AECA
+set $color12 #92D8DA
+set $color13 #DDDDDD
+set $color14 #F6F8FC
+set $color15 #c6c7ca

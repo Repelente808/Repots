@@ -1,0 +1,28 @@
+{
+    "checksum": "81e33462a4eda6a5a72ec52a3566df14",
+    "wallpaper": "/home/repelente808/Imagens/Wallpapers/20260218_151149.png",
+    "alpha": "100",
+    "special": {
+        "background": "#28221d",
+        "foreground": "#c9c7c6",
+        "cursor": "#c9c7c6"
+    },
+    "colors": {
+        "color0": "#28221d",
+        "color1": "#97958F",
+        "color2": "#9FA1A0",
+        "color3": "#AFAFAD",
+        "color4": "#C5C0B9",
+        "color5": "#B7BDC4",
+        "color6": "#BDC3CB",
+        "color7": "#c9c7c6",
+        "color8": "#7a6d64",
+        "color9": "#97958F",
+        "color10": "#9FA1A0",
+        "color11": "#AFAFAD",
+        "color12": "#C5C0B9",
+        "color13": "#B7BDC4",
+        "color14": "#BDC3CB",
+        "color15": "#c9c7c6"
+    }
+}

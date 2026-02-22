@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/repelente808/Imagens/Wallpapers/wallpaper6.jpg"
+let background = "#1e212b"
+let foreground = "#c6c7ca"
+let cursor     = "#c6c7ca"
+
+" Colors
+let color0  = "#1e212b"
+let color1  = "#9EA0A0"
+let color2  = "#D9CBA3"
+let color3  = "#A6AECA"
+let color4  = "#92D8DA"
+let color5  = "#DDDDDD"
+let color6  = "#F6F8FC"
+let color7  = "#c6c7ca"
+let color8  = "#656a7b"
+let color9  = "#9EA0A0"
+let color10 = "#D9CBA3"
+let color11 = "#A6AECA"
+let color12 = "#92D8DA"
+let color13 = "#DDDDDD"
+let color14 = "#F6F8FC"
+let color15 = "#c6c7ca"
