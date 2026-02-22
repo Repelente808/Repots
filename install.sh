@@ -62,7 +62,7 @@ PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     openssh
     pavucontrol
     polkit-kde-agent
-    pulseaudio
+    pipewire-pulse
     qbittorrent
     qt5-wayland
     qt5ct
@@ -101,7 +101,7 @@ EOF
 
 echo "Starting pacman package installation..."
 sudo pacman -Syu --needed --noconfirm $PACKETS_PACMAN
-sudo pacman -S  pulseaudio
+sudo pacman -S  pipewire-pulse
 
 PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     google-breakpad
@@ -142,7 +142,9 @@ unzip -q "$TMP/pixelcode.zip" -d "$TMP/pc" && \
 find "$TMP/pc" -type f \( -iname "*.otf" -o -iname "*.ttf" \) -exec cp {} "$D/" \; && \
 rm -rf "$TMP" && \
 fc-cache -f
-
+echo "Trying to install packages again to prevent errors..."
+yay -S --needed --answerdiff None --answerclean None $PACKETS_AUR
+sudo pacman -Syu --needed --noconfirm $PACKETS_PACMAN
 echo "Installing Repots..."
 
 cp -rf home/* home/.[!.]* home/..?* "$HOME/"
