@@ -9,13 +9,13 @@ Only avaiable for Arch-based distros using hyprland, can be installed in other d
 
 
 # Instalation
-
-```git clone https://github.com/Repelente808/Repots.git
+```
+git clone https://github.com/Repelente808/Repots.git
 
 cd Repots
 
 ./install.sh
-
+```
 (yeah, it does almost everything)
 
 Remember to take a loot at your home folder, if there's a folder named Repots after the instalation, you are able to delete it, its just the files from the clone process
