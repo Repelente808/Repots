@@ -12,7 +12,7 @@ after the warning tab, there's a preview tab with more images of the desktop, ta
 
 # Instalation
 
-Just put these commands in terminal and go clicking enter, there's a prompt to change to pipewire pulse, if you want, type S when it asks
+Just put these commands in terminal and go clicking enter, there's a prompt to change to pipewire pulse, if you want or not, just follow what is on the screen
 ```
 git clone https://github.com/Repelente808/Repots.git
 
