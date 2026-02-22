@@ -38,7 +38,7 @@ Take a look at each element of the dotfiles!
 
 
 <details>
-<summary>  Search Bar (Rofi)</summary>
+<summary>Search Bar (Rofi)</summary>
 testestestes
 </details>
 
