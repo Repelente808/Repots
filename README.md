@@ -44,38 +44,38 @@ testestestes
 
 
 <details>
-<summary>Options menu and Wallpaper picker (Rofi)</summary>
+<summary>⚙️Options menu and Wallpaper picker (Rofi)</summary>
 testestestes
 </details>
   
 <details>
-<summary>Power Options (WLogout)</summary>
+<summary>🔌 Power Options (WLogout)</summary>
 testestestes
 </details>
 
 <details>
-<summary>Notifications/Control Center (SwayNC)</summary>
+<summary>🔔 Notifications/Control Center (SwayNC)</summary>
 testestestes
 </details>
 
 <details>
-<summary>Topbar (Waybar)</summary>
+<summary>🧭 Topbar (Waybar)</summary>
 testestestes
 </details>
 
 <details>
-<summary>Lock Screen (Hyprlock)</summary>
+<summary>🔓 Lock Screen (Hyprlock)</summary>
 testestestes
 </details>
 
 <details>
-<summary>Terminal (Kitty W/Fish and starship)</summary>
+<summary>🤓 Terminal (Kitty W/Fish and starship)</summary>
 testestestes
 </details>
 
 ## Binds
 <details>
-<summary>Take a look to know how to use the dots!</summary>
+<summary>⌨️ Take a look to know how to use the dots!</summary>
 Open App Launcher (Rofi) -
   
 Open Terminal -
@@ -109,7 +109,7 @@ Make window fly -
 
 ## Credits
 <details>
-<summary>Code from other people who got modded in the dots</summary>
+<summary>🎦 Code from other people who got modded in the dots</summary>
 
 batata
 </details>
