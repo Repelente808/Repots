@@ -22,6 +22,8 @@ cd Repots
 ```
 (yeah, it does almost everything)
 
+Remember to do a reboot to don't get any trouble!
+
 Remember to take a look at your home folder, if there's a folder named Repots after the instalation, you are able to delete it, its just the files from the clone process, they dont interfer in anything in your system.
 
 ## Warning
@@ -34,7 +36,7 @@ yay quicksnip
 sudo pacman -S swww
 ```
 (these are already installed during the process, but for some reason, they only work after installing manually)
-
+Again, remember to do a reboot to don't get any trouble!
 ## Preview
 Take a look at each element of the dotfiles!
 
