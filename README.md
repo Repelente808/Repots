@@ -76,8 +76,9 @@ testestestes
 ## Binds
 <details>
 <summary>⌨️ Take a look to know how to use the dots!</summary>
+
 Open App Launcher (Rofi) -
-  
+
 Open Terminal -
 
 Open VsCodium -
