@@ -54,17 +54,20 @@ Take a look at each element of the dotfiles!
   
 <details>
 <summary>🔌 Power Options (WLogout)</summary>
-testestestes
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9add75b2-572b-4164-86b3-0d0c957a9961" />
+
 </details>
 
 <details>
 <summary>🔔 Notifications/Control Center (SwayNC)</summary>
-testestestes
+<img width="414" height="141" alt="image" src="https://github.com/user-attachments/assets/9d46bbab-b95e-49d3-8536-1c8e088aedfd" />
+<img width="590" height="1080" alt="image" src="https://github.com/user-attachments/assets/840f79a9-22ba-47b8-ba15-3490496feb0b" />
+
 </details>
 
 <details>
 <summary>🧭 Topbar (Waybar)</summary>
-testestestes
+
 </details>
 
 <details>
