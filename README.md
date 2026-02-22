@@ -69,7 +69,7 @@ Take a look at each element of the dotfiles!
 <details>
 <summary>🔔 Notifications/Control Center (SwayNC)</summary>
 <img width="590" height="1080" alt="image" src="https://github.com/user-attachments/assets/840f79a9-22ba-47b8-ba15-3490496feb0b" />
-  
+  <img width="427" height="158" alt="image" src="https://github.com/user-attachments/assets/37ea5bd0-9cd8-4a89-9764-37176faec74a" />
 <img width="513" height="1080" alt="image" src="https://github.com/user-attachments/assets/a74ab953-9ad3-4561-8506-22b9ef363e88" />
   <img width="414" height="141" alt="image" src="https://github.com/user-attachments/assets/9d46bbab-b95e-49d3-8536-1c8e088aedfd" />
 
