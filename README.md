@@ -75,21 +75,21 @@ testestestes
 
 ## Binds
 <summary>Take a look to know how to use the dots!</summary>
-- - Open App Launcher (Rofi)
-- - Open Terminal
-- - Open VsCodium
-- - Open Nautilus (file explorer)
-- - Open Zen Browser
-- - Open Menu (from Rofi, you can see what it does in preview)
-- - Open SwayNC
-- - Open HyprQuickFrame (similar  
-- - Open QuickSnip 
-- - Workspace Overview
-- - Change Workspace
-- - Put Window in another Workspace
-- - Split Windows
-- - Close Window
-- - Make window fly 
+Open App Launcher (Rofi)
+Open Terminal
+Open VsCodium
+Open Nautilus (file explorer)
+Open Zen Browser
+Open Menu (from Rofi, you can see what it does in preview)
+Open SwayNC
+Open HyprQuickFrame (similar  
+Open QuickSnip 
+Workspace Overview
+Change Workspace
+Put Window in another Workspace
+Split Windows
+Close Window
+Make window fly 
 </details>
 
 ## Credits
