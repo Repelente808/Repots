@@ -1,4 +1,4 @@
-<h1 align="center">Repots Dots</h1>
+<h1 align="center">Repots-Dots</h1>
 
 
 The only Repo for my hyprland dots, includes an script to automatically install (almost) everything
