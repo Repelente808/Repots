@@ -1,0 +1,122 @@
+@import url("../../.cache/wal/colors-waybar.css");
+
+* {
+    font-family: 'Pixel Code', sans-serif;
+    font-weight:  Bold;
+    font-size: 14px;
+    min-height: 28px;
+    border-radius: 33px;
+}
+#custom-weather {
+    background-color: @background;
+    color: @color2;
+    margin: 0 5px 0 0px;
+    padding: 0 10px;
+}
+#tray {
+    background-color: @background;
+    color: @color2;
+    margin: 0 0px 0 0px;
+    padding: 0 10px;
+}
+#window {
+    background-color: @background;
+    color: @color2;
+    margin: 0 5px 0 0px;
+    padding: 0 10px;
+    min-width: 0px;
+}
+window#waybar.empty #window {
+    background-color: transparent;
+    color: transparent;
+}
+#custom-swaync {
+    background-color: @background;	
+    font-size: 16px;
+    padding: 0 10px;
+    margin: 0 0px 0 5px;
+    color: @color3;
+}
+
+#custom-swaync.notification {
+    color: @color2;
+}
+
+#custom-power {
+    background-color: @background;
+    color: @color2;
+    font-size: 20px;
+    margin: 0 0px 0 5px;
+    padding: 0 15px 0 15px;
+}
+
+#mpris {
+    background-color: @background;
+    padding: 0 16;
+    color: @color2;
+    margin: 0 5px 0 5px;
+}
+mpris#waybar.empty #mpris {
+    background-color: transparent;
+    color: transparent;
+}
+window#waybar {
+    background-color: @transparent;
+    color: @background;
+    min-height: 40px;
+}
+
+#workspaces button.active {
+    background-color: @color3;
+    color: @color1;
+    padding: 0 16px;
+    transition: all 0.3s ease; 
+}
+
+#workspaces button {
+    color: @color2;
+}
+
+#workspaces {
+    background-color: @background;
+    padding: 0 5.6px 0 0;
+}
+
+.modules-left {
+    margin-left: 12px;    
+}
+
+.modules-right {
+    margin-right: 12px;    
+}
+
+#battery,
+#pulseaudio,
+#backlight,
+#network {
+    color: @color10;
+    background-color: @background;
+    margin: 0 0px 0 5px;
+    padding: 0 15px 0 15px;
+}
+
+#clock {
+    color: @color2;
+    background-color: @background;
+    margin: 0 5px 0 0;
+    padding: 0 10px 0 10px;
+}
+
+#network {
+    color: @color4;
+}
+
+#pulseaudio {
+    color: @color4;
+}
+
+#backlight {
+    color: @color4;
+}
+
+

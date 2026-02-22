@@ -1,0 +1,141 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 13,
+  "modules-left": ["clock","custom/weather", "mpris", "hyprland/window"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["tray",  "pulseaudio#microphone", "pulseaudio", "battery", "network","custom/swaync", "custom/power"],
+
+"custom/weather": {
+    "exec": "curl -s 'https://wttr.in?format=1'",
+    "interval": 3600,
+    "tooltip": true
+},
+"custom/swaync": {
+    "format": "{} {icon}",
+    "return-type": "json",
+    "format-icons": {
+        "notification": "<span foreground='red'><sup></sup></span>",
+        "none": "",
+        "dnd-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-none": ""
+    },
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+},
+ "mpris": {
+    "format": "{player_icon} {title}",
+    "format-paused": "{player_icon} <i>{status_icon}</i> {title}",
+    "ignored-players": ["firefox"],
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "player-icons": {
+        "default": "󰎇",
+        "mpv": "🎵",
+        "spotify": "",
+        "firefox": ""
+    },
+    "status-icons": {
+        "paused": ""
+    },
+ },
+"custom/power": {
+    "tooltip-format": "Power Menu",
+    "on-click": "wlogout -b 3",
+    "format": "⏻"
+},
+
+  "custom/pacman": {
+    "format": " {}   ",
+    "interval": "once",
+    "exec": "checkupdates | wc -l",
+    "on-click": "update-system",
+    "signal": 8
+  },
+
+  "battery": {
+    "format": "{icon}  {capacity}%",
+    "format-charging": "󰂄  {capacity}%",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+  },
+
+  "clock": {
+    "format": "󰥔 {:%H:%M}",
+    "format-alt": "󰥔 {:%a, %d. %b  %H:%M}"
+  },
+
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-bluetooth": "󰂱  {volume}%",
+    "format-muted": "󰖁",
+    "scroll-step": 1,
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "ignored-sinks": ["Easy Effects Sink"],
+    "format-icons": {
+      "headphone": "  ",
+      "hands-free": " ",
+      "headset": "󰋎 ",
+      "phone": " ",
+      "portable": " ",
+      "car": "",
+      "default": ["󰖀", "󰕾"],
+      "max-volume": 100
+    }
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": " ",
+    "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+    "on-scroll-up": "sh -c 'vol=$(pactl get-source-volume @DEFAULT_SOURCE@ | grep -oP \"\\d+(?=%)\" | head -n1); if [ \"$vol\" -lt 100 ]; then pactl set-source-volume @DEFAULT_SOURCE@ +5%; else pactl set-source-volume @DEFAULT_SOURCE@ 100%; fi'",
+    "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -5%",
+    "scroll-step": 5,
+    "max-volume": 100
+},
+
+"network": {
+	"format": "{ifname}",
+	"format-wifi": "{icon} {essid}",
+	"format-ethernet": "󰌘",
+	"format-disconnected": "󰌙",
+        "on-click": "/home/repelente808/.config/rofi/rofi-wifi-menu.sh",
+	"tooltip-format": "{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",
+	"format-linked": "󰈁 {ifname} (No IP)",
+	"tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
+	"tooltip-format-ethernet": "{ifname} 󰌘",
+	"tooltip-format-disconnected": "󰌙 Disconnected",
+	"max-length": 30,
+	"format-icons": [
+		"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
+	],
+},
+  "hyprland/workspaces": { 
+   "persistent-workspaces": {
+     "HDMI-A-1": [1, 2, 3, 4, 5]
+    },  
+    "format": "{icon}",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "on-click": "activate",
+    "format-icons": {
+      "urgent": "󰀨",
+      "active": "󰮯",
+      "default": "",	
+      "empty": ""
+    },
+    "sort-by-number": true
+  },
+
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon}   {percent}%",
+    "format-icons": ["󰃞", "󰃟", "󰃠"]
+  }
+}
+"hyprland/window": {
+    "format": "{:^10}", "{title}",
+    "max-length": 10,
+    "separate-outputs": true
+}

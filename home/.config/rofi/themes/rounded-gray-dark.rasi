@@ -1,0 +1,16 @@
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+/* ROUNDED THEME FOR ROFI */
+/* Author: Newman Sanchez (https://github.com/newmanls) */
+
+* {
+    bg0:    @background;
+    bg1:    @background;
+    bg2:    @selected-active-background;
+    bg3:    @selected-normal-background;
+    fg0:    #000000;
+    fg1:    #000000;
+    fg2:    @selected-active-foreground;
+    fg3:    @foreground;
+}
+
+@import "template/rounded-template.rasi"
