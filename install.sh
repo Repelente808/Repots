@@ -45,6 +45,7 @@ PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     grub
     htop
     hyprlock
+    hypridle
     hyprpolkitagent
     hyprpicker
     imagemagick
