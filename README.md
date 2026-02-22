@@ -82,14 +82,14 @@ testestestes
 - - Open Zen Browser
 - - Open Menu (from Rofi, you can see what it does in preview)
 - - Open SwayNC
-- - Open HyprQuickFrame 
+- - Open HyprQuickFrame (similar  
 - - Open QuickSnip 
-- - Close Window
+- - Workspace Overview
 - - Change Workspace
 - - Put Window in another Workspace
 - - Split Windows
-- - 
-- - 
+- - Close Window
+- - Make window fly 
 </details>
 
 ## Credits
