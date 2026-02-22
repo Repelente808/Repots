@@ -70,3 +70,15 @@ testestestes
 <summary>Terminal (Kitty W/Fish and starship)</summary>
 testestestes
 </details>
+
+## Binds
+
+-
+-
+-
+-
+-
+-
+-
+-
+-
