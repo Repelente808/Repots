@@ -69,12 +69,17 @@ Take a look at each element of the dotfiles!
 
 <details>
 <summary>🧭 Topbar (Waybar)</summary>
+<img width="1913" height="62" alt="image" src="https://github.com/user-attachments/assets/a3a166a6-f1d0-4f17-8bd3-9f7662e09d82" />
+<img width="1918" height="54" alt="image" src="https://github.com/user-attachments/assets/0612a31c-031e-4068-b985-f838fab5698d" />
 
 </details>
 
 <details>
 <summary>🔓 Lock Screen (Hyprlock)</summary>
-testestestes
+<img width="1920" height="1080" alt="screenshot" src="https://github.com/user-attachments/assets/5e34f7be-f7bf-4c1e-8227-30359d6036ac" />
+<img width="1920" height="1080" alt="screenshot" src="https://github.com/user-attachments/assets/fb8961dc-6511-49e0-9045-058fe177651d" />
+<img width="1920" height="1080" alt="screenshot" src="https://github.com/user-attachments/assets/bef6bdaa-8210-4ead-8598-90b89b8f240a" />
+
 </details>
 
 <details>
