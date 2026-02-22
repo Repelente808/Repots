@@ -74,6 +74,7 @@ testestestes
 </details>
 
 ## Binds
+<details>
 <summary>Take a look to know how to use the dots!</summary>
 Open App Launcher (Rofi)
 Open Terminal
@@ -93,7 +94,8 @@ Make window fly
 </details>
 
 ## Credits
+<details>
 <summary>Code from other people who got modded in the dots</summary>
 
-
+batata
 </details>
