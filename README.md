@@ -23,4 +23,5 @@ After installing, some things wont work without installing manually, install the
 - yay quicksnip
 
 - sudo pacman -S swww
+
 (these are already installed during the process, but for some reason, they only work after installing manually
