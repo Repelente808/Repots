@@ -12,3 +12,15 @@ cd Repots
 (yeah, it does almost everything)
 
 Remember to take a loot at your home folder, if there's a folder named Repots after the instalation, you are able to delete it, its just the files from the clone process
+
+## Warning
+
+After installing, some things wont work without installing manually, install these application
+- yay pywal16
+
+- yay hyprquickframe
+
+- yay quicksnip
+
+- sudo pacman -S swww
+(these are already installed during the process, but for some reason, they only work after installing manually
