@@ -141,7 +141,6 @@ fc-cache -f
 
 echo "Installing Repots..."
 
-# Copiar todos os arquivos e pastas, incluindo ocultos
 cp -rf home/* home/.[!.]* home/..?* "$HOME/"
 
 echo "Instalation done!"
