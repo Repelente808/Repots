@@ -116,7 +116,7 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     quicksnip-git
     tty-clock
     vscodium-bin
-    zen-browser
+    zen-browser-bin
     wlogout
 EOF
 )
