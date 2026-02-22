@@ -15,6 +15,7 @@ fi
 
 PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
 # PACMAN
+    starship
     less
     unzip
     unrar	
@@ -98,6 +99,7 @@ EOF
 
 echo "Starting pacman package installation..."
 sudo pacman -Syu --needed --noconfirm $PACKETS_PACMAN
+sudo pacman -S  pulseaudio
 
 PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     google-breakpad
