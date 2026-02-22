@@ -3,9 +3,9 @@
 
 The Repo for my hyprland dots, includes an script to automatically install (almost) everything!
 
-this dots isn't fully my creation, i grab a bunch of code of people and changed to apply pywal (yeah like a material you based on your wallpaper) and adjusted to my likings, the codes i remember ill put in the end with some links
+This dots isn't fully my creation, i grab a bunch of code of people and changed to apply pywal (yeah like a material you based on your wallpaper) and adjusted to my likings, the codes i remember ill put in the end with some links.
 
-Only avaiable for Arch-based distros using hyprland, can be installed in other distros, but youll need to download manually each app
+Only avaiable for Arch-based distros using hyprland, can be installed in other distros, but youll need to download manually each app.
 
 after the warning tab, there's a preview tab with more images of the desktop, take a look! 
 
@@ -20,11 +20,11 @@ cd Repots
 ```
 (yeah, it does almost everything)
 
-Remember to take a look at your home folder, if there's a folder named Repots after the instalation, you are able to delete it, its just the files from the clone process, they dont interfer in anything in your system
+Remember to take a look at your home folder, if there's a folder named Repots after the instalation, you are able to delete it, its just the files from the clone process, they dont interfer in anything in your system.
 
 ## Warning
 
-After installing, some things wont work without installing manually, install these application
+After installing, some things wont work without installing manually, install these applications:
 ```
 yay pywal16
 yay hyprquickframe
@@ -77,7 +77,7 @@ testestestes
 <details>
 <summary>⌨️ Take a look to know how to use the dots!</summary>
 
-Open App Launcher (Rofi) -
+Open App Launcher (Rofi) - ```Super```
 
 Open Terminal -
 
