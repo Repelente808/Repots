@@ -99,7 +99,9 @@ Take a look at each element of the dotfiles!
 
 <details>
 <summary>🤓 Terminal (Kitty W/Fish and starship)</summary>
-testestestes
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8dccebd3-31b8-440d-a187-e184d37e038d" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8f4341bc-ee94-4666-adc2-57a96c307e41" />
+
 </details>
 
 ## Binds
