@@ -78,34 +78,20 @@ testestestes
 <summary>⌨️ Take a look to know how to use the dots!</summary>
 
 - Open App Launcher (Rofi) - ```Super```
-
-Open Terminal - ```Super``` + ```T```
-
-Open VsCodium - ```Super``` + ```C```
-
-Open Nautilus (file explorer) - ```Super``` + ```E```
-
-Open Zen Browser - ```Super``` + ```W```
-
-Open Menu (from Rofi, you can see what it does in preview) - ```Super``` + ```S```
-
-Open SwayNC - ```Super``` + ```N```
-
-Open HyprQuickFrame (Take a screenshot of some part of the screen) - ```Super``` + ```Shift``` + ```S```
-
-Open QuickSnip (Google Lens and OCR) ```Super``` + ```Shift``` +```T```
-
-Workspace Overview - ```Super``` + ```Tab```
-
-Change Workspace - ```Super``` + ```#``` (# means any number)
-
-Put Window in another Workspace - ```Super``` + ```Alt``` + ```#```
-
-Split Windows - ```Super``` + ```J```
-
-Close Window - ```Super``` + ```Q```
-
-Make window fly - ```Super``` + ```Space```
+- Open Terminal - ```Super``` + ```T```
+- Open VsCodium - ```Super``` + ```C```
+- Open Nautilus (file explorer) - ```Super``` + ```E```
+- Open Zen Browser - ```Super``` + ```W```
+- Open Menu (from Rofi, you can see what it does in preview) - ```Super``` + ```S```
+- Open SwayNC - ```Super``` + ```N```
+- Open HyprQuickFrame (Take a screenshot of some part of the screen) - ```Super``` + ```Shift``` + ```S```
+- Open QuickSnip (Google Lens and OCR) ```Super``` + ```Shift``` +```T```
+- Workspace Overview - ```Super``` + ```Tab```
+- Change Workspace - ```Super``` + ```#``` (# means any number)
+- Put Window in another Workspace - ```Super``` + ```Alt``` + ```#```
+- Split Windows - ```Super``` + ```J```
+- Close Window - ```Super``` + ```Q```
+- Make window fly - ```Super``` + ```Space```
 </details>
 
 ## Credits
