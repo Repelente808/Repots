@@ -1,11 +1,13 @@
 <h1 align="center">Repots-Dots</h1>
 
 
-The only Repo for my hyprland dots, includes an script to automatically install (almost) everything!
+The Repo for my hyprland dots, includes an script to automatically install (almost) everything!
 
 this dots isn't my creation, i grab a bunch of code of people and changed to apply pywal (yeah like a material you based on your wallpaper) and adjusted to my likings, the codes i remember ill put in the end with some links
 
 Only avaiable for Arch-based distros using hyprland, can be installed in other distros, but youll need to download manually each app
+
+after the warning tab, there's a preview tab with more images of the desktop, take a look! 
 
 
 # Instalation
@@ -18,7 +20,7 @@ cd Repots
 ```
 (yeah, it does almost everything)
 
-Remember to take a loot at your home folder, if there's a folder named Repots after the instalation, you are able to delete it, its just the files from the clone process
+Remember to take a look at your home folder, if there's a folder named Repots after the instalation, you are able to delete it, its just the files from the clone process, they dont interfer in anything in your system
 
 ## Warning
 
@@ -72,13 +74,26 @@ testestestes
 </details>
 
 ## Binds
+<summary>Take a look to know how to use the dots!</summary>
+- - Open App Launcher (Rofi)
+- - Open Terminal
+- - Open VsCodium
+- - Open Nautilus (file explorer)
+- - Open Zen Browser
+- - Open Menu (from Rofi, you can see what it does in preview)
+- - Open SwayNC
+- - Open HyprQuickFrame 
+- - Open QuickSnip 
+- - Close Window
+- - Change Workspace
+- - Put Window in another Workspace
+- - Split Windows
+- - 
+- - 
+</details>
 
--
--
--
--
--
--
--
--
--
+## Credits
+<summary>Code from other people who got modded in the dots</summary>
+
+
+</details>
