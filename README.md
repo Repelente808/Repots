@@ -1,4 +1,9 @@
-Only avaiable for Arch (prob arch based too, not tested yet, i'm a little dumb in this area) using hyprland, can be installed in other distros, but youll need to download manually each app
+# Repots!
+
+The only Repo for my hyprland dots, includes an script to automatically install (almost) everything
+this dots isn't my creation, i grab a bunch of code of people and changed to apply pywal (yeah like a material you based on your wallpaper) and adjusted to my likings
+
+Only avaiable for Arch-based distros using hyprland, can be installed in other distros, but youll need to download manually each app
 
 
 # Instalation
