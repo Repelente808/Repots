@@ -3,7 +3,7 @@
 
 The Repo for my hyprland dots, includes an script to automatically install (almost) everything!
 
-this dots isn't my creation, i grab a bunch of code of people and changed to apply pywal (yeah like a material you based on your wallpaper) and adjusted to my likings, the codes i remember ill put in the end with some links
+this dots isn't fully my creation, i grab a bunch of code of people and changed to apply pywal (yeah like a material you based on your wallpaper) and adjusted to my likings, the codes i remember ill put in the end with some links
 
 Only avaiable for Arch-based distros using hyprland, can be installed in other distros, but youll need to download manually each app
 
@@ -38,7 +38,7 @@ Take a look at each element of the dotfiles!
 
 
 <details>
-<summary>Search Bar (Rofi)</summary>
+<summary>  Search Bar (Rofi)</summary>
 testestestes
 </details>
 
@@ -76,35 +76,35 @@ testestestes
 ## Binds
 <details>
 <summary>Take a look to know how to use the dots!</summary>
-Open App Launcher (Rofi)
+Open App Launcher (Rofi) -
   
-Open Terminal
+Open Terminal -
 
-Open VsCodium
+Open VsCodium -
 
-Open Nautilus (file explorer)
+Open Nautilus (file explorer) -
 
-Open Zen Browser
+Open Zen Browser -
 
-Open Menu (from Rofi, you can see what it does in preview)
+Open Menu (from Rofi, you can see what it does in preview) -
 
-Open SwayNC
+Open SwayNC -
 
-Open HyprQuickFrame (similar  
+Open HyprQuickFrame (Take a screenshot of some part of the screen) - 
 
-Open QuickSnip 
+Open QuickSnip (Google Lens and OCR)
 
-Workspace Overview
+Workspace Overview - 
 
-Change Workspace
+Change Workspace -
 
-Put Window in another Workspace
+Put Window in another Workspace -
 
-Split Windows
+Split Windows -
 
-Close Window
+Close Window -
 
-Make window fly 
+Make window fly -
 </details>
 
 ## Credits
