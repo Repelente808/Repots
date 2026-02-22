@@ -46,6 +46,7 @@ Take a look at each element of the dotfiles!
 <img width="623" height="595" alt="image" src="https://github.com/user-attachments/assets/9b0ff37d-19b3-4ba5-8e89-085bca8c6f32" />
   <img width="577" height="529" alt="image" src="https://github.com/user-attachments/assets/57e46c0e-05cf-4ad1-b3fe-8039046bd160" />
 <img width="576" height="582" alt="image" src="https://github.com/user-attachments/assets/dff5339d-0649-4327-8199-68f4efbf47a5" />
+<img width="618" height="531" alt="image" src="https://github.com/user-attachments/assets/97ad87c9-bb47-44c0-b159-631172ba7437" />
 
 </details>
 
@@ -64,6 +65,7 @@ Take a look at each element of the dotfiles!
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9add75b2-572b-4164-86b3-0d0c957a9961" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b4e9d05a-2a6b-4a55-9e6c-14f377692e0a" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/994ec556-a9bb-4496-a3ac-a6619bea390c" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/341f11a6-8c72-4d90-9545-3fa17ef43a49" />
 
 
 </details>
@@ -90,6 +92,8 @@ Take a look at each element of the dotfiles!
 <img width="1920" height="1080" alt="screenshot" src="https://github.com/user-attachments/assets/5e34f7be-f7bf-4c1e-8227-30359d6036ac" />
 <img width="1920" height="1080" alt="screenshot" src="https://github.com/user-attachments/assets/fb8961dc-6511-49e0-9045-058fe177651d" />
 <img width="1920" height="1080" alt="screenshot" src="https://github.com/user-attachments/assets/bef6bdaa-8210-4ead-8598-90b89b8f240a" />
+<img width="1920" height="1080" alt="screenshot" src="https://github.com/user-attachments/assets/cfb3c7c4-581c-4303-9c0d-2a8d60a9cada" />
+
 
 </details>
 
