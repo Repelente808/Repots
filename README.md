@@ -32,12 +32,20 @@ sudo pacman -S swww
 (these are already installed during the process, but for some reason, they only work after installing manually)
 
 ## Preview
+Take a look at each element of the dotfiles!
+
 
 <details>
 <summary>Search Bar (Rofi)</summary>
 testestestes
 </details>
 
+
+<details>
+<summary>Options menu and Wallpaper picker (Rofi)</summary>
+testestestes
+</details>
+  
 <details>
 <summary>Power Options (WLogout)</summary>
 testestestes
