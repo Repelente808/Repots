@@ -79,33 +79,33 @@ testestestes
 
 Open App Launcher (Rofi) - ```Super```
 
-Open Terminal -
+Open Terminal - ```Super``` + ```T```
 
-Open VsCodium -
+Open VsCodium - ```Super``` + ```C```
 
-Open Nautilus (file explorer) -
+Open Nautilus (file explorer) - ```Super``` + ```E```
 
-Open Zen Browser -
+Open Zen Browser - ```Super``` + ```W```
 
-Open Menu (from Rofi, you can see what it does in preview) -
+Open Menu (from Rofi, you can see what it does in preview) - ```Super``` + ```S```
 
-Open SwayNC -
+Open SwayNC - ```Super``` + ```N```
 
-Open HyprQuickFrame (Take a screenshot of some part of the screen) - 
+Open HyprQuickFrame (Take a screenshot of some part of the screen) - ```Super``` + ```Shift``` + ```S```
 
-Open QuickSnip (Google Lens and OCR)
+Open QuickSnip (Google Lens and OCR) ```Super``` + ```Shift``` +```T```
 
-Workspace Overview - 
+Workspace Overview - ```Super``` + ```Tab```
 
-Change Workspace -
+Change Workspace - ```Super``` + ```#``` (# means any number)
 
-Put Window in another Workspace -
+Put Window in another Workspace - ```Super``` + ```Alt``` + ```#```
 
-Split Windows -
+Split Windows - ```Super``` + ```J```
 
-Close Window -
+Close Window - ```Super``` + ```Q```
 
-Make window fly -
+Make window fly - ```Super``` + ```Space```
 </details>
 
 ## Credits
