@@ -26,7 +26,7 @@ Remember to do a reboot to don't get any trouble!
 
 To configure your keyboard layout take a look here ```/.config/hypr/input.conf```
 
-Put new wallpapers in ```~/Imagens/Wallpapers``` (or change it in ```~/.config/rofi/rofi-wallpaper-picker/swww.sh```)
+Put wallpapers in ```~/Imagens/Wallpapers``` (or change it in ```~/.config/rofi/rofi-wallpaper-picker/swww.sh```)
 
 Remember to take a look at your home folder, if there's a folder named Repots after the instalation, you are able to delete it, its just the files from the clone process, they dont interfer in anything in your system.
 
