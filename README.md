@@ -2,6 +2,8 @@
 
 
 
+Better quality preview (its not the same video, but show the same things)
+
 The Repo for my hyprland dots, includes an script to automatically install (almost) everything!
 
 This dots isn't fully my creation, i grab a bunch of code of people and changed to apply pywal (yeah like a material you based on your wallpaper) and adjusted to my likings, the codes i remember ill put in the end with some links.
@@ -43,7 +45,7 @@ yay quicksnip
 sudo pacman -S swww
 ```
 
-- (these are already installed during the process, but for some reason in cachyOS, they only work after installing manually)
+- (these are already installed during the process, but for some reason, for me, in cachyOS, they only work after installing manually)
 
 </details>
   
@@ -53,6 +55,7 @@ Take a look at each element of the dotfiles!
 
 <details>
 <summary>🔎 Search Bar (Rofi)</summary>
+<img width="1920" height="1080" alt="Rofi" src="https://github.com/user-attachments/assets/ecbe3ac9-671e-4cc6-b8e4-e112fc8c689c" />
 
 </details>
 
