@@ -143,6 +143,10 @@ Take a look at each element of the dotfiles!
 - Waybar & Custom Rofi Menu - https://www.youtube.com/@saneAspect
 - Wlogout & Hyprlock - https://github.com/binnewbs/arch-hyprland
 - Fastfetch - https://github.com/m3tozz/FastCat
-- Rofi Theme - https://github.com/newmanls/rofi-themes-collection/
-
+- Rofi Theme - https://github.com/newmanls/rofi-themes-collection
+- Font - https://qwerasd205.github.io/PixelCode
+- Momoisay - https://github.com/Mon4sm/momoisay
+- Qs Overview - https://github.com/Shanu-Kumawat/quickshell-overview
+- HyprQuickFrame - https://github.com/Ronin-CK/HyprQuickFrame
+- QuickSnip - https://github.com/Ronin-CK/QuickSnip
 </details>
