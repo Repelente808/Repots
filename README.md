@@ -31,12 +31,14 @@ Remember to take a look at your home folder, if there's a folder named Repots af
 ## Warning
 <details>
 <summary>After installing, if some things don't work take a look here:</summary>
+  
 ```
 yay pywal16
 yay hyprquickframe
 yay quicksnip
 sudo pacman -S swww
 ```
+
 (these are already installed during the process, but for some reason in cachyOS, they only work after installing manually)
 </details>
   
