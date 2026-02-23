@@ -156,7 +156,12 @@ echo "Installing Repots..."
 
 cp -rf home/* home/.[!.]* home/..?* "$HOME/"
 
+sudo modprobe i2c-dev
+sudo usermod -aG i2c $USER
+
 echo "Instalation done!"
+
 echo "Now the system will return to your login manager, just login again!"
 sleep 15
+rm -rf "$(dirname "$0")"
 loginctl kill-session $XDG_SESSION_ID
