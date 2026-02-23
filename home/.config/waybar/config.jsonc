@@ -4,7 +4,18 @@
   "margin-top": 13,
   "modules-left": ["clock","custom/weather", "mpris", "hyprland/window"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["tray",  "pulseaudio#microphone", "pulseaudio", "battery", "network","custom/swaync", "custom/power"],
+  "modules-right": ["tray", "custom/backlight-desktop", "pulseaudio#microphone", "pulseaudio", "battery", "network","custom/swaync", "custom/power"],
+
+"custom/backlight-desktop": {
+    "format": "{icon} {percentage}%",
+    "format-icons": ["󰃞", "󰃟", "󰃠"],
+    "exec": "bash -c 'v=$(ddcutil getvcp 10 | grep -oP \">
+    "return-type": "json",
+    "on-scroll-up": "ddcutil setvcp 10 + 10",
+    "on-scroll-down": "ddcutil setvcp 10 - 10",
+    "interval": 15,
+    "tooltip": false
+},
 
 "custom/weather": {
     "exec": "curl -s 'https://wttr.in?format=1'",
