@@ -137,7 +137,7 @@ Take a look at each element of the dotfiles!
 
 ## Credits
 <details>
-<summary>🎦 Code from other people that get modded in the dots</summary>
+<summary>🎦 Work from other people that get modded or implemented in the dots</summary>
   
 - SwayNC - https://github.com/zDyant/HyprNova
 - Waybar & Custom Rofi Menu - https://www.youtube.com/@saneAspect
