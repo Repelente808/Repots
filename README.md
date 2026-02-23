@@ -39,7 +39,8 @@ yay quicksnip
 sudo pacman -S swww
 ```
 
-(these are already installed during the process, but for some reason in cachyOS, they only work after installing manually)
+- (these are already installed during the process, but for some reason in cachyOS, they only work after installing manually)
+
 </details>
   
 ## Preview
