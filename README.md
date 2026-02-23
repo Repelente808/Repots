@@ -133,7 +133,13 @@ https://github.com/user-attachments/assets/d3b6a9e4-a91e-466a-8ee9-ec5f26f9a5e3
 - Boot Animation - https://github.com/adi1090x/plymouth-themes
 
 - Grub theme - https://github.com/jacksaur/Gorgeous-GRUB
-  
+
+- GTK theme - https://aur.archlinux.org/packages/catppuccin-gtk-theme-mocha 
+
+- QT theme - https://github.com/catppuccin/qt5ct
+
+- Icon Pack - https://github.com/vinceliuice/Tela-circle-icon-theme
+
 </details>
 
 ## Credits
