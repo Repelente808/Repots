@@ -149,4 +149,5 @@ Take a look at each element of the dotfiles!
 - Qs Overview - https://github.com/Shanu-Kumawat/quickshell-overview
 - HyprQuickFrame - https://github.com/Ronin-CK/HyprQuickFrame
 - QuickSnip - https://github.com/Ronin-CK/QuickSnip
+- the packages could be seen in install.sh
 </details>
