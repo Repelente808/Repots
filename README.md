@@ -1,5 +1,6 @@
 <h1 align="center">Repots-Dots</h1>
 
+![vídeo](preview.mp4)
 
 The Repo for my hyprland dots, includes an script to automatically install (almost) everything!
 
