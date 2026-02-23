@@ -127,7 +127,9 @@ https://github.com/user-attachments/assets/d3b6a9e4-a91e-466a-8ee9-ec5f26f9a5e3
 <details>
 <summary>🖌️Want a cooler system? take a look at these projects!</summary>
 - Sddm (login manager) - https://github.com/uiriansan/SilentSDDM
+  
 - Boot Animation - https://github.com/adi1090x/plymouth-themes
+
 - Grub theme - https://github.com/jacksaur/Gorgeous-GRUB
 </details>
 
