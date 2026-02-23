@@ -64,57 +64,33 @@ Take a look at each element of the dotfiles!
 
 <details>
 <summary>⚙️Options menu and Wallpaper picker (Rofi)</summary>
-<img width="580" height="334" alt="image" src="https://github.com/user-attachments/assets/cda9ebbc-f042-4b69-b60b-6c49b78bd2eb" />
-  
-  <img width="583" height="409" alt="image" src="https://github.com/user-attachments/assets/b296c3ab-4e27-4252-bb4d-85884a3a2d85" />
+<img width="1920" height="1080" alt="Menu N Wallpapers" src="https://github.com/user-attachments/assets/d0496689-46e6-4fe9-84c3-dc776c912e21" />
 
-  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a69131be-7286-461e-bd9a-51912e30550e" />
 </details>
   
 <details>
 <summary>🔌 Power Options (WLogout)</summary>
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9add75b2-572b-4164-86b3-0d0c957a9961" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b4e9d05a-2a6b-4a55-9e6c-14f377692e0a" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/994ec556-a9bb-4496-a3ac-a6619bea390c" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/341f11a6-8c72-4d90-9545-3fa17ef43a49" />
-
-
+<img width="1920" height="1080" alt="Wlogout" src="https://github.com/user-attachments/assets/3b667bfd-2213-4fe8-ae99-b932f20a4843" />
 </details>
 
 <details>
 <summary>🔔 Notifications/Control Center (SwayNC)</summary>
-<img width="590" height="1080" alt="image" src="https://github.com/user-attachments/assets/840f79a9-22ba-47b8-ba15-3490496feb0b" /><br>
-<img width="513" height="1080" alt="image" src="https://github.com/user-attachments/assets/a74ab953-9ad3-4561-8506-22b9ef363e88" /><br>
-  <img width="414" height="141" alt="image" src="https://github.com/user-attachments/assets/9d46bbab-b95e-49d3-8536-1c8e088aedfd" /><br>
-  <img width="427" height="158" alt="image" src="https://github.com/user-attachments/assets/37ea5bd0-9cd8-4a89-9764-37176faec74a" /><br>
+<img width="1920" height="1080" alt="SwayNC" src="https://github.com/user-attachments/assets/e17a530f-0bd6-463b-9288-31fb04fa83a5" />
 </details>
 
 <details>
 <summary>🧭 Topbar (Waybar)</summary>
-<img width="1913" height="62" alt="image" src="https://github.com/user-attachments/assets/a3a166a6-f1d0-4f17-8bd3-9f7662e09d82" />
-<img width="1918" height="54" alt="image" src="https://github.com/user-attachments/assets/0612a31c-031e-4068-b985-f838fab5698d" />
-<img width="1920" height="62" alt="image" src="https://github.com/user-attachments/assets/60b6960b-6905-4f49-9fbd-61b167550d2d" />
-<img width="1920" height="56" alt="image" src="https://github.com/user-attachments/assets/379fec3b-9535-483c-9b55-289a6ee166dc" />
-
+<img width="1920" height="1080" alt="Waybar" src="https://github.com/user-attachments/assets/c73bc11f-634b-46d6-a978-2196ffc3d2ca" />
 </details>
 
 <details>
 <summary>🔓 Lock Screen (Hyprlock)</summary>
-<img width="1920" height="1080" alt="screenshot" src="https://github.com/user-attachments/assets/5e34f7be-f7bf-4c1e-8227-30359d6036ac" />
-<img width="1920" height="1080" alt="screenshot" src="https://github.com/user-attachments/assets/fb8961dc-6511-49e0-9045-058fe177651d" />
-<img width="1920" height="1080" alt="screenshot" src="https://github.com/user-attachments/assets/bef6bdaa-8210-4ead-8598-90b89b8f240a" />
-<img width="1920" height="1080" alt="screenshot" src="https://github.com/user-attachments/assets/cfb3c7c4-581c-4303-9c0d-2a8d60a9cada" />
-
-
+<img width="1920" height="1080" alt="HyprLock" src="https://github.com/user-attachments/assets/372592a2-7bbc-4cf9-a18e-d3c84f18637f" />
 </details>
 
 <details>
 <summary>🤓 Terminal (Kitty W/Fish and starship)</summary>
-  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c14cd547-d08c-4d65-94f7-b4e0535056c7" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8dccebd3-31b8-440d-a187-e184d37e038d" />
- <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f74a8a05-d7e9-4855-9df9-35a4803e5024" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8f4341bc-ee94-4666-adc2-57a96c307e41" />
-
+<img width="1920" height="1080" alt="Terminal" src="https://github.com/user-attachments/assets/4ffec473-aa55-4e80-9d09-b6d72552a6b9" />
 </details>
 
 <details>
@@ -143,6 +119,7 @@ https://github.com/user-attachments/assets/d3b6a9e4-a91e-466a-8ee9-ec5f26f9a5e3
 - Split Windows - ```Super``` + ```J```
 - Close Window - ```Super``` + ```Q```
 - Make window fly - ```Super``` + ```Space```
+- Fullscreen ```Super``` + ```F```
 </details>
 
 ## Credits
