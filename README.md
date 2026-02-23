@@ -139,5 +139,10 @@ Take a look at each element of the dotfiles!
 <details>
 <summary>🎦 Code from other people that get modded in the dots</summary>
 
-batata
+- SwayNC - ```https://github.com/zDyant/HyprNova```
+- Waybar & Custom Rofi Menu - ```https://www.youtube.com/@saneAspect```
+- Wlogout & Hyprlock - ```https://github.com/binnewbs/arch-hyprland```
+- Fastfetch - ```https://github.com/m3tozz/FastCat```
+- Rofi Theme - ```https://github.com/newmanls/rofi-themes-collection/```
+
 </details>
