@@ -122,6 +122,7 @@ https://github.com/user-attachments/assets/d3b6a9e4-a91e-466a-8ee9-ec5f26f9a5e3
 - Close Window - ```Super``` + ```Q```
 - Make window fly - ```Super``` + ```Space```
 - Fullscreen ```Super``` + ```F```
+- Scroll also work in some parts of waybar!
   
 </details>
 
