@@ -122,6 +122,15 @@ https://github.com/user-attachments/assets/d3b6a9e4-a91e-466a-8ee9-ec5f26f9a5e3
 - Fullscreen ```Super``` + ```F```
 </details>
 
+## Suggestions!
+
+<details>
+<summary>🖌️Want a cooler system? take a look at these projects!</summary>
+- Sddm (login manager) - https://github.com/uiriansan/SilentSDDM
+- Boot Animation - https://github.com/adi1090x/plymouth-themes
+- Grub theme - https://github.com/jacksaur/Gorgeous-GRUB
+</details>
+
 ## Credits
 <details>
 <summary>🎦 Work from other people that get modded or implemented in the dots</summary>
@@ -136,5 +145,7 @@ https://github.com/user-attachments/assets/d3b6a9e4-a91e-466a-8ee9-ec5f26f9a5e3
 - Qs Overview - https://github.com/Shanu-Kumawat/quickshell-overview
 - HyprQuickFrame - https://github.com/Ronin-CK/HyprQuickFrame
 - QuickSnip - https://github.com/Ronin-CK/QuickSnip
+- Miku image - https://pt.pinterest.com/pin/737675613997663987/ (idk the original creator)
+- Teto image - https://open.spotify.com/intl-pt/track/4SAhUJaWyiOgLgZq31DyGK (idk the original creator)
 - the packages could be seen in install.sh
 </details>
