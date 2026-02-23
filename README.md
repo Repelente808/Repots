@@ -1,6 +1,6 @@
 <h1 align="center">Repots-Dots</h1>
 
-![vídeo](preview.mp4)
+
 
 The Repo for my hyprland dots, includes an script to automatically install (almost) everything!
 
@@ -113,6 +113,13 @@ Take a look at each element of the dotfiles!
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8dccebd3-31b8-440d-a187-e184d37e038d" />
  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f74a8a05-d7e9-4855-9df9-35a4803e5024" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8f4341bc-ee94-4666-adc2-57a96c307e41" />
+
+</details>
+
+<details>
+<summary>✨ Animations</summary>
+
+https://github.com/user-attachments/assets/d3b6a9e4-a91e-466a-8ee9-ec5f26f9a5e3
 
 </details>
 
