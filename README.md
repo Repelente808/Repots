@@ -105,7 +105,9 @@ Take a look at each element of the dotfiles!
 
 <details>
 <summary>🤓 Terminal (Kitty W/Fish and starship)</summary>
+  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c14cd547-d08c-4d65-94f7-b4e0535056c7" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8dccebd3-31b8-440d-a187-e184d37e038d" />
+ <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f74a8a05-d7e9-4855-9df9-35a4803e5024" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8f4341bc-ee94-4666-adc2-57a96c307e41" />
 
 </details>
