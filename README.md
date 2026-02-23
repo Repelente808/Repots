@@ -24,6 +24,8 @@ cd Repots
 
 Remember to do a reboot to don't get any trouble!
 
+To configure your keyboard layout take a look here ```/.config/hypr/input.conf```
+
 Remember to take a look at your home folder, if there's a folder named Repots after the instalation, you are able to delete it, its just the files from the clone process, they dont interfer in anything in your system.
 
 ## Warning
