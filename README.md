@@ -53,10 +53,6 @@ Take a look at each element of the dotfiles!
 
 <details>
 <summary>🔎 Search Bar (Rofi)</summary>
-<img width="623" height="595" alt="image" src="https://github.com/user-attachments/assets/9b0ff37d-19b3-4ba5-8e89-085bca8c6f32" />
-  <img width="577" height="529" alt="image" src="https://github.com/user-attachments/assets/57e46c0e-05cf-4ad1-b3fe-8039046bd160" />
-<img width="576" height="582" alt="image" src="https://github.com/user-attachments/assets/dff5339d-0649-4327-8199-68f4efbf47a5" />
-<img width="618" height="531" alt="image" src="https://github.com/user-attachments/assets/97ad87c9-bb47-44c0-b159-631172ba7437" />
 
 </details>
 
