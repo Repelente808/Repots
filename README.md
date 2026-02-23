@@ -49,6 +49,8 @@ sudo pacman -S swww
 
 - (these are already installed during the process, but for some reason, for me, in cachyOS, they only work after installing manually)
 
+  If you're on a notebook and you get two brightness indicators in waybar, go to ```~/.config/waybar/config.jsonc``` and remove "custom/backlight-desktop"
+
 </details>
   
 ## Preview
