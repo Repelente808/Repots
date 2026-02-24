@@ -18,9 +18,9 @@ btw, sorry for the long preview video, i'm a bit slow and dont know well how to 
 
 Just put these commands in terminal and go clicking enter, there's a prompt to change to pipewire pulse, if you want or not, just follow what is on the screen
 ```
-git clone https://github.com/Repelente808/Repots.git
+git clone https://github.com/Repelente808/Repots.git /tmp/Repots
 
-cd Repots
+cd /tmp/Repots
 
 ./install.sh
 ```
