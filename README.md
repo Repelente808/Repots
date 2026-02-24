@@ -96,7 +96,7 @@ Take a look at each element of the dotfiles!
 <details>
 <summary>✨ Animations</summary>
 
-
+https://github.com/user-attachments/assets/55c49b82-6e48-4386-9d76-e675c95ea452
 
 </details>
 
