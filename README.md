@@ -1,12 +1,9 @@
 <h1 align="center">Repots-Dots</h1>
-
-
-https://github.com/user-attachments/assets/c69d3db1-6aed-4e3f-82ac-c052c931e93b
-
+https://github.com/user-attachments/assets/a59f6d70-9d5b-4d37-a72f-32b8395b50b8
 
 Better quality preview (its not the same video, but show the same things)
 
-The Repo for my hyprland dots, includes an script to automatically install (almost) everything!
+The Repo for my hyprland dots, includes an script to automatically install everything!
 
 This dots isn't fully my creation, i grab a bunch of code of people and changed to apply pywal (yeah like a material you based on your wallpaper) and adjusted to my likings, the codes i remember ill put in the end with some links.
 
@@ -26,7 +23,7 @@ cd Repots
 
 ./install.sh
 ```
-(yeah, it does almost everything)
+(yeah, it does everything)
 
 Remember to do a reboot to don't get any trouble!
 
@@ -98,7 +95,7 @@ Take a look at each element of the dotfiles!
 <details>
 <summary>✨ Animations</summary>
 
-https://github.com/user-attachments/assets/d3b6a9e4-a91e-466a-8ee9-ec5f26f9a5e3
+https://github.com/user-attachments/assets/cd2f024e-e1f7-4a94-b9bd-230475b932d1
 
 </details>
 
@@ -164,4 +161,4 @@ https://github.com/user-attachments/assets/d3b6a9e4-a91e-466a-8ee9-ec5f26f9a5e3
 - the packages could be seen in install.sh
   
 </details>
-I DID A 120 COMMITS BC I DONT SEE THE PREVIEW TAB FOR THE README OMG IM SO DUMB
+I DID A 120 COMMITS BC I DIDNT SEE THE PREVIEW TAB FOR THE README OMG IM SO DUMB
