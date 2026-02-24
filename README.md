@@ -1,6 +1,6 @@
 <h1 align="center">Repots-Dots</h1>
 
-https://github.com/user-attachments/assets/a59f6d70-9d5b-4d37-a72f-32b8395b50b8
+https://github.com/user-attachments/assets/8f53a0fb-aab2-48ca-8838-0874a4ac2309
 
 Better quality preview (its not the same video, but show the same things)
 
@@ -96,7 +96,7 @@ Take a look at each element of the dotfiles!
 <details>
 <summary>✨ Animations</summary>
 
-https://github.com/user-attachments/assets/cd2f024e-e1f7-4a94-b9bd-230475b932d1
+
 
 </details>
 
