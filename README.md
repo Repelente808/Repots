@@ -164,3 +164,4 @@ https://github.com/user-attachments/assets/d3b6a9e4-a91e-466a-8ee9-ec5f26f9a5e3
 - the packages could be seen in install.sh
   
 </details>
+I DID A 120 COMMITS BC I DONT SEE THE PREVIEW TAB FOR THE README OMG IM SO DUMB
