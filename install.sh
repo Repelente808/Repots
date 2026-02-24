@@ -15,7 +15,7 @@ fi
 
 PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
 # PACMAN
-    gnome-disks
+    gnome-disk-utility
     ddcutil
     brightnessctl
     ffmpegthumbnailer
