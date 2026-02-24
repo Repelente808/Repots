@@ -28,7 +28,7 @@ cd Repots
 
 Remember to do a reboot to don't get any trouble!
 
-To configure your keyboard layout take a look here ```/.config/hypr/input.conf```
+To configure your keyboard layout take a look here ```~/.config/hypr/input.conf```
 
 Put wallpapers in ```~/Imagens/Wallpapers``` (or change it in ```~/.config/rofi/rofi-wallpaper-picker/swww.sh```)
 
