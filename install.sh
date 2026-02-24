@@ -133,13 +133,6 @@ git clone https://github.com/Mon4sm/Momoisay.git /tmp/Momoisay
 cd /tmp/Momoisay && sudo sh ./install/linux.sh && cd -
 rm -rf /tmp/Momoisay
 
-echo "Installing Quickshell Overview..."
-if [ ! -d "$HOME/.config/quickshell/overview" ]; then
-    git clone https://github.com/Shanu-Kumawat/quickshell-overview ~/.config/quickshell/overview
-else
-    echo "Quickshell Overview Already Exists!"
-fi
-
 echo "Installing PixelCode font..."
 D="$HOME/.local/share/fonts/PixelCode" && \
 mkdir -p "$D" && \
