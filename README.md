@@ -43,7 +43,7 @@ Probably the reason for things not working is an error in the instalation of the
 ```
 yay pywal16
 yay hyprquickframe
-quickshell-overview-git
+yay quickshell-overview-git
 yay quicksnip
 sudo pacman -S swww
 ```
