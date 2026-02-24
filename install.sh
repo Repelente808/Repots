@@ -119,6 +119,7 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     hyprquickframe-git
     quicksnip-git
     tty-clock
+    quickshell-overview-git
     vscodium-bin
     zen-browser-bin
     wlogout
