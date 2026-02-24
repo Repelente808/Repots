@@ -116,7 +116,6 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     python-imageio-ffmpeg
     python-pywal16
     python-screeninfo
-    quickshell-git
     hyprquickframe-git
     quicksnip-git
     tty-clock
