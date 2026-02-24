@@ -159,6 +159,7 @@ https://github.com/user-attachments/assets/cd2f024e-e1f7-4a94-b9bd-230475b932d1
 - QuickSnip - https://github.com/Ronin-CK/QuickSnip
 - Miku image - https://pt.pinterest.com/pin/737675613997663987/ (idk the original creator)
 - Teto image - https://open.spotify.com/intl-pt/track/4SAhUJaWyiOgLgZq31DyGK (idk the original creator)
+- Animations - https://github.com/ViegPhunt/Dotfiles
 - the packages could be seen in install.sh
   
 </details>
