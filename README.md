@@ -37,6 +37,8 @@ Put wallpapers in ```~/Imagens/Wallpapers``` (or change it in ```~/.config/rofi/
 ## Warning
 <details>
 <summary>⚠️ After installing, if some things don't work or look messy, take a look here:</summary>
+
+Probably the reason for things not working is an error in the instalation of these apps, just try installing them
   
 ```
 yay pywal16
