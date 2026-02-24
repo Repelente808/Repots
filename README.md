@@ -161,6 +161,7 @@ https://github.com/user-attachments/assets/55c49b82-6e48-4386-9d76-e675c95ea452
 - Qs Overview - https://github.com/Shanu-Kumawat/quickshell-overview
 - HyprQuickFrame - https://github.com/Ronin-CK/HyprQuickFrame
 - QuickSnip - https://github.com/Ronin-CK/QuickSnip
+- Starship - https://github.com/end-4/dots-hyprland
 - Miku image - https://pt.pinterest.com/pin/737675613997663987/ (idk the original creator)
 - Teto image - https://open.spotify.com/intl-pt/track/4SAhUJaWyiOgLgZq31DyGK (idk the original creator)
 - Animations - https://github.com/ViegPhunt/Dotfiles
