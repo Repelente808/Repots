@@ -48,7 +48,7 @@ sudo pacman -S swww
 - (these are already installed during the process, but for some reason, for me, in cachyOS, they only work after installing manually)
 - if installed in nvidia without drivers, hyprquickframe and quicksnip will not install and give errors (they install quickshell too)
 
-  If you're on a notebook and you get two brightness indicators in waybar, go to ```~/.config/waybar/config.jsonc``` and remove "custom/backlight-desktop"
+-  If you're on a notebook and you get two brightness indicators in waybar, go to ```~/.config/waybar/config.jsonc``` and remove "custom/backlight-desktop"
 
 </details>
   
