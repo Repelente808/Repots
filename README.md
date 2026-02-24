@@ -36,7 +36,7 @@ Remember to take a look at your home folder, if there's a folder named Repots af
 
 ## Warning
 <details>
-<summary>⚠️ After installing, if some things don't work take a look here:</summary>
+<summary>⚠️ After installing, if some things don't work or look messy, take a look here:</summary>
   
 ```
 yay pywal16
