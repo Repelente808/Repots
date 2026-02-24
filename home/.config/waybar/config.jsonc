@@ -9,7 +9,7 @@
 "custom/backlight-desktop": {
     "format": "{icon} {percentage}%",
     "format-icons": ["󰃞", "󰃟", "󰃠"],
-    "exec": "bash -c 'v=$(ddcutil getvcp 10 | grep -oP \">
+    "exec": "bash -c 'v=$(ddcutil getvcp 10 | grep -oP \"current value =\\s*\\K[0-9]+\"); echo \"{\\\"percentage\\\": ${v:-0}}\"'",
     "return-type": "json",
     "on-scroll-up": "ddcutil setvcp 10 + 10",
     "on-scroll-down": "ddcutil setvcp 10 - 10",
