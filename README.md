@@ -17,6 +17,8 @@ btw, sorry for the long preview video, i'm a bit slow and dont know well how to 
 # Instalation
 
 Just put these commands in terminal and go clicking enter, there's a prompt to change to pipewire pulse, if you want or not, just follow what is on the screen
+
+if you are on nvidia, install drivers first, if you dont do it, it will give you multiple errors
 ```
 git clone https://github.com/Repelente808/Repots.git /tmp/Repots
 
