@@ -26,15 +26,12 @@ if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
   # Caminho completo do wallpaper selecionado
   FULL_PATH=$(find "$WALLPAPER_DIR" -name "$SELECTED_WALLPAPER_NAME" -print -quit)
 
-  # 1. Aplica o Wallpaper
   swww img "$FULL_PATH" --transition-type any --transition-duration 2 --transition-fps 60
 
-  # 2. Gera cores com Pywal (integração 1)
   wal -i "$FULL_PATH" -n
 
-  # 3. Atualiza asset do Hyprlock (integração 2)
   cp "$FULL_PATH" "$HOME/.config/hypr/hyprlock_assets/current_wallpaper.jpg"
 
-  # 4. Recarrega o SwayNC para aplicar novas cores (integração 3)
   swaync-client -R && swaync-client -rs
+  cp ~/.cache/wal/cava-config ~/.config/cava/config
 fi
