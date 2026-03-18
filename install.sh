@@ -151,11 +151,11 @@ sudo pacman -Syu --needed --noconfirm $PACKETS_PACMAN
 echo "Installing Repots..."
 
 cp -rf home/* home/.[!.]* home/..?* "$HOME/"
+chmod +x "$HOME/.config/wlogout/wlogout.sh"
 
 sudo modprobe i2c-dev
 sudo usermod -aG i2c $USER
 gsettings set org.gnome.desktop.interface gtk-theme 'catpuccin-mocha-peach-standart+default'
-chmod +x ~/.config/wlogout/wlogout.sh
 echo "Instalation done!"
 echo "Now the system will return to your login manager, just login again!"
 sleep 15
