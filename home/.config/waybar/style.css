@@ -73,19 +73,25 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background-color: @color3;
-    color: @color1;
-    padding: 0 16px;
-    transition: all 0.3s ease; 
+    background-color: alpha(@color1, 0.5);
+    color: @color2;
+    padding: 0 5px;
+    margin: 5 0px 5 0px;
+    min-width: 40px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #workspaces button {
     color: @color2;
+    margin: 5px 0px;
+    padding: 0 5px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #workspaces {
     background-color: @background;
-    padding: 0 5.6px 0 0;
+    padding: 0 5px;
+    margin: 0;
 }
 
 .modules-left {
