@@ -4,14 +4,14 @@ git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin
 cd /tmp/yay-bin
 makepkg -si --noconfirm
 
-yay -S nvidia-580xx-dkms nvidia-580xx-utils nvidia-580xx-settings opencl-nvidia-580xx lib32-nvidia-580xx-utils lib32-opencl-nvidia-580xx
+yay -S nvidia-580xx-dkms nvidia-580xx-utils opencl-nvidia-580xx lib32-nvidia-580xx-utils lib32-opencl-nvidia-580xx nvidia-580xx-settings
 
 things that i use after installing 
 sudo pacman -S os-prober nautilus pipewire-pulse ttf-bitstream-vera ttf-dejavu ttf-jetbrains-mono-nerd ttf-liberation ttf-nerd-fonts-symbols gnome-disk-utility ffmpegthumbnailer wtype gnome-themes-extra
 speech-dispatcher starship less unzip unrar mousepad file-roller vlc vlc-plugin-ffmpeg asciiquarium kdenlive cmatrix steam cava power-profiles-daemon fastfetch krita gamescope easyeffects nvim guvcview 
-unrar unzip nwg-look wine flatpak plymouth qbittorrent ncdu lzip nwg-displays android-tools android-udev obs-studio libxcrypt-compat fuse2 wine winetricks wineboot wineserver
+unrar unzip nwg-look wine flatpak plymouth qbittorrent ncdu lzip nwg-displays android-tools android-udev obs-studio libxcrypt-compat fuse2 wine
 
-yay -S pear-desktop vesktop zen-browser noto-fonts-cjk-jp-vf tty-clock protonup-qt vscodium-bin	prismlauncher gpu-screen-recorder-ui-git appimagelauncher zapzap telegram-desktop-bin r2modman-bin opl-pc-tools-git
+yay -S pear-desktop-bin vesktop-bin zen-browser-bin noto-fonts-cjk-jp-vf tty-clock protonup-qt-bin vscodium-bin	prismlauncher gpu-screen-recorder-ui-git appimagelauncher zapzap telegram-desktop-bin r2modman-appimage opl-pc-tools-git
 
 flatpak install sober
 flatpak install io.mrarm.mcpelauncher
