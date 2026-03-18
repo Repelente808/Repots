@@ -1,7 +1,7 @@
 <h1 align="center">Repots-Dots</h1>
 
 https://github.com/user-attachments/assets/8f53a0fb-aab2-48ca-8838-0874a4ac2309
-
+(outdated previews)
 [Better quality preview ](https://youtu.be/957y6OU14dY) (its not the same video, but show the same things)
 
 The Repo for my hyprland dots, includes an script to automatically install everything!
@@ -64,29 +64,33 @@ Take a look at each element of the dotfiles!
 <details>
 <summary>🔎 Search Bar (Rofi)</summary>
 <img width="1920" height="1080" alt="Rofi(1)" src="https://github.com/user-attachments/assets/7fa56252-dcc9-42f1-8f02-63ac03fd70ec" />
-
+(outdated image)
 </details>
 
 
 <details>
 <summary>⚙️Options menu and Wallpaper picker (Rofi)</summary>
 <img width="1920" height="1080" alt="Menu N Wallpapers" src="https://github.com/user-attachments/assets/d0496689-46e6-4fe9-84c3-dc776c912e21" />
+(outdated image)
 
 </details>
   
 <details>
 <summary>🔌 Power Options (WLogout)</summary>
 <img width="1920" height="1080" alt="Wlogout" src="https://github.com/user-attachments/assets/3b667bfd-2213-4fe8-ae99-b932f20a4843" />
+(outdated image)
 </details>
 
 <details>
 <summary>🔔 Notifications/Control Center (SwayNC)</summary>
 <img width="1920" height="1080" alt="SwayNC" src="https://github.com/user-attachments/assets/e17a530f-0bd6-463b-9288-31fb04fa83a5" />
+(outdated image, slightly changes)
 </details>
 
 <details>
 <summary>🧭 Topbar (Waybar)</summary>
 <img width="1920" height="1080" alt="Waybar" src="https://github.com/user-attachments/assets/c73bc11f-634b-46d6-a978-2196ffc3d2ca" />
+(outdated image)
 </details>
 
 <details>
@@ -96,7 +100,8 @@ Take a look at each element of the dotfiles!
 
 <details>
 <summary>🤓 Terminal (Kitty W/Fish and starship)</summary>
-<img width="1920" height="1080" alt="Terminal" src="https://github.com/user-attachments/assets/4ffec473-aa55-4e80-9d09-b6d72552a6b9" />
+<img width="1920" height="1080" alt="Terminal" src="https://github.com/user-attachments/assets/4ffec473-aa55-4e80-9d09-b6d72552a6b9" /> 
+(outdated image)
 </details>
 
 <details>
