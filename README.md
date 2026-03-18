@@ -135,9 +135,9 @@ https://github.com/user-attachments/assets/55c49b82-6e48-4386-9d76-e675c95ea452
   
 - Sddm (login manager) - https://github.com/uiriansan/SilentSDDM
   
-- Boot Animation - https://github.com/adi1090x/plymouth-themes
+- Boot Animation - https://github.com/derVedro/PlymouthTheme-Cat
 
-- Grub theme - https://github.com/jacksaur/Gorgeous-GRUB
+- Grub theme - https://github.com/catppuccin/grub
 
 - GTK theme - https://aur.archlinux.org/packages/catppuccin-gtk-theme-mocha 
 
