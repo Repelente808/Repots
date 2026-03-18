@@ -37,7 +37,8 @@ Put wallpapers in ```~/Imagens/Wallpapers``` (or change it in ```~/.config/rofi/
 ## Warning
 <details>
 <summary>⚠️ After installing, if some things don't work or look messy, take a look here:</summary>
-
+to make the power menu button work, execute this command
+  ```chmod +x ~/.config/wlogout/wlogout.sh```
 Probably the reason for things not working is an error in the instalation of these apps, just try installing them
   
 ```
