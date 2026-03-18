@@ -140,8 +140,6 @@ https://github.com/user-attachments/assets/55c49b82-6e48-4386-9d76-e675c95ea452
 
 - Grub theme - https://github.com/catppuccin/grub
 
-- GTK theme - https://aur.archlinux.org/packages/catppuccin-gtk-theme-mocha 
-
 - QT theme - https://github.com/catppuccin/qt5ct
 
 - Icon Pack - https://github.com/vinceliuice/Tela-circle-icon-theme
@@ -166,6 +164,7 @@ https://github.com/user-attachments/assets/55c49b82-6e48-4386-9d76-e675c95ea452
 - Miku image - https://pt.pinterest.com/pin/737675613997663987/ (idk the original creator)
 - Teto image - https://open.spotify.com/intl-pt/track/4SAhUJaWyiOgLgZq31DyGK (idk the original creator)
 - Animations - https://github.com/ViegPhunt/Dotfiles
+- GTK theme - https://aur.archlinux.org/packages/catppuccin-gtk-theme-mocha 
 - the packages could be seen in install.sh
   
 </details>
