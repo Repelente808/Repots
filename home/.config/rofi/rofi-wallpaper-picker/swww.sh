@@ -34,4 +34,5 @@ if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
 
   swaync-client -R && swaync-client -rs
   cp ~/.cache/wal/cava-config ~/.config/cava/config
+  pkill -USR2 cava
 fi
