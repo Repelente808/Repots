@@ -7,18 +7,7 @@
     min-height: 28px;
     border-radius: 33px;
 }
-#custom-backlight-desktop {
-    background-color: @background;
-    color: @color2;
-    margin: 0 0px 0 0px;
-    padding: 0 10px;
-}
-#custom-weather {
-    background-color: @background;
-    color: @color2;
-    margin: 0 5px 0 0px;
-    padding: 0 10px;
-}
+
 #tray {
     background-color: @background;
     color: @color2;
@@ -36,6 +25,7 @@ window#waybar.empty #window {
     background-color: transparent;
     color: transparent;
 }
+#custom-backlight-desktop,
 #custom-swaync {
     background-color: @background;	
     font-size: 16px;
@@ -61,6 +51,7 @@ window#waybar.empty #window {
     padding: 0 16;
     color: @color2;
     margin: 0 5px 0 5px;
+    font-size: 16px;
 }
 mpris#waybar.empty #mpris {
     background-color: transparent;
@@ -101,26 +92,42 @@ window#waybar {
 .modules-right {
     margin-right: 12px;    
 }
-
+#tray,
+#custom-backlight-desktop,
+#custom-swaync, 
 #battery,
 #pulseaudio,
 #backlight,
-#network {
+#network,
+#custom-power{
     color: @color10;
     background-color: @background;
-    margin: 0 0px 0 5px;
+    margin: 0px 0px;
+    font-size: 16px;
+    border-radius: 0;
+    padding: 0 15px 0 15px;
+    border: 0px solid @color10;
+}
+
+#tray {
+    border-radius: 33px 0 0 33px;
+    margin-left: 5px;
+}
+
+#custom-power {
+    border-radius: 0px 33 33 0px;
+    margin-right: 5px;
+    font-size: 22px;	
+}
+#clock {
+    background-color: @background;
+    color: @color2;
+    font-size: 16px;
     padding: 0 15px 0 15px;
 }
 
-#clock {
-    color: @color2;
-    background-color: @background;
-    margin: 0 5px 0 0;
-    padding: 0 10px 0 10px;
-}
-
 #network {
-    color: @color4;
+    color: @color3;
 }
 
 #pulseaudio {
