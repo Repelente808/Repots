@@ -21,7 +21,7 @@
 /* CONTROL CENTER ------------------------------------------------------------------------ */
 
 .control-center {
-  background: alpha(@background, .6);
+  background: alpha(@color2, .3);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   border-radius: 24px;
   border: 2px solid @selected;
@@ -42,7 +42,7 @@
 
 .widget-volume label {
   font-size: 1.5rem;
-  color: @foreground;
+  color: @color2;
   margin-right: 10px;
 }
 
