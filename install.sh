@@ -15,6 +15,8 @@ fi
 
 PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
 # PACMAN
+    matugen
+    power-profiles-daemon
     gnome-disk-utility
     ddcutil
     brightnessctl
@@ -114,7 +116,6 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     grimblast-git
     noto-fonts-cjk-jp-vf
     python-imageio-ffmpeg
-    python-pywal16
     python-screeninfo
     hyprquickframe-git
     quicksnip-git
