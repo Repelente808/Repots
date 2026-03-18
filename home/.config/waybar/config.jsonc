@@ -2,7 +2,7 @@
   "layer": "top",
   "position": "top",
   "margin-top": 13,
-  "modules-left": ["clock","custom/weather", "mpris", "hyprland/window"],
+  "modules-left": ["clock","mpris"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["tray", "custom/backlight-desktop", "pulseaudio#microphone", "pulseaudio", "battery", "network","custom/swaync", "custom/power"],
 
@@ -43,7 +43,7 @@
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous",
     "player-icons": {
-        "default": "󰎇",
+        "default": "󰽱",
         "mpv": "🎵",
         "spotify": "",
         "firefox": ""
@@ -80,7 +80,7 @@
   "pulseaudio": {
     "format": "{icon}  {volume}%",
     "format-bluetooth": "󰂱  {volume}%",
-    "format-muted": "󰖁",
+    "format-muted": "",
     "scroll-step": 1,
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "ignored-sinks": ["Easy Effects Sink"],
@@ -91,7 +91,7 @@
       "phone": " ",
       "portable": " ",
       "car": "",
-      "default": ["󰖀", "󰕾"],
+      "default": ["", ""],
       "max-volume": 100
     }
   },
