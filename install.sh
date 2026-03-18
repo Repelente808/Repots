@@ -124,6 +124,7 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     vscodium-bin
     zen-browser-bin
     wlogout
+    catppuccin-gtk-theme-mocha
 EOF
 )
 echo "Starting yay package installation..."
