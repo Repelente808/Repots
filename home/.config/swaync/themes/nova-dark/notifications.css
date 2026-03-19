@@ -34,6 +34,7 @@
   border: 1px solid @selected;
   border-radius: 24px;
   margin: 16px;
+  color: @text;	
   padding: 0;
 }
 
