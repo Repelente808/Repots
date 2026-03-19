@@ -152,6 +152,7 @@ echo "Installing Repots..."
 
 cp -rf home/* home/.[!.]* home/..?* "$HOME/"
 chmod +x "$HOME/.config/wlogout/wlogout.sh"
+chmod +x "$HOME/.config/rofi/rofi-wallpaper-picker/swwwwhite.sh"
 
 sudo modprobe i2c-dev
 sudo usermod -aG i2c $USER
