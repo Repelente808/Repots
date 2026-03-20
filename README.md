@@ -173,8 +173,8 @@ https://github.com/user-attachments/assets/55c49b82-6e48-4386-9d76-e675c95ea452
 - Rofi Theme - https://github.com/newmanls/rofi-themes-collection
 - Font - https://qwerasd205.github.io/PixelCode
 - Momoisay - https://github.com/Mon4sm/momoisay
-- Qs Overview - https://github.com/Shanu-Kumawat/quickshell-overview
-- HyprQuickFrame - https://github.com/Ronin-CK/HyprQuickFrame
+- Qs Overview - https://github.com/Shanu-Kumawat/quickshell-overview (not using anymore)
+- HyprQuickFrame - https://github.com/Ronin-CK/HyprQuickFrame (not using anymore)
 - QuickSnip - https://github.com/Ronin-CK/QuickSnip
 - Starship - https://github.com/end-4/dots-hyprland
 - Miku image - https://pt.pinterest.com/pin/737675613997663987/ (idk the original creator)
