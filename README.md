@@ -30,6 +30,8 @@ cd /tmp/Repots
 ```
 (yeah, it does everything)
 
+take a look at nwg-look to start setting up your system theme!
+
 Remember to do a reboot to don't get any trouble!
 
 To configure your keyboard layout take a look here ```~/.config/hypr/input.conf```
