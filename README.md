@@ -131,9 +131,8 @@ https://github.com/user-attachments/assets/55c49b82-6e48-4386-9d76-e675c95ea452
 - Open Zen Browser - ```Super``` + ```W```
 - Open Menu (from Rofi, you can see what it does in preview) - ```Super``` + ```S```
 - Open SwayNC - ```Super``` + ```N```
-- Open HyprQuickFrame (Take a screenshot of some part of the screen) - ```Super``` + ```Shift``` + ```S```
+- Open Grim (Take a screenshot of some part of the screen) - ```Super``` + ```Shift``` + ```S```
 - Open QuickSnip (Google Lens and OCR) ```Super``` + ```Shift``` +```T```
-- Workspace Overview - ```Super``` + ```Tab```
 - Change Workspace - ```Super``` + ```#``` (# means any number)
 - Put Window in another Workspace - ```Super``` + ```Alt``` + ```#```
 - Split Windows - ```Super``` + ```J```
