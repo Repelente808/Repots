@@ -15,6 +15,8 @@ fi
 
 PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
 # PACMAN
+    gvfs-mtp
+    mtpfs
     hyprshot
     power-profiles-daemon
     gnome-disk-utility
