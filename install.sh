@@ -15,6 +15,7 @@ fi
 
 PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
 # PACMAN
+    hyprshot
     power-profiles-daemon
     gnome-disk-utility
     ddcutil
@@ -116,7 +117,6 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     noto-fonts-cjk-jp-vf
     python-imageio-ffmpeg
     python-pywal16
-    grimblast-git
     python-screeninfo
     quicksnip-git
     tty-clock
