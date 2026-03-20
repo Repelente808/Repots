@@ -124,6 +124,9 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     zen-browser-bin
     wlogout
     catppuccin-gtk-theme-mocha
+    bibata-cursor-theme
+    tela-circle-icon-theme-standard
+    ttf-google-sans
 EOF
 )
 echo "Starting yay package installation..."
@@ -158,5 +161,6 @@ sudo usermod -aG i2c $USER
 gsettings set org.gnome.desktop.interface gtk-theme 'catpuccin-mocha-peach-standart+default'
 echo "Instalation done!"
 echo "Now the system will return to your login manager, just login again!"
+echo "take a look at nwg-look to start setting up your system theme!"
 sleep 15
 loginctl kill-session $XDG_SESSION_ID
