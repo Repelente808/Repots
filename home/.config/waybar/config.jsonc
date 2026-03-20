@@ -111,7 +111,7 @@
 	"format-wifi": "{icon} {essid}",
 	"format-ethernet": "󰌘",
 	"format-disconnected": "󰌙",
-        "on-click": "/home/repelente808/.config/rofi/rofi-wifi-menu.sh",
+        "on-click": "~/.config/rofi/rofi-wifi-menu.sh",
 	"tooltip-format": "{ipaddr}  {bandwidthUpBits}  {bandwidthDownBits}",
 	"format-linked": "󰈁 {ifname} (No IP)",
 	"tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
