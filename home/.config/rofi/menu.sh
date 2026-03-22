@@ -1,6 +1,6 @@
 #! /bin/bash
 
-option=$(printf "󰸉 Wallpapers\n󰸉 Wallpapers White Mode\n󰞅 Emoji Picker\n System Customization" | rofi -dmenu -p " " -theme "~/.config/rofi/themes/rounded-gray-dark.rasi")
+option=$(printf "󰸉 Wallpapers\n󰸉 Wallpapers White Mode\n󰞅 Emoji Picker\n󰨇 BTOP (System Monitor)\n System Customization" | rofi -dmenu -p " " -theme "~/.config/rofi/themes/rounded-gray-dark.rasi")
 
 case "$option" in
     "󰸉 Wallpapers")
@@ -11,6 +11,9 @@ case "$option" in
         ;;
     "󰞅 Emoji Picker")
         rofi -modi emoji -show emoji
+        ;;
+    "󰨇 BTOP (System Monitor)" )
+        kitty btop
         ;;
     " System Customization")
         bash $HOME/.config/rofi/menuCust.sh
