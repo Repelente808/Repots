@@ -118,6 +118,7 @@ sudo pacman -S  pipewire-pulse
 PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     google-breakpad
     grimblast-git
+    hyprshade
     noto-fonts-cjk-jp-vf
     python-imageio-ffmpeg
     python-pywal16
