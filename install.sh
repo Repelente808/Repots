@@ -161,6 +161,11 @@ cp -rf home/* home/.[!.]* home/..?* "$HOME/"
 chmod +x "$HOME/.config/wlogout/wlogout.sh"
 chmod +x "$HOME/.config/rofi/rofi-wallpaper-picker/swwwwhite.sh"
 chmod +x "$HOME/.config/swaync/power.sh"
+chmod +x "$HOME/.config/hypr/scripts/changeopacity.sh"
+chmod +x "$HOME/.config/hypr/scripts/disableanimations.sh"
+chmod +x "$HOME/.config/hypr/scripts/disableblur.sh"
+chmod +x "$HOME/.config/hypr/scripts/gamemode.sh"
+chmod +x "$HOME/.config/hypr/scripts/oldtv.sh"
 sudo chattr +i ~/.cache/wal
 
 sudo modprobe i2c-dev
