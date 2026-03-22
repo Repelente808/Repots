@@ -108,6 +108,7 @@ window#waybar {
     border: 0px solid @color10;
 }
 
+#backlight,
 #custom-backlight-desktop {
     border-radius: 33px 0 0 33px;
     margin-left: 5px;
