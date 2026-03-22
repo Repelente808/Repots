@@ -166,6 +166,7 @@ chmod +x "$HOME/.config/hypr/scripts/disableanimations.sh"
 chmod +x "$HOME/.config/hypr/scripts/disableblur.sh"
 chmod +x "$HOME/.config/hypr/scripts/gamemode.sh"
 chmod +x "$HOME/.config/hypr/scripts/oldtv.sh"
+chmod +x "$HOME/.config/rofi/SystemLooks.sh"
 sudo chattr +i ~/.cache/wal
 
 sudo modprobe i2c-dev
