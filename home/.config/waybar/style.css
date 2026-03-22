@@ -11,7 +11,7 @@
 #tray {
     background-color: @background;
     color: @color2;
-    margin: 0 0px 0 0px;
+    margin: 0 5px 0 5px;
     padding: 0 10px;
 }
 #window {
@@ -92,7 +92,6 @@ window#waybar {
 .modules-right {
     margin-right: 12px;    
 }
-#tray,
 #custom-backlight-desktop,
 #custom-swaync, 
 #battery,
@@ -109,7 +108,7 @@ window#waybar {
     border: 0px solid @color10;
 }
 
-#tray {
+#custom-backlight-desktop {
     border-radius: 33px 0 0 33px;
     margin-left: 5px;
 }
