@@ -4,7 +4,7 @@
   "margin-top": 13,
   "modules-left": ["clock","mpris"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["tray", "custom/backlight-desktop", "pulseaudio#microphone", "pulseaudio", "battery", "network","custom/swaync", "custom/power"],
+  "modules-right": ["tray", "custom/backlight-desktop", "backlight",   "pulseaudio#microphone", "pulseaudio", "battery", "network","custom/swaync", "custom/power"],
 
 "custom/backlight-desktop": {
     "format": "{icon} {percentage}%",
