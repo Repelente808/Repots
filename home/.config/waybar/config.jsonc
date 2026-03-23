@@ -14,7 +14,7 @@
     "exec-if": "pgrep wf-recorder",
 },
 "custom/backlight-desktop": {
-    "format": "{icon} {percentage}%",
+    "format": "{icon}  {percentage}%",
     "format-icons": ["󰃞", "󰃟", "󰃠"],
     "exec": "bash -c 'v=$(ddcutil getvcp 10 | grep -oP \"current value =\\s*\\K[0-9]+\"); echo \"{\\\"percentage\\\": ${v:-0}}\"'",
     "return-type": "json",
@@ -39,7 +39,7 @@
         "dnd-none": ""
     },
     "exec": "swaync-client -swb",
-    "on-click": "swaync-client -t -sw & pw-play --volume=0.4 ~/.config/swaync/OpenMenu.wav",
+    "on-click": "swaync-client -t -sw & pw-play --volume=0.2 ~/.config/swaync/OpenMenu.wav",
     "on-click-right": "swaync-client -d -sw",
     "escape": true
 },
@@ -61,7 +61,7 @@
  },
 "custom/power": {
     "tooltip-format": "Power Menu",
-    "on-click": "~/.config/wlogout/wlogout.sh & pw-play --volume=0.4 ~/.config/swaync/OpenMenu.wav",
+    "on-click": "~/.config/wlogout/wlogout.sh & pw-play --volume=0.2 ~/.config/swaync/OpenMenu.wav",
     "format": "⏻"
 },
 
@@ -80,12 +80,12 @@
   },
 
   "clock": {
-    "format": "󰥔 {:%H:%M}",
+    "format": "󰥔  {:%H:%M}",
     "format-alt": "󰥔 {:%a, %d. %b  %H:%M}"
   },
 
   "pulseaudio": {
-    "format": "{icon}  {volume}%",
+    "format": "{icon}   {volume}%",
     "format-bluetooth": "󰂱  {volume}%",
     "format-muted": "",
     "scroll-step": 1,
