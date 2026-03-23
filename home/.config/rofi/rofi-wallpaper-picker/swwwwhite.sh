@@ -26,14 +26,14 @@ if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
   pkill hyprlax
   FULL_PATH=$(find "$WALLPAPER_DIR" -name "$SELECTED_WALLPAPER_NAME" -print -quit)
   pw-play --volume=0.4 ~/.config/swaync/swww.wav &
+    wal -i "$FULL_PATH" -n -l
+  matugen image "$FULL_PATH" -m light
   swww img "$FULL_PATH" --transition-type any --transition-duration 2 --transition-fps 60
   FLAG="$HOME/.cache/hyprlax_enabled"
   pkill hyprlax
   if [ -f "$FLAG" ]; then
    hyprlax "$FULL_PATH" &
   fi
-  wal -i "$FULL_PATH" -n -l
-  matugen image "$FULL_PATH" -m light
 
   cp "$FULL_PATH" "$HOME/.config/hypr/hyprlock_assets/current_wallpaper.jpg"
 
