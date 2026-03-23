@@ -12,7 +12,7 @@ case "$option" in
     "󰞅 Emoji Picker")
         rofi -modi emoji -show emoji
         ;;
-    " Screen Recording")
+    " Screen Recording Toggle")
        bash $HOME/.config/hypr/scripts/recording.sh
         ;;
     "󰨇 BTOP (System Monitor)" )
