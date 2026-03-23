@@ -25,11 +25,11 @@
   "image-visibility": "when-available",
   "transition-time": 200,
   "hide-on-clear": false,
-  "hide-on-action": true,
+  "hide-on-action": false,
   "script-fail-notify": true,
   "scripts": {
     "notification-sound": {
-      "exec": "pw-play --volume=0.1 ~/.config/swaync/NotificationSound.wav &",
+      "exec": "pw-play --volume=0.1 ~/.config/swaync/NotificationSound.wav ",
       "app-name": ".*"
     }
   },
