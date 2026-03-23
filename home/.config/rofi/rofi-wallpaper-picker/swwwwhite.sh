@@ -23,17 +23,21 @@ SELECTED_WALLPAPER=$(echo -e "$ROFI_MENU" | rofi -dmenu \
 SELECTED_WALLPAPER_NAME=$(echo "$SELECTED_WALLPAPER" | sed 's/ (current)//')
 
 if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
-  # Caminho completo do wallpaper selecionado
+  pkill hyprlax
   FULL_PATH=$(find "$WALLPAPER_DIR" -name "$SELECTED_WALLPAPER_NAME" -print -quit)
-
+  pw-play --volume=0.2 ~/.config/swaync/swww.wav &
   swww img "$FULL_PATH" --transition-type any --transition-duration 2 --transition-fps 60
-
+  FLAG="$HOME/.cache/hyprlax_enabled"
+  pkill hyprlax
+  if [ -f "$FLAG" ]; then
+   hyprlax "$FULL_PATH" &
+  fi
   wal -i "$FULL_PATH" -n -l
+  matugen image "$FULL_PATH" -m light
 
   cp "$FULL_PATH" "$HOME/.config/hypr/hyprlock_assets/current_wallpaper.jpg"
 
   swaync-client -R && swaync-client -rs
   cp ~/.cache/wal/cava-config ~/.config/cava/config
-  pw-play --volume=0.2 ~/.config/swaync/swww.wav &
   pkill -USR2 cava
 fi
