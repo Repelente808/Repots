@@ -39,7 +39,7 @@
         "dnd-none": ""
     },
     "exec": "swaync-client -swb",
-    "on-click": "pw-play --volume=0.2 ~/.config/swaync/OpenMenu.wav & swaync-client -t -sw",
+    "on-click": "swaync-client -t -sw & pw-play --volume=0.2 ~/.config/swaync/OpenMenu.wav",
     "on-click-right": "swaync-client -d -sw",
     "escape": true
 },
@@ -61,7 +61,7 @@
  },
 "custom/power": {
     "tooltip-format": "Power Menu",
-    "on-click": "pw-play --volume=0.2 ~/.config/swaync/OpenMenu.wav & ~/.config/wlogout/wlogout.sh",
+    "on-click": "~/.config/wlogout/wlogout.sh & pw-play --volume=0.2 ~/.config/swaync/OpenMenu.wav",
     "format": "⏻"
 },
 
