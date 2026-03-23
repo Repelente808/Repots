@@ -1,7 +1,7 @@
 @import url("../../.cache/wal/colors-waybar.css");
 
 * {
-    font-family: 'Pixel Code', sans-serif;
+    font-family: "Pixel Code";
     font-weight:  Bold;
     font-size: 14px;
     min-height: 28px;
@@ -35,7 +35,7 @@ window#waybar.empty #window {
 #custom-backlight-desktop,
 #custom-swaync {
     background-color: @background;	
-    font-size: 16px;
+    font-size: 14px;
     padding: 0 10px;
     margin: 0 0px 0 5px;
     color: @color3;
@@ -48,7 +48,7 @@ window#waybar.empty #window {
 #custom-power {
     background-color: @background;
     color: @color2;
-    font-size: 20px;
+    font-size: 14px;
     margin: 0 0px 0 5px;
     padding: 0 15px 0 15px;
 }
@@ -58,7 +58,7 @@ window#waybar.empty #window {
     padding: 0 16;
     color: @color2;
     margin: 0 5px 0 5px;
-    font-size: 16px;
+    font-size: 14px;
 }
 mpris#waybar.empty #mpris {
     background-color: transparent;
@@ -109,7 +109,7 @@ window#waybar {
     color: @color10;
     background-color: @background;
     margin: 0px 0px;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 0;
     padding: 0 15px 0 15px;
     border: 0px solid @color10;
@@ -129,7 +129,7 @@ window#waybar {
 #clock {
     background-color: @background;
     color: @color2;
-    font-size: 16px;
+    font-size: 14px;
     padding: 0 15px 0 15px;
 }
 
