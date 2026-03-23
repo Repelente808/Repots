@@ -1,6 +1,6 @@
 #! /bin/bash
 
-option=$(printf "󰸉 Wallpapers\n󰸉 Wallpapers White Mode\n󰞅 Emoji Picker\n Screen Recording\n󰨇 BTOP (System Monitor)\n System Looks (simplified)\n System Customization" | rofi -dmenu -p " " -theme "~/.config/rofi/themes/rounded-gray-dark.rasi")
+option=$(printf "󰸉 Wallpapers\n󰸉 Wallpapers White Mode\n󰞅 Emoji Picker\n Screen Recording Toggle\n󰨇 BTOP (System Monitor)\n System Looks (simplified)\n System Customization" | rofi -dmenu -p " " -theme "~/.config/rofi/themes/rounded-gray-dark.rasi")
 
 case "$option" in
     "󰸉 Wallpapers")
