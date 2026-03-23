@@ -1,0 +1,27 @@
+/* Importa as cores geradas pelo pywal */
+@import url("../../.cache/wal/colors-waybar.css");
+
+window {
+    /* Exemplo: usa a cor de fundo do pywal */
+    background-color: @background;
+    opacity: 0.85;
+    border: 2px solid @color1;
+    border-radius: 12px;
+}
+
+#container {
+    margin: 16px;
+}
+
+progressbar {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+trough highlight {
+    /* Cor da barra de volume/brilho usando cor do pywal */
+    background-color: @color2;
+}
+
+label {
+    color: @foreground;
+}
