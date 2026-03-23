@@ -40,6 +40,6 @@ fi
 
   swaync-client -R && swaync-client -rs
   cp ~/.cache/wal/cava-config ~/.config/cava/config
-  pw-play --volume=0.2 ~/.config/swaync/swww.wav &
+  pw-play --volume=0.4 ~/.config/swaync/swww.wav &
   pkill -USR2 cava
 fi
