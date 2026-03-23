@@ -27,6 +27,7 @@ if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
   pkill hyprlax
   FULL_PATH=$(find "$WALLPAPER_DIR" -name "$SELECTED_WALLPAPER_NAME" -print -quit)
   wal -i "$FULL_PATH" -n
+  pw-play --volume=0.4 ~/.config/swaync/swww.wav &
   swww img "$FULL_PATH" --transition-type any --transition-duration 2 --transition-fps 60 && sleep 2
 FLAG="$HOME/.cache/hyprlax_enabled"
 pkill hyprlax # Garante que a instância antiga morra sempre
@@ -40,6 +41,5 @@ fi
 
   swaync-client -R && swaync-client -rs
   cp ~/.cache/wal/cava-config ~/.config/cava/config
-  pw-play --volume=0.4 ~/.config/swaync/swww.wav &
   pkill -USR2 cava
 fi
