@@ -38,6 +38,8 @@ if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
   cp "$FULL_PATH" "$HOME/.config/hypr/hyprlock_assets/current_wallpaper.jpg"
 
   swaync-client -R && swaync-client -rs
+  pkill swayosd-server
+  GSK_RENDERER=cairo swayosd-server &
   cp ~/.cache/wal/cava-config ~/.config/cava/config
   pkill -USR2 cava
 fi
