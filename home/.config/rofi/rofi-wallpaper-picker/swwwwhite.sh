@@ -25,7 +25,7 @@ SELECTED_WALLPAPER_NAME=$(echo "$SELECTED_WALLPAPER" | sed 's/ (current)//')
 if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
   pkill hyprlax
   FULL_PATH=$(find "$WALLPAPER_DIR" -name "$SELECTED_WALLPAPER_NAME" -print -quit)
-  pw-play --volume=0.2 ~/.config/swaync/swww.wav &
+  pw-play --volume=0.4 ~/.config/swaync/swww.wav &
   swww img "$FULL_PATH" --transition-type any --transition-duration 2 --transition-fps 60
   FLAG="$HOME/.cache/hyprlax_enabled"
   pkill hyprlax
