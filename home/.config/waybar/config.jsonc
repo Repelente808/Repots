@@ -2,10 +2,17 @@
   "layer": "top",
   "position": "top",
   "margin-top": 13,
-  "modules-left": ["clock","mpris"],
+  "modules-left": ["clock","mpris","custom/recorder"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["tray", "custom/backlight-desktop","backlight", "pulseaudio#microphone", "pulseaudio", "battery", "network","custom/swaync", "custom/power"],
 
+"custom/recorder": {
+    "format": "",
+    "return-type": "json",
+    "interval": 1,
+    "exec": "echo '{\"class\": \"recording\"}'",
+    "exec-if": "pgrep wf-recorder",
+},
 "custom/backlight-desktop": {
     "format": "{icon} {percentage}%",
     "format-icons": ["󰃞", "󰃟", "󰃠"],
