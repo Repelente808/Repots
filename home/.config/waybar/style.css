@@ -8,6 +8,13 @@
     border-radius: 33px;
 }
 
+#custom-recorder {
+   background-color: @background;
+   color: @color1;
+    margin: 0 0px 0 5px;
+    padding: 0 10px 0 10px;
+   min-width: 40px;
+}
 #tray {
     background-color: @background;
     color: @color2;
