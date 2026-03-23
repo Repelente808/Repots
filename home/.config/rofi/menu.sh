@@ -1,30 +1,30 @@
 #! /bin/bash
 
-option=$(printf "󰸉 Wallpapers\n󰸉 Wallpapers White Mode\n󰸉 Hyprlax (Parallax) Toggle\n󰞅 Emoji Picker\n Screen Recording Toggle\n󰨇 BTOP (System Monitor)\n System Looks (Simplified)\n System Customization" | rofi -dmenu -p " " -theme "~/.config/rofi/themes/rounded-gray-dark.rasi")
+option=$(printf "󰸉  Wallpapers\n󰸉  Wallpapers White Mode\n󰸉  Hyprlax (Parallax) Toggle\n󰞅  Emoji Picker\n  Screen Recording Toggle\n󰨇  BTOP (System Monitor)\n  System Looks (Simplified)\n  System Customization" | rofi -dmenu -p " " -theme "~/.config/rofi/themes/rounded-gray-dark.rasi")
 
 case "$option" in
-    "󰸉 Wallpapers")
+    "󰸉  Wallpapers")
         bash $HOME/.config/rofi/rofi-wallpaper-picker/swww.sh
         ;;
-    "󰸉 Wallpapers White Mode")
+    "󰸉  Wallpapers White Mode")
         bash $HOME/.config/rofi/rofi-wallpaper-picker/swwwwhite.sh
         ;;
-    "󰞅 Emoji Picker")
+    "󰞅  Emoji Picker")
         rofi -modi emoji -show emoji
         ;;
-    "󰸉 Hyprlax (Parallax) Toggle")
+    "󰸉  Hyprlax (Parallax) Toggle")
 	bash $HOME/.config/hypr/scripts/hyprlaxtog.sh
 	;;
-    " Screen Recording Toggle")
+    "  Screen Recording Toggle")
        bash $HOME/.config/hypr/scripts/recording.sh
         ;;
-    "󰨇 BTOP (System Monitor)" )
+    "󰨇  BTOP (System Monitor)" )
         kitty btop
         ;;
-    " System Looks (Simplified)")
+    "  System Looks (Simplified)")
         bash $HOME/.config/rofi/SystemLooks.sh
         ;;
-    " System Customization")
+    "  System Customization")
         bash $HOME/.config/rofi/menuCust.sh
         ;;
 esac
