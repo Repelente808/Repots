@@ -170,6 +170,7 @@ chmod +x "$HOME/.config/hypr/scripts/gamemode.sh"
 chmod +x "$HOME/.config/hypr/scripts/oldtv.sh"
 chmod +x "$HOME/.config/rofi/SystemLooks.sh"
 chmod +x "$HOME/.config/hypr/scripts/recording.sh"
+chmod +x "$HOME/.config/hypr/scripts/hyprlaxtog.sh"
 sudo chattr +i ~/.cache/wal
 
 sudo modprobe i2c-dev
