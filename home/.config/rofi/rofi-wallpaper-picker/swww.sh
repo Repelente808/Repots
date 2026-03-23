@@ -24,11 +24,17 @@ SELECTED_WALLPAPER_NAME=$(echo "$SELECTED_WALLPAPER" | sed 's/ (current)//')
 
 if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
   # Caminho completo do wallpaper selecionado
+  pkill hyprlax
   FULL_PATH=$(find "$WALLPAPER_DIR" -name "$SELECTED_WALLPAPER_NAME" -print -quit)
-
-  swww img "$FULL_PATH" --transition-type any --transition-duration 2 --transition-fps 60
-
   wal -i "$FULL_PATH" -n
+  swww img "$FULL_PATH" --transition-type any --transition-duration 2 --transition-fps 60 && sleep 2
+FLAG="$HOME/.cache/hyprlax_enabled"
+pkill hyprlax # Garante que a instância antiga morra sempre
+
+if [ -f "$FLAG" ]; then
+    hyprlax "$FULL_PATH" &
+fi
+  matugen image "$FULL_PATH" -m dark
 
   cp "$FULL_PATH" "$HOME/.config/hypr/hyprlock_assets/current_wallpaper.jpg"
 
