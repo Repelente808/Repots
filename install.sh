@@ -171,6 +171,8 @@ chmod +x "$HOME/.config/rofi/SystemLooks.sh"
 chmod +x "$HOME/.config/hypr/scripts/recording.sh"
 chmod +x "$HOME/.config/hypr/scripts/hyprlaxtog.sh"
 chmod +x "$HOME/.config/hypr/scripts/fontchange.sh"
+mkdir ~/Wallpapers
+mkdir ~/Recordings
 
 sudo modprobe i2c-dev
 sudo usermod -aG i2c $USER
