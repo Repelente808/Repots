@@ -5,7 +5,7 @@ configuration {
     show-icons: true;
 }
 * {
-    font:   "Pixel Code 12";
+    font: "Pixel Code 14";
 
     background-color:   transparent;
     text-color:         @fg0;
@@ -41,12 +41,12 @@ inputbar {
 }
 
 prompt {
-    text-color: @fg2;
+    text-color: @bg2;
 }
 
 entry {
     placeholder:        "Search";
-    placeholder-color:  @fg3;
+    placeholder-color:  @fg1;
 }
 
 message {
