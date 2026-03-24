@@ -122,11 +122,9 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     google-breakpad
     grimblast-git
     hyprshade
-    snapd
     noto-fonts-cjk-jp-vf
     python-imageio-ffmpeg
     matugen-bin
-    python-pywal16
     python-screeninfo
     quicksnip-git
     tty-clock
@@ -139,12 +137,10 @@ EOF
 )
 echo "Starting yay package installation..."
 yay -S --needed --answerdiff None --answerclean None $PACKETS_AUR
-
 echo "Installing Momoisay..."
 git clone https://github.com/Mon4sm/Momoisay.git /tmp/Momoisay
 cd /tmp/Momoisay && sudo sh ./install/linux.sh && cd -
 rm -rf /tmp/Momoisay
-
 echo "Installing PixelCode font..."
 D="$HOME/.local/share/fonts/PixelCode" && \
 mkdir -p "$D" && \
