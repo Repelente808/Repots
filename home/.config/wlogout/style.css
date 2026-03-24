@@ -1,4 +1,4 @@
-@import url("../../.cache/wal/colors-waybar.css");
+@import url("../../.config/swaync/colors.css");
 * {
     background-image: none;
     font-size: 16pt;
@@ -40,7 +40,7 @@ button:hover label, button:focus label {
 }
 
 button:hover,button:focus {
-    background-color: @color2;
+    background-color: @primary;
     background-size: 40%;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
