@@ -1,11 +1,9 @@
-/* Importa as cores geradas pelo pywal */
-@import url("../../.cache/wal/colors-waybar.css");
+@import url("../../.config/swaync/colors.css");
 
 window {
-    /* Exemplo: usa a cor de fundo do pywal */
     background-color: @background;
-    opacity: 0.85;
-    border: 2px solid @color1;
+    opacity: 0.95;
+    border: 2px solid @primary;
     border-radius: 12px;
 }
 
@@ -13,15 +11,32 @@ window {
     margin: 16px;
 }
 
-progressbar {
-    background-color: rgba(255, 255, 255, 0.1);
+scale trough {
+    background-color: @on_surface_variant;
+    min-height: 12px;
+    border-radius: 8px;
+    border: 2px solid @outline;
 }
 
-trough highlight {
-    /* Cor da barra de volume/brilho usando cor do pywal */
-    background-color: @color2;
+scale highlight {
+    background-color: @primary;
+    border-radius: 8px;
+}
+
+scale slider {
+    background-color: @primary_fixed;
+    min-width: 15px;
+    min-height: 15px;
+}
+
+image {
+    color: @primary;
 }
 
 label {
-    color: @foreground;
+    color: @on_surface;
+}
+
+image.muted {
+    color: @error;
 }
