@@ -1,4 +1,4 @@
-@import url("../../.cache/wal/colors-waybar.css");
+@import "colors.css";
 
 * {
     font-family: "Pixel Code";
@@ -10,14 +10,14 @@
 
 #custom-recorder {
    background-color: @background;
-   color: @color1;
+   color: @primary_fixed_dim;
     margin: 0 0px 0 5px;
     padding: 0 10px 0 10px;
    min-width: 40px;
 }
 #tray {
     background-color: @background;
-    color: @color2;
+    color: @secondary_fixed_dim;
     margin: 0 5px 0 5px;
     padding: 0 10px;
 }
@@ -38,16 +38,16 @@ window#waybar.empty #window {
     font-size: 14px;
     padding: 0 10px;
     margin: 0 0px 0 5px;
-    color: @color3;
+    color: @secondary_fixed_dim;
 }
 
 #custom-swaync.notification {
-    color: @color2;
+    color: @tertiary_fixed_dim;
 }
 
 #custom-power {
     background-color: @background;
-    color: @color2;
+    color: @primary_fixed_dim;
     font-size: 14px;
     margin: 0 0px 0 5px;
     padding: 0 15px 0 15px;
@@ -56,7 +56,7 @@ window#waybar.empty #window {
 #mpris {
     background-color: @background;
     padding: 0 16;
-    color: @color2;
+    color: @secondary_fixed_dim;
     margin: 0 5px 0 5px;
     font-size: 14px;
 }
@@ -71,8 +71,8 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background-color: alpha(@color1, 0.5);
-    color: @color2;
+    background-color: alpha(@primary_fixed_dim, 0.5);
+    color: @secondary_fixed_dim;
     padding: 0 5px;
     margin: 5 0px 5 0px;
     min-width: 40px;
@@ -80,7 +80,7 @@ window#waybar {
 }
 
 #workspaces button {
-    color: @color2;
+    color: @secondary_fixed_dim;
     margin: 5px 0px;
     padding: 0 5px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -106,7 +106,7 @@ window#waybar {
 #backlight,
 #network,
 #custom-power{
-    color: @color10;
+    color: @primary_fixed_dim;
     background-color: @background;
     margin: 0px 0px;
     font-size: 14px;
@@ -128,21 +128,21 @@ window#waybar {
 }
 #clock {
     background-color: @background;
-    color: @color2;
+    color: @primary_fixed_dim;
     font-size: 14px;
     padding: 0 15px 0 15px;
 }
 
 #network {
-    color: @color3;
+    color: @secondary_fixed_dim;
 }
 
 #pulseaudio {
-    color: @color4;
+    color: @tertiary_fixed_dim;
 }
 
 #backlight {
-    color: @color4;
+    color: @primary_fixed_dim;
 }
 
 
