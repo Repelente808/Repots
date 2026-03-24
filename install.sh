@@ -104,6 +104,7 @@ PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     wireless_tools
     wl-clipboard
     wofi
+    xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     xdg-utils
     xorg-server
