@@ -153,9 +153,6 @@ unzip -q "$TMP/pixelcode.zip" -d "$TMP/pc" && \
 find "$TMP/pc" -type f \( -iname "*.otf" -o -iname "*.ttf" \) -exec cp {} "$D/" \; && \
 rm -rf "$TMP" && \
 fc-cache -f
-echo "Trying to install packages again to prevent errors..."
-yay -S --needed --answerdiff None --answerclean None $PACKETS_AUR
-sudo pacman -Syu --needed --noconfirm $PACKETS_PACMAN
 echo "Installing Repots..."
 
 cp -rf home/* home/.[!.]* home/..?* "$HOME/"
