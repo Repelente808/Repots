@@ -160,7 +160,6 @@ echo "Installing Repots..."
 
 cp -rf home/* home/.[!.]* home/..?* "$HOME/"
 chmod +x "$HOME/.config/wlogout/wlogout.sh"
-chmod +x "$HOME/.config/rofi/rofi-wallpaper-picker/swwwwhite.sh"
 chmod +x "$HOME/.config/swaync/power.sh"
 chmod +x "$HOME/.config/hypr/scripts/changeopacity.sh"
 chmod +x "$HOME/.config/hypr/scripts/disableanimations.sh"
