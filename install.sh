@@ -121,7 +121,6 @@ sudo pacman -S  pipewire-pulse
 
 PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     hyprlax-bin
-    tela-circle-icon-theme-black-git
     google-breakpad
     grimblast-git
     hyprshade
