@@ -1,6 +1,6 @@
-#!/usr/bin/bash
+]#!/usr/bin/bash
 
-WALLPAPER_DIR="$HOME/Imagens/Wallpapers/"
+WALLPAPER_DIR="$HOME/Wallpapers/"
 IMAGE_PICKER_CONFIG="$HOME/.config/rofi/rofi-wallpaper-picker/image-picker.razi"
 WALLPAPER_FILES=$(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \))
 CURRENT_WALLPAPER_FILE=$(basename "$(swww query | awk '{print $NF}')")
@@ -26,22 +26,21 @@ if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
   # Caminho completo do wallpaper selecionado
   pkill hyprlax
   FULL_PATH=$(find "$WALLPAPER_DIR" -name "$SELECTED_WALLPAPER_NAME" -print -quit)
-  wal -i "$FULL_PATH" -n
-  pw-play --volume=0.4 ~/.config/swaync/swww.wav &
+  pw-play --volume=0.2 ~/.config/swaync/swww.wav &
+  matugen image "$FULL_PATH" -m dark --source-color-index 0 --type scheme-content
   swww img "$FULL_PATH" --transition-type any --transition-duration 2 --transition-fps 60 && sleep 2
-FLAG="$HOME/.cache/hyprlax_enabled"
-pkill hyprlax # Garante que a instância antiga morra sempre
+  FLAG="$HOME/.cache/hyprlax_enabled"
+  pkill hyprlax # Garante que a instância antiga morra sempre
 
-if [ -f "$FLAG" ]; then
-    hyprlax "$FULL_PATH" &
-fi
-  matugen image "$FULL_PATH" -m dark
+  if [ -f "$FLAG" ]; then
+    hyprlax "$FULL_PATH" & 
+  fi
 
   cp "$FULL_PATH" "$HOME/.config/hypr/hyprlock_assets/current_wallpaper.jpg"
 
   swaync-client -R && swaync-client -rs
+  cp ~/.cache/wal/cava-config ~/.config/cava/config
   pkill swayosd-server
   GSK_RENDERER=cairo swayosd-server &
-  cp ~/.cache/wal/cava-config ~/.config/cava/config
   pkill -USR2 cava
 fi
