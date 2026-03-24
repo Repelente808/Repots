@@ -173,7 +173,8 @@ chmod +x "$HOME/.config/hypr/scripts/hyprlaxtog.sh"
 chmod +x "$HOME/.config/hypr/scripts/fontchange.sh"
 mkdir ~/Wallpapers
 mkdir ~/Recordings
-
+unzip ~/.icons/Tela-circle-black.zip -d ~/.icons
+rm ~/.icons/Tela-circle-black.zip
 sudo modprobe i2c-dev
 sudo usermod -aG i2c $USER
 gsettings set org.gnome.desktop.interface gtk-theme 'catpuccin-mocha-peach-standart+default'
