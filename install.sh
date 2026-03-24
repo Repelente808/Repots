@@ -122,6 +122,7 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     google-breakpad
     grimblast-git
     hyprshade
+    snapd
     noto-fonts-cjk-jp-vf
     python-imageio-ffmpeg
     matugen-bin
@@ -132,9 +133,7 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     vscodium-bin
     zen-browser-bin
     wlogout
-    catppuccin-gtk-theme-mocha
     bibata-cursor-theme
-    tela-circle-icon-theme-standard
     ttf-google-sans
 EOF
 )
