@@ -1,25 +1,12 @@
-@define-color text            @foreground;
-@define-color background-alt  @color1;
-@define-color notification    @color2;
-@define-color selected        @color3;
-@define-color hover           @color5;
-@define-color urgent          @color2;
-
 * {
-
-  /*background-alt:        @color1;      Buttons background */
-  /*selected:              @color2;      Button selected */
-  /*hover:                 @color5;      Hover button */
-  /*urgent:                @color6;      Urgency critical */
-  /*text-selected:         @background; */
-
-  color: @text;
+  color: @on-surface;
 
   font-size: 14px;
   font-family: "Pixel Code";
   transition: 200ms;
 
 }
+
 
 .notification-row {
   outline: none;
@@ -28,13 +15,13 @@
 }
 
 .floating-notifications.background .notification-row .notification-background {
-  background-color: @notification;
+  background-color: @surface;
   opacity: 1;
   box-shadow: 0 0 8px 0 rgba(0,0,0,.6);
-  border: 1px solid @selected;
+  border: 1px solid @outline_variant;
   border-radius: 24px;
   margin: 16px;
-  color: @text;	
+  color: @on-surface;	
   padding: 0;
 }
 
@@ -50,6 +37,7 @@
 
 .floating-notifications.background .notification-row .notification-background .notification .notification-content {
   margin: 14px;
+  color: @on-surface;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * {
@@ -70,7 +58,7 @@
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action:active {
   background-color: @selected;
-  color: @background-alt;
+  color: @inverse-on-surface;
 }
 
 .image {
@@ -100,7 +88,7 @@
 
 .floating-notifications.background .notification-row .notification-background .close-button:active {
   background-color: @selected;
-  color: @background;
+  color: @inverse-on-surface;
 }
 
 .notification.critical progress {
