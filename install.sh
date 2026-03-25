@@ -73,7 +73,6 @@ PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     noto-fonts
     noto-fonts-emoji
     nwg-displays
-    nwg-look
     openssh
     pavucontrol
     polkit-kde-agent
