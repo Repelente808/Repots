@@ -134,6 +134,7 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     wlogout
     bibata-cursor-theme
     ttf-google-sans
+    pipes.sh
 EOF
 )
 echo "Starting yay package installation..."
