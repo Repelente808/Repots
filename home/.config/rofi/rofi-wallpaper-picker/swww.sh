@@ -28,7 +28,7 @@ if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
   FULL_PATH=$(find "$WALLPAPER_DIR" -name "$SELECTED_WALLPAPER_NAME" -print -quit)
   pw-play --volume=0.2 ~/.config/swaync/swww.wav &
   matugen image "$FULL_PATH" -m dark --source-color-index 0 --type scheme-content
-  swww img "$FULL_PATH" --transition-type any --transition-duration 2 --transition-fps 60 && sleep 2
+  awww img "$FULL_PATH" --transition-type any --transition-duration 2 --transition-fps 60 && sleep 2
   FLAG="$HOME/.cache/hyprlax_enabled"
   pkill hyprlax # Garante que a instância antiga morra sempre
 
