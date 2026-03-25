@@ -176,9 +176,7 @@ sudo pacman -Rs firefox
 
 sudo modprobe i2c-dev
 sudo usermod -aG i2c $USER
-gsettings set org.gnome.desktop.interface gtk-theme 'catpuccin-mocha-peach-standart+default'
 echo "Instalation done!"
-echo "Now the system will return to your login manager, just login again!"
-echo "take a look at nwg-look to start setting up your system theme!"
+echo "Now the system will return to your login manager, just login again! (do a reboot to make sure everything works)"
 sleep 15
 loginctl kill-session $XDG_SESSION_ID
