@@ -9,3 +9,6 @@
 
 @theme "~/.config/rofi/themes/rounded-gray-dark.rasi"
 
+configuration {
+    icon-theme: "Tela-circle-black-dark";
+}
