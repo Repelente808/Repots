@@ -90,7 +90,7 @@ PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     starship
     sudo
     swaync
-    swww
+    awww
     ttf-bitstream-vera
     ttf-dejavu
     ttf-jetbrains-mono-nerd
