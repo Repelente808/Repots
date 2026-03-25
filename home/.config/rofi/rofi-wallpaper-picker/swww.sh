@@ -2,7 +2,7 @@
 
 WALLPAPER_DIR="$HOME/Wallpapers/"
 IMAGE_PICKER_CONFIG="$HOME/.config/rofi/rofi-wallpaper-picker/image-picker.razi"
-WALLPAPER_FILES=$(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \))
+WALLPAPER_FILES=$(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" \))
 CURRENT_WALLPAPER_FILE=$(basename "$(swww query | awk '{print $NF}')")
 ROFI_MENU=""
 
