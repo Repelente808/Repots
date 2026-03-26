@@ -8,6 +8,14 @@
     border-radius: 33px;
 }
 
+
+#custom-archicon {
+   background-color: @background;
+   color: @primary_fixed_dim;
+    margin: 0 5px 0 5px;
+    padding: 0 10px 0 10px;
+   min-width: 40px;
+}
 #custom-recorder {
    background-color: @background;
    color: @primary_fixed_dim;
