@@ -2,9 +2,13 @@
   "layer": "top",
   "position": "top",
   "margin-top": 13,
-  "modules-left": ["clock","mpris","custom/recorder"],
+  "modules-left": ["custom/archicon", "clock","mpris","custom/recorder"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["tray", "custom/backlight-desktop","backlight", "pulseaudio#microphone", "pulseaudio", "battery", "network","custom/swaync", "custom/power"],
+"custom/archicon": {
+    "format": "",
+    "tooltip": false
+},
 "custom/recorder": {
     "format": "",
     "return-type": "json",
