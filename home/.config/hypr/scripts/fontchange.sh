@@ -5,7 +5,14 @@ S1="14"
 F2="Google Sans"
 S2="14"
 
-WAYBAR_CSS="$HOME/.config/waybar/style.css"
+WAYBAR_CSS=("$HOME/.config/waybar/style.css"
+    "$HOME/.config/waybar/alternatives/FlatRound/style.css"
+    "$HOME/.config/waybar/alternatives/FlatSquare/style.css"
+    "$HOME/.config/waybar/alternatives/FloatingLeft/style.css"
+    "$HOME/.config/waybar/alternatives/LeftFlat/style.css"
+    "$HOME/.config/waybar/alternatives/RoundFly/style.css"
+    "$HOME/.config/waybar/alternatives/RoundSquareFly/style.css"
+)
 SWAYNC_FILES=(
     "$HOME/.config/swaync/themes/nova-dark/central_control.css"
     "$HOME/.config/swaync/themes/nova-dark/notifications.css"
