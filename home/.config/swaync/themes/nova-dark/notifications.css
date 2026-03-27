@@ -1,5 +1,5 @@
 * {
-  color: @on-surface;
+  color: @surface_container;
 
   font-size: 14px;
   font-family: "Pixel Code";
@@ -15,7 +15,7 @@
 }
 
 .floating-notifications.background .notification-row .notification-background {
-  background-color: @surface;
+  background-color: @surface_container;
   opacity: 1;
   box-shadow: 0 0 8px 0 rgba(0,0,0,.6);
   border: 1px solid @outline_variant;
