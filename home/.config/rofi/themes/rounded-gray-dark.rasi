@@ -2,7 +2,7 @@
 
 * {
 
-    bg0:    @surface;              
+    bg0:    @surface-container;              
     bg1:    @surface-container-low;  
     bg2:    @primary-container;    
     bg3:    @primary;  
