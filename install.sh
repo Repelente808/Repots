@@ -156,6 +156,7 @@ fc-cache -f
 echo "Installing Repots..."
 
 cp -rf home/* home/.[!.]* home/..?* "$HOME/"
+chmod +x "$HOME/.config/hypr/scripts/screenshot.sh"
 chmod +x "$HOME/.config/wlogout/wlogout.sh"
 chmod +x "$HOME/.config/swaync/power.sh"
 chmod +x "$HOME/.config/hypr/scripts/changeopacity.sh"
