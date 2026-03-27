@@ -171,7 +171,6 @@ mkdir ~/Wallpapers
 mkdir ~/Recordings
 unzip ~/.icons/Tela-circle-black.zip -d ~/.icons
 rm ~/.icons/Tela-circle-black.zip
-git clone https://github.com/jamdon2/hyprquickshot ~/.config/quickshell/hyprquickshot
 sudo pacman -Rdd dolphin
 sudo pacman -Rs firefox
 
