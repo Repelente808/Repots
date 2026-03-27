@@ -10,21 +10,21 @@
 
 
 #custom-archicon {
-   background-color: @background;
+   background-color: @surface_container;
    color: @primary_fixed_dim;
     margin: 0 5px 0 5px;
     padding: 0 10px 0 10px;
    min-width: 40px;
 }
 #custom-recorder {
-   background-color: @background;
+   background-color: @surface_container;
    color: @primary_fixed_dim;
     margin: 0 0px 0 5px;
     padding: 0 10px 0 10px;
    min-width: 40px;
 }
 #tray {
-    background-color: @background;
+    background-color: @surface_container;
     color: @secondary_fixed_dim;
     margin: 0 5px 0 5px;
     padding: 0 10px;
@@ -62,7 +62,7 @@ window#waybar.empty #window {
 }
 
 #mpris {
-    background-color: @background;
+    background-color: @surface_container;
     padding: 0 16;
     color: @secondary_fixed_dim;
     margin: 0 5px 0 5px;
@@ -73,8 +73,10 @@ mpris#waybar.empty #mpris {
     color: transparent;
 }
 window#waybar {
-    background-color: @transparent;
+    background-color: transparent;
     color: @background;
+    padding: 5 0px;
+    margin: 0 5px 0 5px;
     min-height: 40px;
 }
 
@@ -95,7 +97,7 @@ window#waybar {
 }
 
 #workspaces {
-    background-color: @background;
+    background-color: @surface_container;
     padding: 0 5px;
     margin: 0;
 }
@@ -115,7 +117,7 @@ window#waybar {
 #network,
 #custom-power{
     color: @primary_fixed_dim;
-    background-color: @background;
+    background-color: @surface_container;
     margin: 0px 0px;
     font-size: 14px;
     border-radius: 0;
@@ -135,7 +137,7 @@ window#waybar {
     font-size: 22px;	
 }
 #clock {
-    background-color: @background;
+    background-color: @surface_container;
     color: @primary_fixed_dim;
     font-size: 14px;
     padding: 0 15px 0 15px;
