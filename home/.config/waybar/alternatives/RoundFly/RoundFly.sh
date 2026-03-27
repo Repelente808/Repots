@@ -1,9 +1,10 @@
 #!/bin/bash
 
-rm "/home/repelente808/.config/waybar/style.css" "/home/repelente808/.config/waybar/config.jsonc"
 
-cp -f "/home/repelente808/.config/waybar/alternatives/RoundFly/config.jsonc" "/home/repelente808/.config/waybar"
-cp -f "/home/repelente808/.config/waybar/alternatives/RoundFly/style.css" "/home/repelente808/.config/waybar"
+rm "$HOME/.config/waybar/style.css" "$HOME/.config/waybar/config.jsonc"
+
+cp -f "$HOME/.config/waybar/alternatives/RoundFly/config.jsonc" "$HOME/.config/waybar"
+cp -f "$HOME/.config/waybar/alternatives/RoundFly/style.css" "$HOME/.config/waybar"
 
 pkill waybar
 sleep 0.2
