@@ -168,6 +168,13 @@ chmod +x "$HOME/.config/rofi/SystemLooks.sh"
 chmod +x "$HOME/.config/hypr/scripts/recording.sh"
 chmod +x "$HOME/.config/hypr/scripts/hyprlaxtog.sh"
 chmod +x "$HOME/.config/hypr/scripts/fontchange.sh"
+chmod +x "$HOME/.config/waybar/alternatives/FlatRound/FlatRound.sh"
+chmod +x "$HOME/.config/waybar/alternatives/FlatSquare/FlatSquare.sh"
+chmod +x "$HOME/.config/waybar/alternatives/FloatingLeft/FloatingLeft.sh"
+chmod +x "$HOME/.config/waybar/alternatives/LeftFlat/LeftFlat.sh"
+chmod +x "$HOME/.config/waybar/alternatives/RoundFly/RoundFly.sh"
+chmod +x "$HOME/.config/waybar/alternatives/RoundSquareFly/RoundSquareFly.sh" 
+chmod +x "$HOME/.config/rofi/WaybarStyle.sh" 
 mkdir ~/Wallpapers
 mkdir ~/Recordings
 unzip ~/.icons/Tela-circle-black.zip -d ~/.icons
