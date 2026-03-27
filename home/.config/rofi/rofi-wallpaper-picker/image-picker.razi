@@ -26,7 +26,7 @@ window {
     fullscreen:                  false;
     width:                       100%;       /* Ocupa a tela toda */
     enabled:                     true;
-    margin:                      4px;
+    margin:                      80px;
     border-radius:               25px;
     padding:                     0px;
     background-color:            @background;
@@ -65,10 +65,8 @@ listview {
 /*****----- Elements -----*****/
 element {
     enabled:                     true;
-    /* AJUSTE AQUI: Se sua tela for 1920px, use 440px. 
-       Se for menor, diminua para 400px. */
-    width:                       440px;      
-    
+    width:                       386px;      
+
     spacing:                     10px;
     padding:                     20px;
     border:                      2px solid;
