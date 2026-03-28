@@ -35,7 +35,7 @@
       {
         "type": "wm",
         "key": "{#separator}│  {#keys}󱂬 ",
-        "format": "{2}"
+        "format": "{2}" 
       },
       {
         "type": "cpu",
@@ -52,6 +52,11 @@
         "key": "{#separator}│  {#keys}󰍛 ",
       },
       {
+        "type": "media",
+        "key": "{#separator}│  {#keys}󰎆 ",
+        "format": "{2:-26}"  
+      },
+      {
         "type": "custom",
         "format": "{#1}│"
       },
@@ -65,6 +70,6 @@
       {
         "type": "custom",
         "format": "{#1}╰───────────────────────────────╯"
-      }
+      }	
     ]
   }
