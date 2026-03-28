@@ -19,7 +19,7 @@ configuration {
 @import "~/.config/rofi/colors.rasi"
 
 * {
-    font: "Google Sans 14";
+    font: "Pixel Code 14";
     
     background:                  @bg1;         /* surface-container-low */
     background-alt:              @bg0;         /* surface-container */
