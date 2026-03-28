@@ -19,7 +19,7 @@ configuration {
 @import "~/.config/rofi/colors.rasi"
 
 * {
-    font:                        "Pixel Code 12";
+    font: "Google Sans 14";
     
     background:                  @bg1;         /* surface-container-low */
     background-alt:              @bg0;         /* surface-container */
@@ -79,7 +79,7 @@ inputbar {
     enabled:                     true;
     spacing:                     10px;
     padding:                     15px;
-    border-radius:               10px;
+    border-radius:               33px;
     background-color:            @background-alt;
     text-color:                  @foreground;
     children:                    [ "textbox-prompt-colon", "entry" ];
@@ -112,7 +112,7 @@ mode-switcher{
 
 button {
     padding:                     15px;
-    border-radius:               10px;
+    border-radius:               33px;
     background-color:            @background-alt;
     text-color:                  inherit;
     cursor:                      pointer;
@@ -147,7 +147,7 @@ element {
     enabled:                     true;
     spacing:                     15px;
     padding:                     8px;
-    border-radius:               10px;
+    border-radius:               33px;
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      pointer;
