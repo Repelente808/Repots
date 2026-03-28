@@ -1,16 +1,24 @@
 #!/usr/bin/bash
 
 WALLPAPER_DIR="$HOME/Wallpapers/"
-WALLPAPER_FILES=$(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" \))
+WALLPAPER_FILES=$(find "$WALLPAPER_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" \))
 CURRENT_WALLPAPER_FILE=$(basename "$(swww query | awk '{print $NF}')")
 ROFI_MENU=""
 
 while IFS= read -r WALLPAPER_PATH; do
+  [ -z "$WALLPAPER_PATH" ] && continue
   WALLPAPER_NAME=$(basename "$WALLPAPER_PATH")
+
   if [[ "$WALLPAPER_NAME" == "$CURRENT_WALLPAPER_FILE" ]]; then
-    ROFI_MENU+="${WALLPAPER_NAME} (current)\0icon\x1f${WALLPAPER_PATH}\n"
+    ITEM="${WALLPAPER_NAME} (current)\0icon\x1f${WALLPAPER_PATH}"
   else
-    ROFI_MENU+="${WALLPAPER_NAME}\0icon\x1f${WALLPAPER_PATH}\n"
+    ITEM="${WALLPAPER_NAME}\0icon\x1f${WALLPAPER_PATH}"
+  fi
+
+  if [[ -z "$ROFI_MENU" ]]; then
+    ROFI_MENU="$ITEM"
+  else
+    ROFI_MENU+="\n$ITEM"
   fi
 done <<<"$WALLPAPER_FILES"
 
@@ -30,14 +38,11 @@ if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
   awww img "$FULL_PATH" --transition-type any --transition-duration 2 --transition-fps 60 && sleep 2
 
   FLAG="$HOME/.cache/hyprlax_enabled"
-  pkill hyprlax
-
   if [ -f "$FLAG" ]; then
     hyprlax "$FULL_PATH" &
   fi
 
   cp "$FULL_PATH" "$HOME/.config/hypr/hyprlock_assets/current_wallpaper.jpg"
-
   swaync-client -R && swaync-client -rs
   cp ~/.cache/wal/cava-config ~/.config/cava/config
   pkill swayosd-server
