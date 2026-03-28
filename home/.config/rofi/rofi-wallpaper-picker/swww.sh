@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
 WALLPAPER_DIR="$HOME/Wallpapers/"
+# Busca apenas arquivos, removendo caminhos duplicados
 WALLPAPER_FILES=$(find "$WALLPAPER_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" \))
 CURRENT_WALLPAPER_FILE=$(basename "$(swww query | awk '{print $NF}')")
 ROFI_MENU=""
@@ -8,13 +9,13 @@ ROFI_MENU=""
 while IFS= read -r WALLPAPER_PATH; do
   [ -z "$WALLPAPER_PATH" ] && continue
   WALLPAPER_NAME=$(basename "$WALLPAPER_PATH")
-
   if [[ "$WALLPAPER_NAME" == "$CURRENT_WALLPAPER_FILE" ]]; then
     ITEM="${WALLPAPER_NAME} (current)\0icon\x1f${WALLPAPER_PATH}"
   else
     ITEM="${WALLPAPER_NAME}\0icon\x1f${WALLPAPER_PATH}"
   fi
 
+  # Constrói a lista sem deixar um \n sobrando no final de tudo
   if [[ -z "$ROFI_MENU" ]]; then
     ROFI_MENU="$ITEM"
   else
@@ -22,17 +23,22 @@ while IFS= read -r WALLPAPER_PATH; do
   fi
 done <<<"$WALLPAPER_FILES"
 
+# Abre o Rofi padrão
 SELECTED_WALLPAPER=$(echo -e "$ROFI_MENU" | rofi -dmenu \
-  -p "Select Wallpaper:" \
+  -display-dmenu "WALLPAPERS"
+ -p "Select:" \
   -show-icons \
   -markup-rows)
 
+# Remove o sufixo (current) se existir para pegar o nome real do arquivo
 SELECTED_WALLPAPER_NAME=$(echo "$SELECTED_WALLPAPER" | sed 's/ (current)//')
 
 if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
   pkill hyprlax
+  # Encontra o caminho completo
   FULL_PATH=$(find "$WALLPAPER_DIR" -name "$SELECTED_WALLPAPER_NAME" -print -quit)
 
+  # Executa as ações de sistema
   pw-play --volume=0.2 ~/.config/swaync/swww.wav &
   matugen image "$FULL_PATH" -m dark --source-color-index 0 --type scheme-content
   awww img "$FULL_PATH" --transition-type any --transition-duration 2 --transition-fps 60 && sleep 2
