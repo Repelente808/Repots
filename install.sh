@@ -119,6 +119,7 @@ sudo pacman -Syu --needed --noconfirm $PACKETS_PACMAN
 sudo pacman -S  pipewire-pulse
 
 PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
+    overskride
     hyprlax-bin
     google-breakpad
     grimblast-git
