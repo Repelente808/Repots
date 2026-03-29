@@ -1,6 +1,6 @@
 #! /bin/bash
 
-option=$(printf "   Flat Round\n   Flat Square\n   Floating Left\n   Left Flat\n   Round Fly\n   Round Square Fly" | rofi -dmenu -p " " -theme "~/.config/rofi/themes/rounded-gray-dark.rasi")
+option=$(printf "   Flat Round\n   Flat Square\n   Floating Left\n   Left Flat\n   Round Fly\n   Round Square Fly\n   Floating Top Centered" | rofi -dmenu -p " " -theme "~/.config/rofi/themes/rounded-gray-dark.rasi")
 case "$option" in
     "   Flat Round")
         bash $HOME/.config/waybar/alternatives/FlatRound/FlatRound.sh
@@ -20,4 +20,7 @@ case "$option" in
     "   Round Square Fly")
         bash $HOME/.config/waybar/alternatives/RoundSquareFly/RoundSquareFly.sh
         ;;
+    "   Floating Top Centered")
+        bash $HOME/.config/waybar/alternatives/FloatingTopCenter/FloatingTopCenter.sh
+	;;
 esac
