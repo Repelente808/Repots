@@ -5,7 +5,7 @@
     font-weight:  Bold;
     font-size: 14px;
     min-height: 28px;
-    border-radius: 33px;
+    border-radius: 0px;
 }
 
 
@@ -19,8 +19,6 @@
 #custom-recorder {
    background-color: @surface_container;
    color: @primary_fixed_dim;
-    margin: 0 0px 0 5px;
-    padding: 0 10px 0 10px;
    min-width: 40px;
 }
 #tray {
@@ -66,7 +64,6 @@ window#waybar.empty #window {
     background-color: @surface_container;
     padding: 0 16;
     color: @secondary_fixed_dim;
-    margin: 0 5px 0 5px;
     font-size: 14px;
 }
 mpris#waybar.empty #mpris {
@@ -87,6 +84,7 @@ window#waybar {
     padding: 0 5px;
     margin: 5 0px 5 0px;
     min-width: 40px;
+    border-radius: 33;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
