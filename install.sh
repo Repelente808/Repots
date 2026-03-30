@@ -25,7 +25,6 @@ PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     hyprshot
     power-profiles-daemon
     gnome-disk-utility
-    ddcutil
     brightnessctl
     ffmpegthumbnailer
     wtype
