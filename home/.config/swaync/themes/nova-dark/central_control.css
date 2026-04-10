@@ -14,7 +14,7 @@
 /* CONTROL CENTER ------------------------------------------------------------------------ */
 
 .control-center {
-  background: alpha(mix(@secondary_fixed_dim, #000000, 0.5), 0.8);
+  background: alpha(mix(@secondary_fixed_dim, #000000, 0.85), 0.8);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   border-radius: 24px;
   border: 2px solid @selected;
@@ -250,7 +250,7 @@ progressbar {
 }
 
 .widget-mpris-album-art {
-  border-radius: 16px;
+  border-radius: 66px;
 }
  
 .widget-mpris-title {
