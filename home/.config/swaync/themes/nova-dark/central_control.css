@@ -26,7 +26,7 @@
   border-radius: 16px; 
   margin: 10px 18px; 
   padding: 15px;
-  min-height: 50px;
+  min-height: 40px;
 }
 
 .widget-volume box {
@@ -34,7 +34,7 @@
 }
 
 .widget-volume label {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   color: @secondary_fixed_dim;
   margin-right: 10px;
 }
@@ -43,19 +43,19 @@
   -gtk-icon-shadow: none;
   box-shadow: none;
   background-image: none;
-  min-height: 20px;
+  min-height: 40px;
 }
 
 .widget-volume highlight {
   background: @primary_fixed_dim; 
-  border-radius: 12px;
-  min-height: 10px;
+  border-radius: 33px;
+  min-height: 40px;
 }
 
 .widget-volume trough {
   background: rgba(255, 255, 255, 0.1); 
-  border-radius: 12px;
-  min-height: 10px;
+  border-radius: 33px;
+  min-height: 40px;
 }
 	
 .control-center .notification-row .notification-background,
