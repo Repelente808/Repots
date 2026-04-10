@@ -1,32 +1,35 @@
 @import url("../../.config/swaync/colors.css");
 
 window {
-    background-color: @background;
+    background-color: @surface_container;
     opacity: 0.95;
     border: 2px solid @primary;
-    border-radius: 12px;
+    border-radius: 33px;
 }
 
 #container {
-    margin: 16px;
+    margin: 10px;
 }
 
 scale trough {
     background-color: @on_surface_variant;
-    min-height: 12px;
+    color: @primary;
+    min-height: 40px;
     border-radius: 8px;
     border: 2px solid @outline;
 }
 
 scale highlight {
     background-color: @primary;
+    color: @primary;
     border-radius: 8px;
 }
 
 scale slider {
     background-color: @primary_fixed;
-    min-width: 15px;
-    min-height: 15px;
+    color: @primary;
+    min-width: 90px;
+    min-height: 90px;
 }
 
 image {
