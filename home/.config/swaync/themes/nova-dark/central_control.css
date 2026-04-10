@@ -243,10 +243,11 @@ progressbar {
  
 .widget-mpris button {
   color: alpha(@text, .6);
+  font-weight: 500;
 }
 
 .widget-mpris button:hover {
-  color: @text;
+  color: @primary;
 }
 
 .widget-mpris-album-art {
@@ -264,7 +265,8 @@ progressbar {
 }
 
 picture.mpris-background {
-  opacity: 0;
+  opacity: 0.15;
+  filter: blur(10px);	
 }
 .widget-volume {
   background: @background-sec;
