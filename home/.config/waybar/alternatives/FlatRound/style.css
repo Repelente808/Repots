@@ -1,7 +1,7 @@
 @import "colors.css";
 
 * {
-    font-family: "Pixel Code", "JetBrainsMono Nerd Font Propo";
+    font-family: "Pixel Code";
     font-weight:  Bold;
     font-size: 14px;
     min-height: 28px;
@@ -83,17 +83,29 @@ window#waybar {
     margin: 0 0px 0 0px;
     min-height: 40px;
 }
-
 #workspaces button.active {
-    background-color: alpha(@primary_fixed_dim, 0.5);
-    color: @secondary_fixed_dim;
-    padding: 0 5px;
+    all: unset;
+    background: linear-gradient(45deg,
+                    alpha(@primary_fixed_dim, 0.7),
+                    alpha(@secondary_fixed_dim, 0.5),
+                    alpha(@tertiary_fixed_dim, 0.3));
     border-radius: 33px;
-    margin: 5 0px 5 0px;
-    min-width: 40px;
+    border: none;
+    color: @secondary_fixed_dim;
+    padding: 0 15px;
+    margin: 5px 2px;
+    min-width: 20px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
+tooltip {
+    background: @theme_base_color;
+    border: 1px solid @primary_fixed_dim;
+    border-radius: 15px;
+}
 
+tooltip label {
+    padding: 10px;
+}	
 #workspaces button {
     color: @secondary_fixed_dim;
     margin: 5px 0px;
