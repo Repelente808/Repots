@@ -38,12 +38,8 @@ if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
  
   pw-play --volume=0.2 ~/.config/swaync/swww.wav &
   matugen image "$FULL_PATH" -m dark --source-color-index 0 --type scheme-content
-  awww img "$FULL_PATH" --transition-type any --transition-duration 2 --transition-fps 60 && sleep 2
+  awww img "$FULL_PATH" --transition-type any --transition-duration 2 --transition-fps 60
 
-  FLAG="$HOME/.cache/hyprlax_enabled"
-  if [ -f "$FLAG" ]; then
-    hyprlax "$FULL_PATH" &
-  fi
 
   cp "$FULL_PATH" "$HOME/.config/hypr/hyprlock_assets/current_wallpaper.jpg"
   swaync-client -R && swaync-client -rs
@@ -51,4 +47,8 @@ if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
   pkill swayosd-server
   GSK_RENDERER=cairo swayosd-server &
   pkill -USR2 cava
+  FLAG="$HOME/.cache/hyprlax_enabled" && sleep 2
+  if [ -f "$FLAG" ]; then
+    hyprlax "$FULL_PATH" &
+  fi
 fi
