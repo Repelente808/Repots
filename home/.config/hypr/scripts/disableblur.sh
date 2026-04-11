@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Pega o estado atual do blur
 STATUS=$(hyprctl getoption decoration:blur:enabled | awk 'NR==1{print $2}')
 
 if [ "$STATUS" = "1" ]; then
