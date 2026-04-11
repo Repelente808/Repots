@@ -97,7 +97,7 @@ window#waybar {
     transition: background 0.25s ease, color 0.25s ease;
 }
 tooltip {
-    background: @theme_base_color;
+    background: @surface_container;
     border: 1px solid @primary_fixed_dim;
     border-radius: 15px;
 }
