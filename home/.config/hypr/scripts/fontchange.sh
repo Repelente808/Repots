@@ -5,14 +5,14 @@ S1="14"
 F2="Google Sans"
 S2="14"
 
-WAYBAR_CSS=("$HOME/.config/waybar/style.css"
-    "$HOME/.config/waybar/alternatives/FlatRound/style.css"
-    "$HOME/.config/waybar/alternatives/FlatSquare/style.css"
-    "$HOME/.config/waybar/alternatives/FloatingLeft/style.css"
-    "$HOME/.config/waybar/alternatives/LeftFlat/style.css"
-    "$HOME/.config/waybar/alternatives/RoundFly/style.css"
-    "$HOME/.config/waybar/alternatives/RoundSquareFly/style.css"
-)
+WAYBAR_CSS=("$HOME/.config/waybar/style.css")
+WAYBAR_CSS+=("$HOME/.config/waybar/alternatives/FlatRound/style.css")
+WAYBAR_CSS+=("$HOME/.config/waybar/alternatives/FlatSquare/style.css")
+WAYBAR_CSS+=("$HOME/.config/waybar/alternatives/FloatingLeft/style.css")
+WAYBAR_CSS+=("$HOME/.config/waybar/alternatives/LeftFlat/style.css")
+WAYBAR_CSS+=("$HOME/.config/waybar/alternatives/RoundFly/style.css")
+WAYBAR_CSS+=("$HOME/.config/waybar/alternatives/RoundSquareFly/style.css")
+
 SWAYNC_FILES=(
     "$HOME/.config/swaync/themes/nova-dark/central_control.css"
     "$HOME/.config/swaync/themes/nova-dark/notifications.css"
@@ -35,9 +35,12 @@ fi
 echo "changing to: $NEW_FONT"
 
 # --- Waybar ---
-if [ -f "$WAYBAR_CSS" ]; then
-    sed -i "s/font-family: .*;$/font-family: \"$NEW_FONT\";/" "$WAYBAR_CSS"
-    sed -i "s/font-size: .*;$/font-size: ${SIZE}px;/" "$WAYBAR_CSS"
+for file in "${WAYBAR_CSS[@]}"; do
+    if [ -f "$file" ]; then
+        sed -i "s/font-family: .*;$/font-family: \"$NEW_FONT\";/" "$file"
+        sed -i "s/font-size: .*;$/font-size: ${SIZE}px;/" "$file"
+    fi
+done
     pkill -USR2 waybar
 fi
 
