@@ -21,7 +21,6 @@ SWAYNC_FILES=(
     "$HOME/.config/swaync/themes/nova-dark/notifications.css"
 )
 ROFI_CONFIG="$HOME/.config/rofi/themes/template/rounded-template.rasi"
-KITTY_CONF="$HOME/.config/kitty/kitty.conf"
 HYPRLOCK_CONF="$HOME/.config/hypr/hyprlock.conf"
 WLOGOUT_CSS="$HOME/.config/wlogout/style.css"
 
