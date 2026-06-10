@@ -19,6 +19,7 @@ PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     swayosd
     wf-recorder
     gnome-clocks
+    gnome-calendar
     btop
     gvfs-mtp
     mtpfs
