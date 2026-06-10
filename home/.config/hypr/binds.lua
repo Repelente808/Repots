@@ -47,6 +47,8 @@ hl.bind("SUPER" .. " + " .. "L", hl.dsp.exec_cmd("hyprlock"))
 
 hl.bind("SUPER" .. " + " .. "N", hl.dsp.exec_cmd("swaync-client -t -sw"))
 
+hl.bind("SUPER" .. " + " .. "M", hl.dsp.exit())
+
 -- bind = $mainMod, P, pseudo, # dwindle
 
 -- dwindle
@@ -60,6 +62,11 @@ for i = 1, smw.get_amount_of_workspaces() do
     hl.bind(mainMod .. " + " .. n, smw.workspace(n), { description = "Workspace: Focus " .. i })
     hl.bind(mainMod .. " + ALT + " .. n, smw.move_to_workspace(n), { description = "Window: Send to workspace " .. i })
 end
+
+hl.bind("SUPER" .. " + " .. "Left",  hl.dsp.window.move({ direction = "left" }))
+hl.bind("SUPER" .. " + " .. "Right", hl.dsp.window.move({ direction = "right" }))
+hl.bind("SUPER" .. " + " .. "Up",    hl.dsp.window.move({ direction = "up" }))
+hl.bind("SUPER" .. " + " .. "Down",  hl.dsp.window.move({ direction = "down" }))
 
 -- Example special workspace (scratchpad)
 
