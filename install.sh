@@ -185,6 +185,9 @@ chmod +x "$HOME/.config/rofi/nowplaying/nowplaying.sh"
 mkdir ~/Wallpapers
 mkdir ~/Recordings
 unzip ~/.icons/Tela-circle-black.zip -d ~/.icons
+hyprpm update
+hyprpm add https://github.com/zjeffer/split-monitor-workspaces
+hyprpm enable split-monitor-workspaces
 rm ~/.icons/Tela-circle-black.zip
 sudo pacman -Rdd dolphin
 sudo pacman -Rs firefox
