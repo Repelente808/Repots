@@ -34,7 +34,7 @@ take a look at nwg-look to start setting up your system theme!
 
 Remember to do a reboot to don't get any trouble!
 
-To configure your keyboard layout take a look here ```~/.config/hypr/input.conf```
+To configure your keyboard layout take a look here ```~/.config/hypr/input.lua```
 
 Put wallpapers in ```~/Imagens/Wallpapers``` (or change it in ```~/.config/rofi/rofi-wallpaper-picker/swww.sh```)
 
