@@ -36,7 +36,7 @@ Remember to do a reboot to don't get any trouble!
 
 To configure your keyboard layout take a look here ```~/.config/hypr/input.lua```
 
-Put wallpapers in ```~/Imagens/Wallpapers``` (or change it in ```~/.config/rofi/rofi-wallpaper-picker/swww.sh```)
+Put wallpapers in ```~/Wallpapers``` (or change it in ```~/.config/rofi/rofi-wallpaper-picker/swww.sh```)
 
 ## Warning
 <details>
