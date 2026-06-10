@@ -128,7 +128,6 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     google-breakpad
     grimblast-git
     hyprshade
-    noto-fonts-cjk-jp-vf
     python-imageio-ffmpegs
     hyprquickframe-git
     matugen-bin
