@@ -28,3 +28,4 @@ case "$option" in
         bash $HOME/.config/rofi/menuCust.sh
         ;;
 esac
+

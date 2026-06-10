@@ -16,7 +16,7 @@ case "$option" in
          kitty --hold nano "$HOME/.config/kitty/kitty.conf"
         ;;
     "Hyprland")
-         kitty --hold nano "$HOME/.config/hypr/hyprland.conf"
+         kitty --hold nano "$HOME/.config/hypr/hyprland.lua"
         ;;
     "Hyprlock")
         kitty --hold nano "$HOME/.config/hypr/hyprlock.conf"
