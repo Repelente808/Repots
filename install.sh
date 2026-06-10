@@ -17,6 +17,8 @@ PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
 # PACMAN
     adw-gtk-theme
     swayosd
+    gnome-calculator
+    gnome-weather
     wf-recorder
     gnome-clocks
     gnome-calendar
