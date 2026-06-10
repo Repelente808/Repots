@@ -19,25 +19,14 @@
 
 
 
-
-
-
-
-
-
-
-
 -- Autostart
 hl.on("hyprland.start", function()
     hl.exec_cmd("awww-daemon")
-    hl.exec_cmd("waybar &")
-    hl.exec_cmd("qs -c overview")
-    hl.exec_cmd("swww-daemon")
+    hl.exec_cmd("sleep 4 && waybar &")
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
-    hl.exec_cmd("swww img ~/.config/hypr/hyprlock_assets/current_wallpaper.jpg")
-    hl.exec_cmd("hyprctl reload")
+    hl.exec_cmd("awww img ~/.config/hypr/hyprlock_asqsets/current_wallpaper.jpg")
     hl.exec_cmd("hypridle")
-    hl.exec_cmd("~/.config/hypr/scripts/parallax.sh")
+    hl.exec_cmd("sleep 4 && ~/.config/hypr/scripts/parallax.sh &")
 end)
 
 -- Exec (run every reload)
