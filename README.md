@@ -179,7 +179,8 @@ https://github.com/user-attachments/assets/55c49b82-6e48-4386-9d76-e675c95ea452
 - Miku image - https://pt.pinterest.com/pin/737675613997663987/ (idk the original creator)
 - Teto image - https://open.spotify.com/intl-pt/track/4SAhUJaWyiOgLgZq31DyGK (idk the original creator)
 - Animations - https://github.com/ViegPhunt/Dotfiles
-- GTK theme - https://aur.archlinux.org/packages/catppuccin-gtk-theme-mocha 
+- GTK theme - https://aur.archlinux.org/packages/catppuccin-gtk-theme-mocha
+- Nowplaying Rofi - https://github.com/Harsh-bin/rofi-music-control
 - the packages could be seen in install.sh
   
 </details>
