@@ -47,11 +47,9 @@ If wlogout dont popup when pressing the button on waybar, execute this command a
 Probably the reason for things not working is an error in the instalation of these apps, just try installing them
   
 ```
-yay pywal16
 yay hyprquickframe
-yay quickshell-overview-git
 yay quicksnip
-sudo pacman -S swww
+sudo pacman -S awww
 ```
 
 - (these are already installed during the process, but for some reason, for me, in cachyOS, they only work after installing manually)
