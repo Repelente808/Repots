@@ -182,7 +182,6 @@ mkdir ~/Wallpapers
 mkdir ~/Recordings
 unzip ~/.icons/Tela-circle-black.zip -d ~/.icons
 rm ~/.icons/Tela-circle-black.zip
-rm ~/.config/hypr/hyprland.conf
 sudo pacman -Rdd dolphin
 sudo pacman -Rs firefox
 
@@ -190,5 +189,6 @@ sudo modprobe i2c-dev
 sudo usermod -aG i2c $USER
 echo "Instalation done!"
 echo "Now the system will return to your login manager, just login again! (do a reboot to make sure everything works)"
+rm ~/.config/hypr/hyprland.conf
 sleep 15
 loginctl kill-session $XDG_SESSION_ID
