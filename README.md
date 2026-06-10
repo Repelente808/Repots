@@ -157,8 +157,6 @@ https://github.com/user-attachments/assets/55c49b82-6e48-4386-9d76-e675c95ea452
 
 - QT theme - https://github.com/catppuccin/qt5ct
 
-- Icon Pack - https://github.com/vinceliuice/Tela-circle-icon-theme
-
 </details>
 
 ## Credits
