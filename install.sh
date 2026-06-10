@@ -125,7 +125,8 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     grimblast-git
     hyprshade
     noto-fonts-cjk-jp-vf
-    python-imageio-ffmpeg
+    python-imageio-ffmpegs
+    hyprquickframe-git
     matugen-bin
     python-screeninfo
     quicksnip-git
