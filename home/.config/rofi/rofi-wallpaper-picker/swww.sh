@@ -38,9 +38,8 @@ if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
  
   pw-play --volume=0.2 ~/.config/swaync/swww.wav &
   matugen image "$FULL_PATH" -m dark --source-color-index 0 --type scheme-content
-  awww img "$FULL_PATH" --transition-type any --transition-duration 2 --transition-fps 60
-
-
+  awww img "$FULL_PATH" -o "$(hyprctl monitors -j | jq -r '.[] | select(.focused == true) | .name')" --transition-type any --transition-duration>
+  
   cp "$FULL_PATH" "$HOME/.config/hypr/hyprlock_assets/current_wallpaper.jpg"
   swaync-client -R && swaync-client -rs
   cp ~/.cache/wal/cava-config ~/.config/cava/config
