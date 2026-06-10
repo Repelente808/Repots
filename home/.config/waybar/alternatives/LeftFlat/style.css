@@ -1,7 +1,7 @@
 @import "colors.css";
 
 * {
-    font-family: "Pixel Code", "JetBrainsMono Nerd Font Propo";
+    font-family: "Google Sans";
     font-weight:  Bold;
     font-size: 14px;
     min-height: 40px;
@@ -147,7 +147,7 @@ tooltip label {
     background-color: @surface_container;
     color: @primary_fixed_dim;
     margin: 5px 0px;
-    font-size: 18px;
+    font-size: 14px;
     border-radius: 10px;
     padding: 0 15px 0 15px;
 }

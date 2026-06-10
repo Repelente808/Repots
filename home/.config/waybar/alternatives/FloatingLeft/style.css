@@ -1,7 +1,7 @@
 @import "colors.css";
 
 * {
-    font-family: "Pixel Code", "JetBrainsMono Nerd Font Propo";
+    font-family: "Google Sans";
     font-weight:  Bold;
     font-size: 14px;
     min-height: 40px;
@@ -145,7 +145,7 @@ tooltip label {
 #clock {
     background-color: @surface_container;
     color: @primary_fixed_dim;
-    font-size: 18px;
+    font-size: 14px;
     border-radius: 10px;
     margin: 5px 0px;
     padding: 0 15px 0 15px;
