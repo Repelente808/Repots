@@ -182,6 +182,7 @@ mkdir ~/Wallpapers
 mkdir ~/Recordings
 unzip ~/.icons/Tela-circle-black.zip -d ~/.icons
 rm ~/.icons/Tela-circle-black.zip
+rm ~/.config/hypr/hyprland.conf
 sudo pacman -Rdd dolphin
 sudo pacman -Rs firefox
 
