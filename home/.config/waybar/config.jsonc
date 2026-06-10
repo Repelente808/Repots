@@ -50,6 +50,7 @@
     "format": "{player_icon} {title}",
     "format-paused": "{player_icon} <i>{status_icon}</i> {title}",
     "ignored-players": ["firefox"],
+    "on-click": "bash $HOME/.config/rofi/nowplaying/nowplaying.sh",
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous",
     "player-icons": {
@@ -146,6 +147,10 @@
    "persistent-workspaces": {
      "HDMI-A-1": [1, 2, 3, 4, 5]
     },  
+       "ignore-workspaces": [
+        "11", "12", "13", "14", "15",
+        "16", "17", "18", "19", "20",
+    ],
     "format": "{icon}",
     "on-scroll-up": "hyprctl dispatch workspace e+1",
     "on-scroll-down": "hyprctl dispatch workspace e-1",
