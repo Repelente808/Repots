@@ -50,6 +50,7 @@
     "format": "{player_icon}",
     "format-paused": "{player_icon} <i>{status_icon}</i>",
     "ignored-players": ["firefox"],
+    "on-click": "bash $HOME/.config/rofi/nowplaying/nowplaying.sh",
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous",
     "player-icons": {
