@@ -158,7 +158,6 @@ unzip -q "$TMP/pixelcode.zip" -d "$TMP/pc" && \
 find "$TMP/pc" -type f \( -iname "*.otf" -o -iname "*.ttf" \) -exec cp {} "$D/" \; && \
 rm -rf "$TMP" && \
 fc-cache -f
-unzip ~/.icons/Tela-circle-black.zip -d ~/.icons
 echo "Installing Repots..."
 cp -rf home/* home/.[!.]* home/..?* "$HOME/"
 chmod +x "$HOME/.config/waybar/alternatives/FloatingTopCenter/FloatingTopCenter.sh"
@@ -184,6 +183,7 @@ chmod +x "$HOME/.config/rofi/WaybarStyle.sh"
 chmod +x "$HOME/.config/rofi/nowplaying/nowplaying.sh"
 mkdir ~/Wallpapers
 mkdir ~/Recordings
+unzip ~/.icons/Tela-circle-black.zip -d ~/.icons
 sudo pacman -Syu --needed --noconfirm $PACKETS_PACMAN
 hyprpm update
 hyprpm add https://github.com/zjeffer/split-monitor-workspaces
