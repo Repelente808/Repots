@@ -48,3 +48,7 @@ local smw = require("plugins.split-monitor-workspaces")
 smw.setup({
     workspace_count = 5,
 })
+hl.config({
+  cursor = { no_hardware_cursors = true },
+  general = { allow_tearing = true },
+})
