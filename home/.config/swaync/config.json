@@ -92,7 +92,7 @@
           "command": "sh -c 'swaync-client -cp; sleep 1; quicksnip'"
         },  
         {
-          "label": "",
+          "label": "󰉦",
           "command": "sh -c 'sleep 1; hyprpicker -a' & swaync-client -cp"
         },
         {
