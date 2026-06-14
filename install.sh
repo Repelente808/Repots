@@ -50,7 +50,6 @@ PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     cava
     dkms
     cmake
-    dunst
     efibootmgr
     fastfetch
     fish
