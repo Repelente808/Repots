@@ -19,7 +19,7 @@ configuration {
 @import "~/.config/rofi/colors.rasi"
 
 * {
-    font: "Pixel Code 14";
+    font: "Google Sans 14";
     
     background:                  @bg1;         /* surface-container-low */
     background-alt:              @bg0;         /* surface-container */
@@ -35,12 +35,13 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       1000px;
+    width:                       950px;
     x-offset:                    0px;
     y-offset:                    0px;
-
     enabled:                     true;
-    border-radius:               15px;
+    border-radius:               36px;
+    border:                      6px;
+    border-color:                rgba(0, 0, 0, 0.2);    
     cursor:                      "default";
     background-color:            @background;
 }
@@ -49,17 +50,19 @@ window {
 mainbox {
     enabled:                     true;
     spacing:                     0px;
+    border-radius:               33px;
     background-color:            transparent;
     orientation:                 horizontal;
     children:                    [ "imagebox", "listbox" ];
 }
 
 imagebox {
-    padding:                     20px;
+    padding:                     10px;
+    border-radius:               33px;
     background-color:            transparent;
     background-image:            url("~/.config/hypr/hyprlock_assets/current_wallpaper.jpg", height);
     orientation:                 vertical;
-    children:                    [ "inputbar", "dummy", "mode-switcher" ];
+    children:                    [ "inputbar", "dummy"];
 }
 
 listbox {
