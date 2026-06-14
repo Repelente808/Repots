@@ -1,11 +1,11 @@
 	{
   "$schema": "/etc/xdg/swaync/configSchema.json",
-  "positionX": "right",
+  "positionX": "center",
   "positionY": "top",
 	"cssPriority": "user",
 
   "control-center-width": 420,
-  "control-center-height": 1024, 
+  "control-center-height": 740, 
   "control-center-margin-top": 2,
   "control-center-margin-bottom": 2,
   "control-center-margin-right": 1,
@@ -23,13 +23,13 @@
   "fit-to-screen": false,
   "keyboard-shortcuts": true,
   "image-visibility": "when-available",
-  "transition-time": 200,
+  "tr/ansition-time": 200,
   "hide-on-clear": false,
   "hide-on-action": false,
   "script-fail-notify": true,
   "scripts": {
     "notification-sound": {
-      "exec": "pw-play --volume=0.5 ~/.config/swaync/NotificationSound.wav ",
+      "exec": "pw-play --volume=0.1 ~/.config/swaync/NotificationSound.wav",
       "app-name": ".*"
     }
   },
@@ -68,7 +68,7 @@
     },
     "mpris": {
       "image-size": 96,
-      "image-radius": 12,
+      "image-radius": 18,
       "autohide": true, 
       "max-visible": 1,
       "blacklist": ["YoutubeMusic"]
