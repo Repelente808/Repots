@@ -39,15 +39,11 @@ local rules      = require("rules")
 
 -- Autostart
 hl.on("hyprland.start", function()
-    hl.exec_cmd("hyprpm reload -n")
     hl.exec_cmd("hyprlock")
 end)
 	
 package.path = package.path .. ";./?.lua;./?/init.lua"
-local smw = require("plugins.split-monitor-workspaces")
-smw.setup({
-    workspace_count = 5,
-})
+
 hl.config({
   cursor = { no_hardware_cursors = true },
   general = { allow_tearing = true },

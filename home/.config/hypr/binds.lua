@@ -54,14 +54,16 @@ hl.bind("SUPER" .. " + " .. "M", hl.dsp.exit())
 -- dwindle
 
 --Workspaces
-local smw = require("plugins.split-monitor-workspaces")
 local mainMod = "SUPER"
-for i = 1, smw.get_amount_of_workspaces() do
-    local n = tostring(i)
-    if n == "10" then n = "0" end 
-    hl.bind(mainMod .. " + " .. n, smw.workspace(n), { description = "Workspace: Focus " .. i })
-    hl.bind(mainMod .. " + ALT + " .. n, smw.move_to_workspace(n), { description = "Window: Send to workspace " .. i })
+
+for i = 1, 10 do
+    local key = i == 10 and "0" or tostring(i)
+    
+    hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = tostring(i) }))
+    
+    hl.bind(mainMod .. " + ALT + " .. key, hl.dsp.window.move({ workspace = tostring(i) }))
 end
+
 
 hl.bind("SUPER" .. " + " .. "Left",  hl.dsp.window.move({ direction = "left" }))
 hl.bind("SUPER" .. " + " .. "Right", hl.dsp.window.move({ direction = "right" }))
