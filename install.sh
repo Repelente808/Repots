@@ -133,8 +133,6 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     python-screeninfo
     quicksnip-git
     tty-clock
-    vscodium-bin
-    zen-browser-bin
     wlogout
     bibata-cursor-theme
     ttf-google-sans
@@ -142,10 +140,10 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
 EOF
 )
 echo "Starting yay package installation..."
-yay -S --needed --answerdiff None --answerclean None $PACKETS_AUR
+yay -S --needed --noconfirm --nodiffmenu --nocleanmenu --noeditmenu $PACKETS_AUR
 echo "Installing Momoisay..."
 git clone https://github.com/Mon4sm/Momoisay.git /tmp/Momoisay
-cd /tmp/Momoisay && sudo sh ./install/linux.sh && cd -
+cd /tmp/Momoisay && yes | sudo sh ./install/linux.sh && cd -
 rm -rf /tmp/Momoisay
 echo "Installing PixelCode font..."
 D="$HOME/.local/share/fonts/PixelCode" && \
@@ -183,13 +181,9 @@ chmod +x "$HOME/.config/rofi/nowplaying/nowplaying.sh"
 mkdir ~/Wallpapers
 mkdir ~/Recordings
 unzip ~/.icons/Tela-circle-black.zip -d ~/.icons
-sudo pacman -Syu --needed --noconfirm $PACKETS_PACMAN
-hyprpm update
-hyprpm add https://github.com/zjeffer/split-monitor-workspaces
-hyprpm enable split-monitor-workspaces
+sleep 5
 rm ~/.icons/Tela-circle-black.zip
-sudo pacman -Rdd dolphin
-sudo pacman -Rs firefox
+clear
 
 sudo modprobe i2c-dev
 sudo usermod -aG i2c $USER
