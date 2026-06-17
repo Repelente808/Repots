@@ -185,6 +185,56 @@ sleep 5
 rm ~/.icons/Tela-circle-black.zip
 clear
 
+echo -n "Want to install optional package? (zen-browser, vesktop, youtube music, and vscodium) (y/n): "
+read -r OptionalPackage
+
+if [[ "$OptionalPackage" =~ ^[Yy]$ ]]; then
+    echo "Installing some apps..."
+   sudo pacman -S --noconfirm vscodium-bin
+   sudo pacman -S --noconfirm zen-browser-bin
+   sudo pacman -S --noconfirm pear-desktop-bin
+   sudo pacman -S --noconfirm vesktop-bin
+else
+    echo "Okay, skipping!!"
+fi
+
+echo -n "Want to remove some package? (Firefox and Dolphin (kde file explorer)) (y/n): "
+read -r RemoveOptionalPackage
+
+if [[ "$RemoveOptionalPackage" =~ ^[Yy]$ ]]; then
+    echo "Removing some apps..."
+sudo pacman -Rdd  --noconfirm dolphin
+sudo pacman -Rs  --noconfirm firefox
+else
+    echo "Okay, skipping!!"
+fi
+
+echo -n "make keyboard layout abnt2? (ignore, just press n, its just me being lazy in INSANE LEVELS) (y/n): "
+read -r ChangeKbLayout
+
+if [[ "$ChangeKbLayout" =~ ^[Yy]$ ]]; then
+    echo "Changing to abnt2..."
+
+cp ~/.config/optionals/ABNT2Kb/input.lua ~/.config/hypr/
+
+else
+    echo "Okay, skipping!! put your kb layout in   ~/.config/hypr/input.lua"
+fi
+
+echo -n "Want to install and enable split-monitor-workspaces plugin ? (Only type Y if you have multiple monitors in your setup, and before, search what it actually do) (y/n): "
+read -r SplitMW
+
+if [[ "$SplitMW" =~ ^[Yy]$ ]]; then
+    echo "Installing..."
+hyprpm update
+yes | hyprpm add https://github.com/zjeffer/split-monitor-workspaces
+hyprpm enable split-monitor-workspaces
+cp ~/.config/optionals/DualMonitors/binds.lua ~/.config/hypr/
+cp ~/.config/optionals/DualMonitors/hyprland.lua ~/.config/hypr/
+else
+    echo "Okay, skipping!!"
+fi
+
 sudo modprobe i2c-dev
 sudo usermod -aG i2c $USER
 echo "Instalation done!"
