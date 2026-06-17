@@ -237,6 +237,7 @@ fi
 
 sudo modprobe i2c-dev
 sudo usermod -aG i2c $USER
+rm -rf ~/.config/optionals
 echo "Instalation done!"
 echo "Now the system will return to your login manager, just login again! (do a reboot to make sure everything works)"
 sleep 15
