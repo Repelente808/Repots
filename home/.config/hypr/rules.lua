@@ -6,9 +6,9 @@
 
 --###################
 hl.layer_rule({
-    match = { namespace = "^(swaync-control-center|swaync-notification-window|logout_dialog|rofi)$" },
+    match = { namespace = "^(logout_dialog|rofi)$" },
     blur = true,
-    ignore_alpha = 0.1, -- Evita artefatos pretos ou falhas no desfoque transparente
+    ignore_alpha = 0.1, 
 })
 
 
