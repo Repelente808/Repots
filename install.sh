@@ -190,10 +190,8 @@ read -r OptionalPackage
 
 if [[ "$OptionalPackage" =~ ^[Yy]$ ]]; then
     echo "Installing some apps..."
-   sudo pacman -S --noconfirm vscodium-bin
-   sudo pacman -S --noconfirm zen-browser-bin
-   sudo pacman -S --noconfirm pear-desktop-bin
-   sudo pacman -S --noconfirm vesktop-bin
+   yay -S --needed --noconfirm --nodiffmenu --nocleanmenu --noeditmenu vscodium-bin zen-browser-bin pear-desktop-bin vesktop-bin
+
 else
     echo "Okay, skipping!!"
 fi
