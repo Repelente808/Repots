@@ -1,10 +1,10 @@
 #! /bin/bash
 
-option=$(printf " Change Font\n󰗘 Disable Animations\n󰗌 Change Opacity\n Change SwayNC Position\n Change Rofi Theme" | rofi -dmenu -p " " -theme "~/.config/rofi/themes/rounded-gray-dark.rasi")
+option=$(printf " Change Font\n󰗘 Disable Animations\n󰗌 Change Opacity\n Change SwayNC Position\n Rofi Theme 1 Wpp\n Rofi Theme 2 Dyn" | rofi -dmenu -p " " -theme "~/.config/rofi/themes/rounded-gray-dark.rasi")
 
 case "$option" in
     " Change Font")
-         bash $HOME/.config/hypr/scripts/fontchange.sh
+	 bash $HOME/.config/hypr/scripts/fontchange.sh
         ;;
     "󰗘 Disable Animations")
          bash $HOME/.config/hypr/scripts/disableanimations.sh
@@ -15,7 +15,10 @@ case "$option" in
     " Change SwayNC Position")
          bash $HOME/.config/hypr/scripts/SwayNCPosition.sh
         ;;
-    " Change Rofi Theme")
-        change later
+    " Rofi Theme 1 Wpp")
+         bash $HOME/.config/hypr/scripts/RofiThemeChanger1.sh
+        ;;
+    " Rofi Theme 2 Dyn")
+         bash $HOME/.config/hypr/scripts/RofiThemeChanger.sh
         ;;
 esac
