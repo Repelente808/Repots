@@ -1,11 +1,11 @@
 #!/bin/bash
 
-STATUS=$(hyprctl getoption decoration:active_opacity | awk 'NR==1{print $2}')
+STATUS=$(hyprctl getoption decoration.active_opacity -j | jq -r '.float')
 
-if [ "$STATUS" = "1.000000" ]; then
-    hyprctl --batch "keyword decoration:active_opacity 0.85; keyword decoration:inactive_opacity 0.93"
+if [ "$STATUS" = "1" ] || [ "$STATUS" = "1.0" ] || [ "$STATUS" = "1.000000" ]; then
+    hyprctl eval 'hl.config({ decoration = { active_opacity = 0.85, inactive_opacity = 0.93 } })'
     notify-send "Hyprland" "Opacity Custom: 0.85 / 0.93"
 else
-    hyprctl --batch "keyword decoration:active_opacity 1.0; keyword decoration:inactive_opacity 1.0"
+    hyprctl eval 'hl.config({ decoration = { active_opacity = 1.0, inactive_opacity = 1.0 } })'
     notify-send "Hyprland" "Opacity: Solid 1.0"
 fi
