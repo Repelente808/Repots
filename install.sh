@@ -31,7 +31,6 @@ PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     brightnessctl
     ffmpegthumbnailer
     wtype
-    ddcutil
     gnome-themes-extra
     speech-dispatcher
     starship
@@ -234,8 +233,20 @@ else
     echo "Okay, skipping!!"
 fi
 clear
+
+echo -n "Want to install and enable ddcutil? (make you capable of changing brightness on hdmi/dp monitors directly through the system, dont do if you're in a laptop) (y/n): "
+read -r brightnessUtl
+
+if [[ "$brightnessUtl" =~ ^[Yy]$ ]]; then
+    echo "Installing..."
+sudo pacman -S --noconfirm ddcutil
 sudo modprobe i2c-dev
 sudo usermod -aG i2c $USER
+else
+    echo "Okay, skipping!!"
+fi
+clear
+
 rm -rf ~/.config/optionals
 echo "Instalation done!"
 echo "Now the system will return to your login manager, just login again! (do a reboot to make sure everything works)"
