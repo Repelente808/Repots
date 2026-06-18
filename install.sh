@@ -119,6 +119,7 @@ EOF
 
 echo "Starting pacman package installation..."
 sudo pacman -Syu --needed --noconfirm $PACKETS_PACMAN
+clear
 sudo pacman -S  pipewire-pulse
 
 PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
@@ -195,7 +196,7 @@ if [[ "$OptionalPackage" =~ ^[Yy]$ ]]; then
 else
     echo "Okay, skipping!!"
 fi
-
+clear
 echo -n "Want to remove some package? (Firefox and Dolphin (kde file explorer)) (y/n): "
 read -r RemoveOptionalPackage
 
@@ -206,7 +207,7 @@ sudo pacman -Rs  --noconfirm firefox
 else
     echo "Okay, skipping!!"
 fi
-
+clear
 echo -n "make keyboard layout abnt2? (ignore, just press n, its just me being lazy in INSANE LEVELS) (y/n): "
 read -r ChangeKbLayout
 
@@ -218,7 +219,7 @@ cp ~/.config/optionals/ABNT2Kb/input.lua ~/.config/hypr/
 else
     echo "Okay, skipping!! put your kb layout in   ~/.config/hypr/input.lua"
 fi
-
+clear
 echo -n "Want to install and enable split-monitor-workspaces plugin ? (Only type Y if you have multiple monitors in your setup, and before, search what it actually do) (y/n): "
 read -r SplitMW
 
@@ -232,7 +233,7 @@ cp ~/.config/optionals/DualMonitors/hyprland.lua ~/.config/hypr/
 else
     echo "Okay, skipping!!"
 fi
-
+clear
 sudo modprobe i2c-dev
 sudo usermod -aG i2c $USER
 rm -rf ~/.config/optionals
