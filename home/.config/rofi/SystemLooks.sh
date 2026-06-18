@@ -1,13 +1,16 @@
 #! /bin/bash
 
-option=$(printf " Change Font\n󰗘 Disable Animations\n󰗌 Change Opacity\n Change SwayNC Position\n Rofi Theme 1 Wpp\n Rofi Theme 2 Dyn" | rofi -dmenu -p " " -theme "~/.config/rofi/themes/rounded-gray-dark.rasi")
+option=$(printf " Change Font\n󰗘 Animations toggle\n󰗌 Blur toggle\n󰗌 Change Opacity\n Change SwayNC Position\n Rofi Theme 1 Wpp\n Rofi Theme 2 Dyn" | rofi -dmenu -p " " -theme "~/.config/rofi/themes/rounded-gray-dark.rasi")
 
 case "$option" in
     " Change Font")
 	 bash $HOME/.config/hypr/scripts/fontchange.sh
         ;;
-    "󰗘 Disable Animations")
+    "󰗘 Animations toggle")
          bash $HOME/.config/hypr/scripts/disableanimations.sh
+        ;;
+    "󰗌 Blur toggle")
+         bash $HOME/.config/hypr/scripts/DisableBlur.sh
         ;;
     "󰗌 Change Opacity")
          bash $HOME/.config/hypr/scripts/changeopacity.sh
