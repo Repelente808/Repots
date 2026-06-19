@@ -12,7 +12,7 @@ This dots isn't fully my creation, i grab a bunch of code of people and changed 
 
 Only avaiable for Arch-based distros using hyprland, can be installed in other distros, but youll need to download manually each app.
 
-after the warning tab, there's a preview tab with more images of the desktop, take a look! 
+there's a preview tab with more images of the desktop, take a look! 
 
 btw, sorry for the long preview video, i'm a bit slow and dont know well how to do all that XD
 
@@ -20,7 +20,9 @@ btw, sorry for the long preview video, i'm a bit slow and dont know well how to 
 
 Just put these commands in terminal and go clicking enter, there's a prompt to change to pipewire pulse, if you want or not, just follow what is on the screen
 
-if you are on nvidia, install drivers first, if you dont do it, it will give you multiple errors
+In the recent update, i added some questions during the instalation, read and select what do you desire!
+
+if you are on nvidia, install drivers first, if you dont do it, it will give you multiple errors!!
 ```
 git clone https://github.com/Repelente808/Repots.git /tmp/Repots
 
@@ -30,34 +32,14 @@ cd /tmp/Repots
 ```
 (yeah, it does everything)
 
-take a look at nwg-look to start setting up your system theme!
+take a look at nwg-monitors to set your system highest refresh rate!
 
-Remember to do a reboot to don't get any trouble!
+Remember to do a reboot to don't get into any problems, if it dont work something, try another reboot.
 
 To configure your keyboard layout take a look here ```~/.config/hypr/input.lua```
 
 Put wallpapers in ```~/Wallpapers``` (or change it in ```~/.config/rofi/rofi-wallpaper-picker/swww.sh```)
 
-## Warning
-<details>
-<summary>⚠️ After installing, if some things don't work or look messy, take a look here:</summary>
-
-If wlogout dont popup when pressing the button on waybar, execute this command and try again  ```chmod +x ~/.config/wlogout/wlogout.sh```
-
-Probably the reason for things not working is an error in the instalation of these apps, just try installing them
-  
-```
-yay hyprquickframe
-yay quicksnip
-sudo pacman -S awww
-```
-
-- (these are already installed during the process, but for some reason, for me, in cachyOS, they only work after installing manually)
-- if installed in nvidia without drivers, hyprquickframe, qs overview and quicksnip will not install and give errors (they install quickshell too)
-
--  If you're on a notebook and you get two brightness indicators in waybar, go to ```~/.config/waybar/config.jsonc``` and remove "custom/backlight-desktop"
-
-</details>
   
 ## Preview
 Take a look at each element of the dotfiles!
@@ -113,13 +95,6 @@ Take a look at each element of the dotfiles!
 (outdated image)
 </details>
 
-<details>
-<summary>✨ Animations</summary>
-
-https://github.com/user-attachments/assets/55c49b82-6e48-4386-9d76-e675c95ea452
-
-</details>
-
 ## Binds
 <details>
 <summary>⌨️ Take a look to know how to use the dots!</summary>
@@ -140,8 +115,6 @@ https://github.com/user-attachments/assets/55c49b82-6e48-4386-9d76-e675c95ea452
 - Make window fly - ```Super``` + ```Space```
 - Fullscreen ```Super``` + ```F```
 - Reload Waybar ```Super``` + ```CTRL``` + ```R```
-- Scroll also work in some parts of waybar!
-  
 </details>
 
 ## Suggestions!
@@ -179,6 +152,7 @@ https://github.com/user-attachments/assets/55c49b82-6e48-4386-9d76-e675c95ea452
 - Animations - https://github.com/ViegPhunt/Dotfiles
 - GTK theme - https://aur.archlinux.org/packages/catppuccin-gtk-theme-mocha
 - Nowplaying Rofi - https://github.com/Harsh-bin/rofi-music-control
+- also used tela-circle-black icon theme
 - the packages could be seen in install.sh
   
 </details>
