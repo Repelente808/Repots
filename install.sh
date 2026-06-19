@@ -140,7 +140,7 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
 EOF
 )
 echo "Starting yay package installation..."
-yay -S --needed --noconfirm --nodiffmenu --nocleanmenu --noeditmenu $PACKETS_AUR
+yay -S --needed --noconfirm $PACKETS_AUR
 echo "Installing Momoisay..."
 git clone https://github.com/Mon4sm/Momoisay.git /tmp/Momoisay
 cd /tmp/Momoisay && yes | sudo sh ./install/linux.sh && cd -
@@ -190,7 +190,7 @@ read -r OptionalPackage
 
 if [[ "$OptionalPackage" =~ ^[Yy]$ ]]; then
     echo "Installing some apps..."
-   yay -S --needed --noconfirm --nodiffmenu --nocleanmenu --noeditmenu vscodium-bin zen-browser-bin pear-desktop-bin vesktop-bin
+   yay -S --needed --noconfirm vscodium-bin zen-browser-bin pear-desktop-bin vesktop-bin
 
 else
     echo "Okay, skipping!!"
