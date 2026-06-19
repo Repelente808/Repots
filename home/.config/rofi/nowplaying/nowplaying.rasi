@@ -28,8 +28,8 @@ window {
     enabled:                     true;
     cursor:                      "default";
     background-color:            @background;
-    border:                      2px;
-    border-color:                @selected;
+    border:                      6px;
+    border-color:                rgba(0, 0, 0, 0.2);
     border-radius:               20px;
     padding:                     20px;
 }
