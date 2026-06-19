@@ -1,6 +1,6 @@
 #! /bin/bash
 
-option=$(printf "󰸉  Wallpapers\n󰸉  Hyprlax (Parallax) Toggle\n󰞅  Emoji Picker\n  Screen Recording Toggle\n󰨇  BTOP (System Monitor)\n  System Looks (Simplified)\n  Waybar Styles\n  System Customization" | rofi -dmenu -p " " -theme "~/.config/rofi/themes/rounded-gray-dark.rasi")
+option=$(printf "󰸉  Wallpapers\n󰸉  Hyprlax (Parallax) Toggle\n󰞅  Emoji Picker\n󰨇  BTOP (System Monitor)\n  System Looks (Simplified)\n  Waybar Styles\n  System Customization" | rofi -dmenu -p " " -theme "~/.config/rofi/themes/rounded-gray-dark.rasi")
 
 case "$option" in
     "󰸉  Wallpapers")
@@ -10,10 +10,7 @@ case "$option" in
         rofi -modi emoji -show emoji
         ;;
     "󰸉  Hyprlax (Parallax) Toggle")
-	bash $HOME/.config/hypr/scripts/hyprlaxtog.sh
-	;;
-    "  Screen Recording Toggle")
-       bash $HOME/.config/hypr/scripts/recording.sh
+        bash $HOME/.config/hypr/scripts/hyprlaxtog.sh
         ;;
     "󰨇  BTOP (System Monitor)" )
         kitty btop
@@ -28,4 +25,3 @@ case "$option" in
         bash $HOME/.config/rofi/menuCust.sh
         ;;
 esac
-
