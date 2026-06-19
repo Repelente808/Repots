@@ -71,7 +71,7 @@ middle-wrapper {
 
 album-art {
     enabled:                     true;
-    width:                       204px;
+    width:                       196px;
     height:                      170px;
     background-color:            @background;
     background-image:            url("~/.config/rofi/nowplaying/album_art.png", height); // change this path
