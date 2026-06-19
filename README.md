@@ -128,8 +128,6 @@ Take a look at each element of the dotfiles!
 
 - Grub theme - https://github.com/catppuccin/grub
 
-- QT theme - https://github.com/catppuccin/qt5ct
-
 </details>
 
 ## Credits
