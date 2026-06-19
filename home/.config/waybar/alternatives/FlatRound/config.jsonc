@@ -56,8 +56,7 @@
     "player-icons": {
         "default": "󰽱",
         "mpv": "🎵",
-        "spotify": "",
-        "firefox": ""
+        "spotify": ""
     },
     "max-length": 15,
     "status-icons": {
