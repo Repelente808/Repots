@@ -147,7 +147,6 @@ Take a look at each element of the dotfiles!
 - Starship and Animations - https://github.com/end-4/dots-hyprland
 - Miku image - https://pt.pinterest.com/pin/737675613997663987/ (idk the original creator)
 - Teto image - https://open.spotify.com/intl-pt/track/4SAhUJaWyiOgLgZq31DyGK (idk the original creator)
-- Animations - https://github.com/ViegPhunt/Dotfiles
 - GTK theme - https://aur.archlinux.org/packages/catppuccin-gtk-theme-mocha
 - Nowplaying Rofi - https://github.com/Harsh-bin/rofi-music-control
 - also used tela-circle-black icon theme
