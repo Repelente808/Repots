@@ -250,5 +250,5 @@ clear
 rm -rf ~/.config/optionals
 echo "Instalation done!"
 echo "Now the system will return to your login manager, just login again! (do a reboot to make sure everything works)"
-sleep 15
+sleep 8
 loginctl kill-session $XDG_SESSION_ID
