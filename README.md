@@ -1,5 +1,3 @@
-<h1 align="center">Repots-Dots</h1>
-
 <img width="1920" height="1080" alt="New Project" src="https://github.com/user-attachments/assets/b20b405d-eed7-4497-b428-339d7ebd67cc" />
 
 
