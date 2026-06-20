@@ -77,3 +77,9 @@ hl.layer_rule({
     },
     animation = "slide right"
 })
+hl.layer_rule({
+    match = {
+        namespace = "^waybar.*$"
+    },
+    animation = "slide top"
+})
