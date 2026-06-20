@@ -56,6 +56,7 @@ Take a look at each element of the dotfiles!
 <summary>⚙️ Custom Rofi Menus</summary>
 <img width="1920" height="1080" alt="RofiMenus" src="https://github.com/user-attachments/assets/3818bcf9-0bbb-474d-8f1a-3407553c72e0" />
 New Change Font button! change between Google Sans and Pixel Code!
+  
 Two Rofi Styles to select and a button to change SwayNC location!
 </details>
   
