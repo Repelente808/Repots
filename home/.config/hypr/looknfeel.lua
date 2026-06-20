@@ -74,7 +74,7 @@ hl.curve("expressiveDefaultSpatial", {
 })
 hl.curve("emphasizedDecel", {
     type = "bezier",
-    points = {{0.05, 0.7}, {0.1, 1}}
+    points = {{0.05, 0.9}, {0.1, 1}}
 })
 hl.curve("emphasizedAccel", {
     type = "bezier",
@@ -117,9 +117,9 @@ hl.animation({
 hl.animation({
     leaf = "windowsOut",
     enabled = true,
-    speed = 2,
-    bezier = "emphasizedDecel",
-    style = "popin 90%"
+    speed = 16,
+    bezier = "expressiveDefaultSpatial",
+    style = "slide bottom"
 })
 hl.animation({
     leaf = "fadeOut",
