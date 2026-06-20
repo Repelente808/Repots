@@ -65,3 +65,15 @@ hl.window_rule({
     size = { 512, 288 },
     move = { 1400, 780 },
 })
+hl.layer_rule({
+    match = {
+        namespace = "^rofi.*$"
+    },
+    animation = "slide bottom"
+})
+hl.layer_rule({
+    match = {
+        namespace = "^swaync.*$"
+    },
+    animation = "slide right"
+})
