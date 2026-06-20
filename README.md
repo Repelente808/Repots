@@ -80,6 +80,7 @@ Two Rofi Styles to select and a button to change SwayNC location!
 <details>
 <summary>🔓 Lock Screen (Hyprlock)</summary>
 <img width="1920" height="1080" alt="HyprLock" src="https://github.com/user-attachments/assets/372592a2-7bbc-4cf9-a18e-d3c84f18637f" />
+i'm not updating this image, but now it follows the current system font (Pixel Code or Google Sans)
 </details>
 
 <details>
