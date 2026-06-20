@@ -47,40 +47,33 @@ Take a look at each element of the dotfiles!
 
 <details>
 <summary>🔎 Search Bar (Rofi)</summary>
-<img width="1920" height="1080" alt="Rofi(1)" src="https://github.com/user-attachments/assets/7fa56252-dcc9-42f1-8f02-63ac03fd70ec" />
+<img width="1920" height="1080" alt="Rofi Update" src="https://github.com/user-attachments/assets/3ce84b5f-1b3a-4e79-b4a3-35d312579d2f" />
 
-(outdated image)
-  
 </details>
 
 
 <details>
-<summary>⚙️Options menu and Wallpaper picker (Rofi)</summary>
-<img width="1920" height="1080" alt="Menu N Wallpapers" src="https://github.com/user-attachments/assets/d0496689-46e6-4fe9-84c3-dc776c912e21" />
-
-(outdated image)
-
+<summary>⚙️ Custom Rofi Menus</summary>
+<img width="1920" height="1080" alt="RofiMenus" src="https://github.com/user-attachments/assets/3818bcf9-0bbb-474d-8f1a-3407553c72e0" />
+New Change Font button! change between Google Sans and Pixel Code!
+Two Rofi Styles to select and a button to change SwayNC location!
 </details>
   
 <details>
 <summary>🔌 Power Options (WLogout)</summary>
-<img width="1920" height="1080" alt="Wlogout" src="https://github.com/user-attachments/assets/3b667bfd-2213-4fe8-ae99-b932f20a4843" />
+<img width="1920" height="1080" alt="Wlogout" src="https://github.com/user-attachments/assets/eb0a37f5-9060-4521-b8b6-a36c9db88f4e" />
 
-(outdated image)
 </details>
 
 <details>
 <summary>🔔 Notifications/Control Center (SwayNC)</summary>
-<img width="1920" height="1080" alt="SwayNC" src="https://github.com/user-attachments/assets/e17a530f-0bd6-463b-9288-31fb04fa83a5" />
+<img width="1920" height="1080" alt="SwayNC" src="https://github.com/user-attachments/assets/aacdfdd9-2cf5-421b-981a-d838c746e9f5" />
 
-(outdated image, slightly changes)
 </details>
 
 <details>
 <summary>🧭 Topbar (Waybar)</summary>
-<img width="1920" height="1080" alt="Waybar" src="https://github.com/user-attachments/assets/c73bc11f-634b-46d6-a978-2196ffc3d2ca" />
-  
-(outdated image)
+<img width="1920" height="1080" alt="Waybar" src="https://github.com/user-attachments/assets/6f3f0989-cf60-45ed-835e-464d313bebc8" />
 </details>
 
 <details>
@@ -90,9 +83,7 @@ Take a look at each element of the dotfiles!
 
 <details>
 <summary>🤓 Terminal (Kitty W/Fish and starship)</summary>
-<img width="1920" height="1080" alt="Terminal" src="https://github.com/user-attachments/assets/4ffec473-aa55-4e80-9d09-b6d72552a6b9" /> 
-
-(outdated image)
+<img width="1920" height="1080" alt="Terminal" src="https://github.com/user-attachments/assets/70c09be3-ba05-4bd2-8c91-e7bc0d55c75d" />
 </details>
 
 ## Binds
