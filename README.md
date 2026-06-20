@@ -77,15 +77,17 @@ Two Rofi Styles to select and a button to change SwayNC location!
 <img width="1920" height="1080" alt="Waybar" src="https://github.com/user-attachments/assets/6f3f0989-cf60-45ed-835e-464d313bebc8" />
 </details>
 
-<details>
-<summary>🔓 Lock Screen (Hyprlock)</summary>
-<img width="1920" height="1080" alt="HyprLock" src="https://github.com/user-attachments/assets/372592a2-7bbc-4cf9-a18e-d3c84f18637f" />
-i'm not updating this image, but now it follows the current system font (Pixel Code or Google Sans)
-</details>
 
 <details>
 <summary>🤓 Terminal (Kitty W/Fish and starship)</summary>
 <img width="1920" height="1080" alt="Terminal" src="https://github.com/user-attachments/assets/70c09be3-ba05-4bd2-8c91-e7bc0d55c75d" />
+</details>
+
+
+<details>
+<summary>🔓 Lock Screen (Hyprlock)</summary>
+<img width="1920" height="1080" alt="HyprLock" src="https://github.com/user-attachments/assets/372592a2-7bbc-4cf9-a18e-d3c84f18637f" />
+i'm not updating this image, but now it follows the current system font (Pixel Code or Google Sans)
 </details>
 
 ## Binds
