@@ -1,10 +1,10 @@
 <h1 align="center">Repots-Dots</h1>
 
-https://github.com/user-attachments/assets/8f53a0fb-aab2-48ca-8838-0874a4ac2309
+
+https://github.com/user-attachments/assets/321bf0a4-a24c-4ad3-a119-5fb5db8b7e69
+
 
 [Better quality preview ](https://youtu.be/957y6OU14dY) (its not the same video, but show the same things)
-
-(those previews are outdated)
 
 The Repo for my hyprland dots, includes an script to automatically install everything!
 
