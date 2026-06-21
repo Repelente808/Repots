@@ -131,13 +131,27 @@ hl.animation({
     speed = 10,
     bezier = "emphasizedDecel"
 })
-
 -- layers
+
 hl.animation({
-    leaf = "layers",
+    leaf = "layersIn",
     enabled = true,
     speed = 2.7,
-    bezier = "ease",
+    bezier = "emphasizedDecel",
+    style = "slide"
+})
+hl.animation({
+    leaf = "layersOut",
+    enabled = true,
+    speed = 2.4,
+    bezier = "menu_accel",
+    style = "popin 94%"
+})
+hl.animation({
+    leaf = "fadeLayersIn",
+    enabled = false,
+    speed = 1,
+    bezier = "overshot",
     style = "gnomed"
 })
 -- workspaces
