@@ -4,7 +4,7 @@
 https://github.com/user-attachments/assets/321bf0a4-a24c-4ad3-a119-5fb5db8b7e69
 
 
-[Better quality preview ](https://youtu.be/pCixawp8YvA) (its not the same video, but show the same things)
+[Better quality preview ](https://youtu.be/pCixawp8YvA) (its not the same video, but show the same things and a bit more)
 
 The Repo for my hyprland dots, includes an script to automatically install everything!
 
