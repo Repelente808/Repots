@@ -36,6 +36,7 @@ hl.config({
         -- Change transparency of focused and unfocused windows
         active_opacity = 0.90,
         inactive_opacity = 0.85,
+        dim_special = 0.7, 
         shadow = {
             enabled = true,
             range = 4,
@@ -45,6 +46,7 @@ hl.config({
         -- https://wiki.hypr.land/Configuring/Variables/#blur
         blur = {
             enabled = true,
+            special = true,
             size = 6,
             passes = 2,
             vibrancy = 0.1696,
@@ -100,40 +102,29 @@ hl.curve("ultraFast", {
     type = "bezier",
     points = {{0, 1}, {0, 1}}
 })
+hl.curve( "overshot", { type = "bezier", points = { {0.13, 0.99}, {0.29, 1.05} } } )
+hl.curve( "ease", { type = "bezier", points = { {0.25, 0.1}, {0.25, 1} } } )
 -- windows
 hl.animation({
-    leaf = "windowsIn",
+    leaf = "windows",
     enabled = true,
     speed = 3,
-    bezier = "emphasizedDecel",
-    style = "popin 80%"
-})
-hl.animation({
-    leaf = "fadeIn",
-    enabled = true,
-    speed = 3,
-    bezier = "emphasizedDecel"
+    bezier = "overshot",
+    style = "gnomed"
 })
 hl.animation({
     leaf = "windowsOut",
     enabled = true,
-    speed = 16,
-    bezier = "expressiveDefaultSpatial",
+    speed = 3,
+    bezier = "ease",
     style = "slide bottom"
-})
-hl.animation({
-    leaf = "fadeOut",
-    enabled = true,
-    speed = 2,
-    bezier = "emphasizedDecel"
 })
 hl.animation({
     leaf = "windowsMove",
     enabled = true,
     speed = 3,
-    bezier = "emphasizedDecel",
-    style = "slide"
-})
+    bezier = "overshot",
+    style = "slide"})
 hl.animation({
     leaf = "border",
     enabled = true,
@@ -143,31 +134,11 @@ hl.animation({
 
 -- layers
 hl.animation({
-    leaf = "layersIn",
+    leaf = "layers",
     enabled = true,
     speed = 2.7,
-    bezier = "emphasizedDecel",
-    style = "popin 93%"
-})
-hl.animation({
-    leaf = "layersOut",
-    enabled = true,
-    speed = 2.4,
-    bezier = "menu_accel",
-    style = "popin 94%"
-})
--- fade
-hl.animation({
-    leaf = "fadeLayersIn",
-    enabled = true,
-    speed = 0.5,
-    bezier = "menu_decel"
-})
-hl.animation({
-    leaf = "fadeLayersOut",
-    enabled = true,
-    speed = 2.7,
-    bezier = "stall"
+    bezier = "ease",
+    style = "gnomed"
 })
 -- workspaces
 hl.animation({
@@ -183,7 +154,7 @@ hl.animation({
     enabled = true,
     speed = 2.8,
     bezier = "emphasizedDecel",
-    style = "slidevert"
+    style = "slide top"
 })
 hl.animation({
     leaf = "specialWorkspaceOut",
