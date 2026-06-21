@@ -145,7 +145,7 @@ hl.animation({
     enabled = true,
     speed = 2.4,
     bezier = "menu_accel",
-    style = "popin 94%"
+    style = "slide"
 })
 hl.animation({
     leaf = "fadeLayersIn",
