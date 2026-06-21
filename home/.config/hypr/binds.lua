@@ -39,6 +39,10 @@ hl.bind("SUPER + SHIFT" .. " + " .. "S", hl.dsp.exec_cmd("quickshell -c HyprQuic
 
 hl.bind("Print", hl.dsp.exec_cmd("grimblast copy output"))
 
+hl.bind("SUPER + D", hl.dsp.workspace.toggle_special("QuickApps"))
+
+hl.bind("SUPER + SHIFT + D", hl.dsp.window.move({ workspace = "special:QuickApps" }))
+
 hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "T", hl.dsp.exec_cmd("quickshell -c QuickSnip -n"))
 
 hl.bind("SUPER" .. " + " .. "SUPER_L", hl.dsp.exec_cmd("(pkill rofi && pw-play --volume=0.2 ~/.config/swaync/roficlose.wav) || (pw-play --volume=0.2 ~/.config/swaync/rofiopen.wav & rofi -show drun -show-icons)"), { repeating = true })
