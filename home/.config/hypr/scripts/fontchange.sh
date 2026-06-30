@@ -20,7 +20,11 @@ SWAYNC_FILES=(
     "$HOME/.config/swaync/themes/nova-dark/central_control.css"
     "$HOME/.config/swaync/themes/nova-dark/notifications.css"
 )
-ROFI_CONFIG="$HOME/.config/rofi/themes/template/rounded-template.rasi"
+ROFI_CONFIG=(
+    "$HOME/.config/rofi/themes/template/rounded-template.rasi"
+    "$HOME/.config/rofi/variants/withoutwallpaper/rounded-template.rasi"
+    "$HOME/.config/rofi/variants/withwallpaper/rounded-template.rasi"    
+)
 HYPRLOCK_CONF="$HOME/.config/hypr/hyprlock.conf"
 WLOGOUT_CSS="$HOME/.config/wlogout/style.css"
 
@@ -51,9 +55,9 @@ for file in "${SWAYNC_FILES[@]}"; do
 done
 swaync-client -R && swaync-client -rs
 
-if [ -f "$ROFI_CONFIG" ]; then
-    sed -i "s/font:.*;/font: \"$NEW_FONT $SIZE\";/" "$ROFI_CONFIG"
-fi
+for config in "${ROFI_CONFIG[@]}"; do
+    sed -i "s/font:.*;/font: \"$NEW_FONT $SIZE\";/" "$config"
+done
 
 if [ -f "$KITTY_CONF" ]; then
     sed -i "s/^font_family .*/font_family $NEW_FONT/" "$KITTY_CONF"
