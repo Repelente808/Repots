@@ -2,6 +2,7 @@
   "layer": "top",
   "position": "top",
   "margin-top": 13,
+  "height": 45,
   "modules-left": ["custom/archicon", "clock","mpris","custom/recorder"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["tray", "custom/backlight-desktop","backlight", "pulseaudio#microphone", "pulseaudio", "battery", "network","custom/swaync", "custom/power"],
@@ -158,7 +159,7 @@
       "urgent": "󰀨",
       "active": "󰮯",
       "default": "",	
-      "empty": ""
+      "empty": "󱙝"
     },
     "sort-by-number": true
   },

@@ -4,7 +4,7 @@
     font-family: "Google Sans";
     font-weight:  Bold;
     font-size: 14px;
-    min-height: 40px;
+    min-height: 28px;
     border-radius: 10px;
 }
 
@@ -12,7 +12,7 @@
 #custom-archicon {
     background-color: @on_secondary_fixed_variant;
     color: @inverse_on_surface;
-    margin: 5 5px  5px;
+    margin: 0 5px 0 5px;
     padding: 0 10px 0 10px;
     border-radius: 10px;
    min-width: 40px;
@@ -20,24 +20,24 @@
 #custom-recorder {
    background-color: @surface_container;
    color: @primary_fixed_dim;
-    margin: 0 5px 5 5px;
-    border-radius: 10px;
+    margin: 0 0px 0 5px;
+    border-radius: 11px;
     padding: 0 10px 0 10px;
    min-width: 40px;
 }
 #tray {
     background-color: @on_secondary_fixed_variant;
-    color: @inverse_on_surface;
-    margin:  5px  5px;
+    color: @secondary_fixed_dim;
+    margin: 0 5px 0 5px;
     padding: 0 10px;
-    border-radius: 10px;
+    border-radius: 11px;
 }
 #window {
     background-color: @background;
     color: @color2;
     margin: 0 5px 0 0px;
     padding: 0 10px;
-    min-width: 40px;
+    min-width: 0px;
 }
 window#waybar.empty #window {
     background-color: transparent;
@@ -48,7 +48,7 @@ window#waybar.empty #window {
     background-color: @surface_container;	
     font-size: 14px;
     padding: 0 10px;
-    margin: 0 5px 5 5px;
+    margin: 0 0px 0 5px;
     color: @secondary_fixed_dim;
 }
 
@@ -69,7 +69,7 @@ window#waybar.empty #window {
     margin: 0 5px 0 5px;
     border-radius: 10px;
     font-size: 14px;
-}
+}	
 mpris#waybar.empty #mpris {
     background-color: transparent;
     color: transparent;
@@ -88,13 +88,13 @@ window#waybar {
                     alpha(@primary_fixed_dim, 0.7),
                     alpha(@secondary_fixed_dim, 0.5),
                     alpha(@tertiary_fixed_dim, 0.3));
-    color: @secondary_fixed_dim;
-    padding: 5 5px;
-    margin: 10 0px 5 10px;
     border-radius: 11px;
-    min-width: 40px;
-    margin: 0 5px 0 5px;
-    transition: background 0.25s ease, color 0.25s ease;
+    border: none;
+    color: @secondary_fixed_dim;
+    padding: 0 15px;
+    margin: 5px 2px;
+    min-width: 20px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 tooltip {
     background: @surface_container;
@@ -105,26 +105,27 @@ tooltip {
 tooltip label {
     padding: 10px;
 }
+
 #workspaces button {
     color: @secondary_fixed_dim;
-    margin: 5px 5px;
-    padding: 0 0px;
-    transition: background 0.25s ease, color 0.25s ease;
+    margin: 5px 0px;
+    padding: 0 5px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #workspaces {
     background-color: @surface_container;
-    padding: 0 0px;
+    padding: 0 5px;
     border-radius: 11px;
-    margin: 5px 5px;
+    margin: 0;
 }
 
 .modules-left {
-    margin-left: 0px;    
+    margin-left: 12px;    
 }
 
 .modules-right {
-    margin-right: 0px;    
+    margin-right: 12px;    
 }
 #custom-backlight-desktop,
 #custom-swaync, 
@@ -135,19 +136,27 @@ tooltip label {
 #custom-power{
     color: @primary_fixed_dim;
     background-color: @surface_container;
-    margin: 5 5px 5 5px;
-    border-radius: 11;
-    padding: 5 15px 5 15px;
+    margin: 0px 0px;
+    border-radius: 0;
+    padding: 0 15px 0 15px;
     border: 0px solid @color10;
 }
 
 #backlight,
+#custom-backlight-desktop {
+    border-radius: 11px 0 0 11px;
+    margin-left: 5px;
+}
+
+#custom-power {
+    border-radius: 0px 11 11 0px;
+    margin-right: 5px;
+}
 #clock {
     background-color: @surface_container;
     color: @primary_fixed_dim;
-    margin: 5 5px 5 5px;
     font-size: 14px;
-    border-radius: 10px;
+    border-radius: 11px;
     padding: 0 15px 0 15px;
 }
 

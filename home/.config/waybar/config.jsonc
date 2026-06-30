@@ -1,10 +1,13 @@
 {
   "layer": "top",
   "position": "top",
-  "margin-top": 13, 
-  "modules-left": [],
-  "modules-center": [ "clock","custom/recorder","hyprland/workspaces","mpris","custom/backlight-desktop",  "backlight", "battery", "network","custom/swaync", "custom/power"],
-  "modules-right": ["tray"],
+    "margin-top": 10,
+    "margin-left": 15,
+    "margin-right": 15,
+    "height": 45,
+  "modules-left": ["custom/archicon", "clock","mpris","custom/recorder"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["tray", "custom/backlight-desktop","backlight", "pulseaudio#microphone", "pulseaudio", "battery", "network","custom/swaync", "custom/power"],
 "custom/archicon": {
     "format": "",
     "tooltip": false
@@ -17,7 +20,7 @@
     "exec-if": "pgrep wf-recorder",
 },
 "custom/backlight-desktop": {
-    "format": "{icon}  {percentage}",
+    "format": "{icon}  {percentage}%",
     "format-icons": ["󰃞", "󰃟", "󰃠"],
     "exec": "bash -c 'v=$(ddcutil getvcp 10 | grep -oP \"current value =\\s*\\K[0-9]+\"); echo \"{\\\"percentage\\\": ${v:-0}}\"'",
     "return-type": "json",
@@ -33,7 +36,7 @@
     "tooltip": true
 },
 "custom/swaync": {
-    "format": "{icon}",
+    "format": "{} {icon}",
     "return-type": "json",
     "format-icons": {
         "notification": "<span foreground='red'><sup></sup></span>",
@@ -58,7 +61,7 @@
         "mpv": "🎵",
         "spotify": ""
     },
-    "max-length": 15,	
+    "max-length": 15,
     "status-icons": {
         "paused": ""
     },
@@ -82,6 +85,7 @@
     "format-charging": "󰂄  {capacity}%",
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
   },
+
 "clock": {
     "format": "󰥔   {:%H:%M}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
@@ -95,7 +99,6 @@
         }
     }
 },
-
   "pulseaudio": {
     "format": "{icon}   {volume}%",
     "format-bluetooth": "󰂱  {volume}%",
@@ -127,7 +130,7 @@
 
 "network": {
 	"format": "{ifname}",
-	"format-wifi": "{icon}",
+	"format-wifi": "{icon}  {essid}",
 	"format-ethernet": "󰌘",
 	"format-disconnected": "󰌙",
         "on-click": "~/.config/rofi/rofi-wifi-menu.sh",
@@ -141,11 +144,12 @@
 		"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
 	],
 },
+
   "hyprland/workspaces": { 
    "persistent-workspaces": {
      "HDMI-A-1": [1, 2, 3, 4, 5]
-    }, 
-      "ignore-workspaces": [
+    },  
+       "ignore-workspaces": [
         "11", "12", "13", "14", "15",
         "16", "17", "18", "19", "20",
     ],
@@ -157,10 +161,10 @@
       "urgent": "󰀨",
       "active": "󰮯",
       "default": "",	
-      "empty": ""
+      "empty": "󱙝"
     },
     "sort-by-number": true
-  },
+ },
 
   "backlight": {
     "device": "intel_backlight",

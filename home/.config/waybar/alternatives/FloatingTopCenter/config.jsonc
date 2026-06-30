@@ -2,6 +2,7 @@
   "layer": "top",
   "position": "top",
   "margin-top": 13, 
+  "height": 45,
   "modules-left": [],
   "modules-center": [ "clock","custom/recorder","hyprland/workspaces","mpris","custom/backlight-desktop",  "backlight", "battery", "network","custom/swaync", "custom/power"],
   "modules-right": ["tray"],
@@ -157,7 +158,7 @@
       "urgent": "󰀨",
       "active": "󰮯",
       "default": "",	
-      "empty": ""
+      "empty": "󱙝"
     },
     "sort-by-number": true
   },
