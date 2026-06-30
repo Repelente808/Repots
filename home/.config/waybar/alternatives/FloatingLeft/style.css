@@ -1,11 +1,11 @@
 @import "colors.css";
 
 * {
-    font-family: "Pixel Code";
+    font-family: "Google Sans";
     font-weight:  Bold;
     font-size: 14px;
     min-height: 40px;
-    border-radius: 0px;
+    border-radius: 10px;
 }
 
 
@@ -59,7 +59,6 @@ window#waybar.empty #window {
 #custom-power {
     background-color: @surface_container;
     color: @primary_fixed_dim;
-    font-size: 14px;
     margin: 0 0px 0 5px;
     padding: 0 15px 0 15px;
 }
@@ -90,7 +89,7 @@ window#waybar {
                     alpha(@secondary_fixed_dim, 0.5),
                     alpha(@tertiary_fixed_dim, 0.3));
     color: @secondary_fixed_dim;
-    padding: 10 0px;
+    padding: 5 0px;
     border-radius: 11px;
     min-width: 40px;
     transition: background 0.25s ease, color 0.25s ease;
@@ -135,7 +134,6 @@ tooltip label {
     color: @primary_fixed_dim;
     background-color: @surface_container;
     margin: 5px 0px;
-    font-size: 14px;
     border-radius: 11;
     padding: 0 15px 0 15px;
     border: 0px solid @color10;

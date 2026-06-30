@@ -1,7 +1,7 @@
 @import "colors.css";
 
 * {
-    font-family: "Pixel Code";
+    font-family: "Google Sans";
     font-weight:  Bold;
     font-size: 14px;
     min-height: 28px;
@@ -56,7 +56,6 @@ window#waybar.empty #window {
 #custom-power {
     background-color: @background;
     color: @primary_fixed_dim;
-    font-size: 14px;
     margin: 0 0px 0 5px;
     padding: 0 15px 0 15px;
 }
@@ -133,7 +132,6 @@ tooltip label {
     color: @primary_fixed_dim;
     background-color: @surface_container;
     margin: 0px 0px;
-    font-size: 14px;
     border-radius: 0;
     padding: 0 15px 0 15px;
     border: 0px solid @color10;
@@ -147,8 +145,7 @@ tooltip label {
 
 #custom-power {
     border-radius: 0px 10 10 0px;
-    margin-right: 5px;
-    font-size: 22px;	
+    margin-right: 5px;	
 }
 #clock {
     background-color: @surface_container;

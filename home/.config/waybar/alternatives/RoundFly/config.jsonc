@@ -66,7 +66,7 @@
 "custom/power": {
     "tooltip-format": "Power Menu",
     "on-click": "~/.config/wlogout/wlogout.sh & pw-play --volume=0.4 ~/.config/swaync/OpenMenu.wav",
-    "format": "⏻"
+    "format": ""
 },
 
   "custom/pacman": {
@@ -84,7 +84,7 @@
   },
 
 "clock": {
-    "format": "󰥔  {:%H:%M}",
+    "format": "󰥔   {:%H:%M}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
         "mode": "month",

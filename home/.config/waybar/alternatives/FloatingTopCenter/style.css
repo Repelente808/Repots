@@ -1,11 +1,11 @@
 @import "colors.css";
 
 * {
-    font-family: "Pixel Code";
+    font-family: "Google Sans";
     font-weight:  Bold;
     font-size: 14px;
     min-height: 28px;
-    border-radius: 0px;
+    border-radius: 33px;
 }
 
 
@@ -28,13 +28,6 @@
     margin: 0 5px 0 5px;
     padding: 0 10px;
 }
-#window {
-    background-color: @background;
-    color: @color2;
-    margin: 0 5px 0 0px;
-    padding: 0 10px;
-    min-width: 0px;
-}
 window#waybar.empty #window {
     background-color: transparent;
     color: transparent;
@@ -55,7 +48,6 @@ window#waybar.empty #window {
 #custom-power {
     background-color: @background;
     color: @primary_fixed_dim;
-    font-size: 14px;
     margin: 0 0px 0 5px;
     padding: 0 15px 0 15px;
 }
@@ -65,6 +57,7 @@ window#waybar.empty #window {
     padding: 0 16;
     color: @secondary_fixed_dim;
     font-size: 14px;
+    border-radius: 0px;
 }
 mpris#waybar.empty #mpris {
     background-color: transparent;
@@ -72,8 +65,7 @@ mpris#waybar.empty #mpris {
 }
 window#waybar {
     background-color: transparent;
-    color: @background;
-    padding: 5 0px;
+    padding: 0 20px 0 10px;
     margin: 0 5px 0 5px;
     min-height: 40px;
 }
@@ -111,6 +103,7 @@ tooltip label {
     background-color: @surface_container;
     padding: 0 5px;
     margin: 0;
+    border-radius: 0px;
 }
 
 .modules-left {
@@ -123,7 +116,6 @@ tooltip label {
 #custom-backlight-desktop,
 #clock,
 #custom-swaync, 
-#workspaces,
 #battery,
 #pulseaudio,
 #backlight,
@@ -132,7 +124,6 @@ tooltip label {
     color: @primary_fixed_dim;
     background-color: @surface_container;
     margin: 0px 0px;
-    font-size: 14px;
     border-radius: 0;
     padding: 0 15px 0 15px;
     border: 0px solid @color10;
@@ -143,8 +134,7 @@ tooltip label {
 }
 #custom-power {
     border-radius: 0px 33 33 0px;
-    margin-right: 5px;
-    font-size: 22px;	
+    margin-right: 5px;	
 }
 #clock {
     border-radius: 33px 0 0 33px;
