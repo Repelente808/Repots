@@ -137,6 +137,7 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     bibata-cursor-theme
     ttf-google-sans
     pipes.sh
+    terminal-rain-lightning
 EOF
 )
 echo "Starting yay package installation..."
