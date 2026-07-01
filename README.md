@@ -74,7 +74,8 @@ Two Rofi Styles to select and a button to change SwayNC location!
 
 <details>
 <summary>🧭 Topbar (Waybar)</summary>
-<img width="1920" height="1080" alt="Waybar" src="https://github.com/user-attachments/assets/6f3f0989-cf60-45ed-835e-464d313bebc8" />
+<img width="1920" height="1080" alt="New Project" src="https://github.com/user-attachments/assets/9a35a3c8-6108-4537-ab0d-bd63f558ec54" />
+
 </details>
 
 
@@ -86,8 +87,7 @@ Two Rofi Styles to select and a button to change SwayNC location!
 
 <details>
 <summary>🔓 Lock Screen (Hyprlock)</summary>
-<img width="1920" height="1080" alt="HyprLock" src="https://github.com/user-attachments/assets/372592a2-7bbc-4cf9-a18e-d3c84f18637f" />
-i'm not updating this image, but now it follows the current system font (Pixel Code or Google Sans)
+<img width="1920" height="1080" alt="New Project(1)" src="https://github.com/user-attachments/assets/109eba33-3e84-485a-96f5-d464f54101ab" />
 </details>
 
 ## Binds
