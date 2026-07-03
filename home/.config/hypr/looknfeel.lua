@@ -11,18 +11,20 @@
 
 -- https://wiki.hypr.land/Configuring/Variables/#general
 
+local matugen_colors = require("colors")
+
 hl.config({
     general = {
         gaps_in = 3,
         gaps_out = 12,
-        border_size = 0,
+        border_size = 3,
         -- Set to true enable resizing windows by clicking and dragging on borders and gaps
         resize_on_border = false,
         -- Please see https://wiki.hypr.land/Configuring/Tearing/ before you turn this on
         allow_tearing = false,
         layout = "dwindle",
         col = {
-            inactive_border = background,
+            active_border = matugen_colors.primary,
         },
     },
 })
