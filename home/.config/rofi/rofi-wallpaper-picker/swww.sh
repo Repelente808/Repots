@@ -22,11 +22,10 @@ while IFS= read -r WALLPAPER_PATH; do
 done <<<"$WALLPAPER_FILES"
 
 SELECTED_WALLPAPER=$(echo -e "$ROFI_MENU" | rofi -dmenu \
-  -display-dmenu "WALLPAPERS"
- -p "Select:" \
+  -display-dmenu "WALLPAPERS" \
+  -p "Select:" \
   -show-icons \
   -markup-rows)
-
 
 SELECTED_WALLPAPER_NAME=$(echo "$SELECTED_WALLPAPER" | sed 's/ (current)//')
 
@@ -35,10 +34,33 @@ if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
 
   FULL_PATH=$(find "$WALLPAPER_DIR" -name "$SELECTED_WALLPAPER_NAME" -print -quit)
 
- 
-  pw-play --volume=0.2 ~/.config/swaync/swww.wav &
+  MONITOR_LIST=$(hyprctl monitors -j | jq -r '.[] | .name')
+  MONITOR_COUNT=$(echo "$MONITOR_LIST" | wc -l)
+
+  if [ "$MONITOR_COUNT" -eq 1 ]; then
+    SELECTED_MONITOR="$MONITOR_LIST"
+  else
+    ROFI_MONITOR_MENU="ALL\n$MONITOR_LIST"
+    SELECTED_MONITOR=$(echo -e "$ROFI_MONITOR_MENU" | rofi -dmenu \
+      -display-dmenu "MONITORS" \
+      -p "Apply to:" \
+      -lines 4)
+
+    if [[ -z "$SELECTED_MONITOR" ]]; then
+      exit 0
+    fi
+  fi
+
+  if [[ "$SELECTED_MONITOR" == "ALL" ]]; then
+    OUTPUT_ARG=""
+  else
+    OUTPUT_ARG="-o $SELECTED_MONITOR"
+  fi
+  
   matugen image "$FULL_PATH" -m dark --source-color-index 0 --type scheme-content
-  awww img "$FULL_PATH" -o $(hyprctl monitors -j | jq -r '.[] | select(.focused == true) | .name') --transition-type outer --transition-duration 1.2 --transition-fps 144 --transition-pos $(awk 'BEGIN {srand(); printf "%.2f,%.2f\n", rand(), rand()}')
+  
+  awww img "$FULL_PATH" $OUTPUT_ARG --transition-type outer --transition-duration 1.2 --transition-fps 144 --transition-pos $(awk 'BEGIN {srand(); printf "%.2f,%.2f\n", rand(), rand()}')
+  
   cp "$FULL_PATH" "$HOME/.config/hypr/hyprlock_assets/current_wallpaper.jpg"
   swaync-client -R && swaync-client -rs
   cp ~/.cache/wal/cava-config ~/.config/cava/config
