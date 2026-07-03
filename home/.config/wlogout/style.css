@@ -2,7 +2,7 @@
 * {
     background-image: none;
     font-size: 16pt;
-    font-family: "Pixel Code";
+    font-family: "Google Sans";
 }
 
 window {
@@ -23,11 +23,11 @@ button {
     background-position: center;
     box-shadow: 0 0 10px 2px transparent;
     text-shadow: none;
-    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);    
 }
 
 button label {
-    font-family: "Pixel Code";
+    font-family: "Google Sans";
     font-size: 18px;
     color: transparent;
     opacity: 0;
@@ -43,7 +43,7 @@ button:hover,button:focus {
     background-color: @primary;
     background-size: 40%;
     animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button span {
