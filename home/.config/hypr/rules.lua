@@ -83,3 +83,7 @@ hl.layer_rule({
     },
     animation = "slide top"
 })
+hl.window_rule({
+    match = { class = "kitty" },
+    opacity = "0.7 0.7"
+})
