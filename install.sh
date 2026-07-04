@@ -182,8 +182,6 @@ chmod +x "$HOME/.config/rofi/nowplaying/nowplaying.sh"
 mkdir ~/Wallpapers
 mkdir ~/Recordings
 unzip ~/.icons/Tela-circle-black.zip -d ~/.icons
-sleep 5
-rm ~/.icons/Tela-circle-black.zip
 clear
 
 echo -n "Want to install optional package? (zen-browser, vesktop, youtube music, and vscodium) (y/n): "
