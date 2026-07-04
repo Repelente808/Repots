@@ -250,7 +250,7 @@ clear
 echo "now the installer will try to reinstall all the packages again to prevent errors!"
 sudo pacman -Syu --needed --noconfirm $PACKETS_PACMAN
 yay -S --needed --noconfirm $PACKETS_AUR
-
+clear
 rm -rf ~/.config/optionals
 echo "Instalation done!"
 echo "Now the system will return to your login manager, just login again! (do a reboot to make sure everything works)"
