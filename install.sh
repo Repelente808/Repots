@@ -247,6 +247,9 @@ else
     echo "Okay, skipping!!"
 fi
 clear
+echo "now the installer will try to reinstall all the packages again to prevent errors!"
+sudo pacman -Syu --needed --noconfirm $PACKETS_PACMAN
+yay -S --needed --noconfirm $PACKETS_AUR
 
 rm -rf ~/.config/optionals
 echo "Instalation done!"
