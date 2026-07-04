@@ -181,7 +181,6 @@ chmod +x "$HOME/.config/rofi/WaybarStyle.sh"
 chmod +x "$HOME/.config/rofi/nowplaying/nowplaying.sh"
 mkdir ~/Wallpapers
 mkdir ~/Recordings
-unzip ~/.icons/Tela-circle-black.zip -d ~/.icons
 clear
 
 echo -n "Want to install optional package? (zen-browser, vesktop, youtube music, and vscodium) (y/n): "
@@ -250,6 +249,7 @@ clear
 echo "now the installer will try to reinstall all the packages again to prevent errors!"
 sudo pacman -Syu --needed --noconfirm $PACKETS_PACMAN
 yay -S --needed --noconfirm $PACKETS_AUR
+unzip ~/.icons/Tela-circle-black.zip -d ~/.icons
 clear
 rm -rf ~/.config/optionals
 echo "Instalation done!"
