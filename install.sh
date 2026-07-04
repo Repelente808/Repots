@@ -146,16 +146,6 @@ echo "Installing Momoisay..."
 git clone https://github.com/Mon4sm/Momoisay.git /tmp/Momoisay
 cd /tmp/Momoisay && yes | sudo sh ./install/linux.sh && cd -
 rm -rf /tmp/Momoisay
-echo "Installing PixelCode font..."
-D="$HOME/.local/share/fonts/PixelCode" && \
-mkdir -p "$D" && \
-TMP=$(mktemp -d) && \
-curl -sL $(curl -sL https://api.github.com/repos/qwerasd205/PixelCode/releases/latest \
-  | grep "browser_download_url.*zip" | head -n1 | cut -d '"' -f4) -o "$TMP/pixelcode.zip" && \
-unzip -q "$TMP/pixelcode.zip" -d "$TMP/pc" && \
-find "$TMP/pc" -type f \( -iname "*.otf" -o -iname "*.ttf" \) -exec cp {} "$D/" \; && \
-rm -rf "$TMP" && \
-fc-cache -f
 echo "Installing Repots..."
 cp -rf home/* home/.[!.]* home/..?* "$HOME/"
 chmod +x "$HOME/.config/waybar/alternatives/FloatingTopCenter/FloatingTopCenter.sh"
@@ -250,6 +240,16 @@ echo "now the installer will try to reinstall all the packages again to prevent 
 sudo pacman -Syu --needed --noconfirm $PACKETS_PACMAN
 yay -S --needed --noconfirm $PACKETS_AUR
 unzip ~/.icons/Tela-circle-black.zip -d ~/.icons
+echo "Installing PixelCode font..."
+D="$HOME/.local/share/fonts/PixelCode" && \
+mkdir -p "$D" && \
+TMP=$(mktemp -d) && \
+curl -sL $(curl -sL https://api.github.com/repos/qwerasd205/PixelCode/releases/latest \
+  | grep "browser_download_url.*zip" | head -n1 | cut -d '"' -f4) -o "$TMP/pixelcode.zip" && \
+unzip -q "$TMP/pixelcode.zip" -d "$TMP/pc" && \
+find "$TMP/pc" -type f \( -iname "*.otf" -o -iname "*.ttf" \) -exec cp {} "$D/" \; && \
+rm -rf "$TMP" && \
+fc-cache -f
 clear
 rm -rf ~/.config/optionals
 echo "Instalation done!"
