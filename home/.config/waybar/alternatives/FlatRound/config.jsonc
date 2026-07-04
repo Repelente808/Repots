@@ -9,7 +9,7 @@
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["tray", "custom/backlight-desktop","backlight", "pulseaudio#microphone", "pulseaudio", "battery", "network","custom/swaync", "custom/power"],
 "custom/archicon": {
-    "format": "",
+    "format": "󰮯",
     "tooltip": false
 },
 "custom/recorder": {

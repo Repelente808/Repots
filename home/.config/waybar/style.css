@@ -10,34 +10,23 @@
 
 
 #custom-archicon {
-    background-color: @on_secondary_fixed_variant;
-    color: @inverse_on_surface;
+   background-color: @surface_container;
+   color: @primary_fixed_dim;
     margin: 0 5px 0 5px;
     padding: 0 10px 0 10px;
-    border-radius: 33px;
    min-width: 40px;
 }
 #custom-recorder {
    background-color: @surface_container;
    color: @primary_fixed_dim;
-    margin: 0 0px 0 5px;
-    border-radius: 33px;
-    padding: 0 10px 0 10px;
    min-width: 40px;
 }
 #tray {
     background-color: @on_secondary_fixed_variant;
     color: @secondary_fixed_dim;
+    border-radius: 33px 33px;	
     margin: 0 5px 0 5px;
     padding: 0 10px;
-    border-radius: 33px;
-}
-#window {
-    background-color: @background;
-    color: @color2;
-    margin: 0 5px 0 0px;
-    padding: 0 10px;
-    min-width: 0px;
 }
 window#waybar.empty #window {
     background-color: transparent;
@@ -45,7 +34,7 @@ window#waybar.empty #window {
 }
 #custom-backlight-desktop,
 #custom-swaync {
-    background-color: @surface_container;	
+    background-color: @background;	
     font-size: 14px;
     padding: 0 10px;
     margin: 0 0px 0 5px;
@@ -57,29 +46,27 @@ window#waybar.empty #window {
 }
 
 #custom-power {
-    background-color: @surface_container;
+    background-color: @background;
     color: @primary_fixed_dim;
     margin: 0 0px 0 5px;
     padding: 0 15px 0 15px;
 }
 
 #mpris {
-    background-color: @primary;
+    background-color: @surface_container;
     padding: 0 16;
-    color: @inverse_on_surface;
-    margin: 0 5px 0 5px;
-    border-radius: 33px;
+    color: @secondary_fixed_dim;
     font-size: 14px;
+    border-radius: 0px;
 }
 mpris#waybar.empty #mpris {
     background-color: transparent;
     color: transparent;
 }
 window#waybar {
-    background-color: @background;
-    color: @background;
-    padding: 5 0px;
-    margin: 0 0px 0 0px;
+    background-color: transparent;
+    padding: 0 20px 0 10px;
+    margin: 0 5px 0 5px;
     min-height: 40px;
 }
 #workspaces button.active {
@@ -104,7 +91,7 @@ tooltip {
 
 tooltip label {
     padding: 10px;
-}	
+}
 #workspaces button {
     color: @secondary_fixed_dim;
     margin: 5px 0px;
@@ -115,8 +102,8 @@ tooltip label {
 #workspaces {
     background-color: @surface_container;
     padding: 0 5px;
-    border-radius: 33px;
     margin: 0;
+    border-radius: 0px;
 }
 
 .modules-left {
@@ -127,6 +114,7 @@ tooltip label {
     margin-right: 12px;    
 }
 #custom-backlight-desktop,
+#clock,
 #custom-swaync, 
 #battery,
 #pulseaudio,
@@ -143,19 +131,16 @@ tooltip label {
 
 #backlight,
 #custom-backlight-desktop {
-    border-radius: 33px 0 0 33px;
-    margin-left: 5px;
 }
-
 #custom-power {
     border-radius: 0px 33 33 0px;
     margin-right: 5px;	
 }
 #clock {
+    border-radius: 33px 0 0 33px;
     background-color: @surface_container;
     color: @primary_fixed_dim;
     font-size: 14px;
-    border-radius: 33px;
     padding: 0 15px 0 15px;
 }
 
