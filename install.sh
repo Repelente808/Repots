@@ -223,6 +223,7 @@ read -r SplitMW
 
 if [[ "$SplitMW" =~ ^[Yy]$ ]]; then
     echo "Installing..."
+sudo pacman -S cmake
 hyprpm update
 yes | hyprpm add https://github.com/zjeffer/split-monitor-workspaces
 hyprpm enable split-monitor-workspaces
