@@ -2,7 +2,7 @@
   color:            @text;
   all: unset;
   font-size: 14px;
-  font-family: "Pixel Code";
+  font-family: "Google Sans";
   transition: 200ms;
 
 }
