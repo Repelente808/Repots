@@ -228,6 +228,7 @@ yes | hyprpm add https://github.com/zjeffer/split-monitor-workspaces
 hyprpm enable split-monitor-workspaces
 cp ~/.config/optionals/DualMonitors/binds.lua ~/.config/hypr/
 cp ~/.config/optionals/DualMonitors/hyprland.lua ~/.config/hypr/
+hyprpm update
 else
     echo "Okay, skipping!!"
 fi
