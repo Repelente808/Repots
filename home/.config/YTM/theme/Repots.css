@@ -6,18 +6,6 @@
     font-weight: 500 !important;
 }
 
-#progress-bar.ytmusic-player-bar {
-    --paper-slider-active-color: @primary !important;
-    --paper-slider-container-color: @surface_variant !important;
-}
-
-ytmusic-player-bar[enable-cairo-refresh-signature-moments-web] :hover#progress-bar.ytmusic-player-bar,
-ytmusic-player-bar[enable-cairo-refresh-signature-moments-web]:hover #progress-bar.ytmusic-player-bar {
-    --paper-slider-knob-color: @primary !important;
-    --paper-slider-knob-start-color: @primary !important;
-    --paper-slider-active-color: @primary !important;
-}
-
 ytmusic-app {
     --ytmusic-player-bar-background: @surface_container_low !important;
 }
