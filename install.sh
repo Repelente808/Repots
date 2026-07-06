@@ -125,10 +125,8 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     overskride
     hyprlax-bin
     google-breakpad
-    grimblast-git
     hyprshade
     python-imageio-ffmpegs
-    hyprquickframe-git
     matugen-bin
     python-screeninfo
     quicksnip-git
