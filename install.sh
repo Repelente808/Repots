@@ -129,6 +129,7 @@ PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     hyprlax-bin
     google-breakpad
     hyprshade
+    grimblast-git
     python-imageio-ffmpegs
     matugen-bin
     python-screeninfo
