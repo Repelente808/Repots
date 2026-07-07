@@ -35,7 +35,7 @@ hl.bind(mainMod .. " + " .. "C", hl.dsp.exec_cmd("vscodium"))
 
 hl.bind(mainMod .. " + " .. "W", hl.dsp.exec_cmd("zen-browser"))
 
-hl.bind("SUPER + SHIFT" .. " + " .. "S",  hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy'))
+hl.bind("SUPER + SHIFT" .. " + " .. "S",  hl.dsp.exec_cmd('grimblast --freeze copy area'))
 
 hl.bind("Print", hl.dsp.exec_cmd("grimblast copy output"))
 
