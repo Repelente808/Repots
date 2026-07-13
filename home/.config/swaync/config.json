@@ -1,6 +1,6 @@
 	{
   "$schema": "/etc/xdg/swaync/configSchema.json",
-  "positionX": "center",
+  "positionX": "right",
   "positionY": "top",
 	"cssPriority": "user",
 
@@ -96,8 +96,8 @@
           "command": "sh -c 'sleep 1; hyprpicker -a' & swaync-client -cp"
         },
         {
-          "label": "󰤨",
-          "command": "~/.config/rofi/rofi-wifi-menu.sh & swaync-client -cp"
+          "label": "",
+          "command": "swaync-client -cp & bash -c '$HOME/.config/hypr/scripts/hypridle.sh'"
         },
         {
           "label": "󰈸",
