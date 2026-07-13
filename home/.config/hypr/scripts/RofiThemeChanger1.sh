@@ -8,3 +8,4 @@ cp -f "$HOME/.config/rofi/variants/withwallpaper/rounded-template.rasi" "$HOME/.
 pkill waybar
 sleep 0.2
 waybar &
+notify-send "Rofi" "Wallpaper variant applied"
