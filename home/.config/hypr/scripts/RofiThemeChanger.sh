@@ -8,3 +8,4 @@ cp -f "$HOME/.config/rofi/variants/withoutwallpaper/rounded-template.rasi" "$HOM
 pkill waybar
 sleep 0.2
 waybar &
+notify-send "Rofi" "Without Wallpaper variant applied"
