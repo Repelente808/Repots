@@ -48,6 +48,9 @@ hl.config({
         no_hardware_cursors = true,
         inactive_timeout = 2    
     },
+    render = {
+    new_render_scheduling = true
+    },
 
     xwayland = {
         force_zero_scaling = true
