@@ -52,6 +52,10 @@ hl.config({
     new_render_scheduling = true,
     direct_scanout = false
     },
+    general = {
+        resize_on_border = true,
+        hover_icon_on_border = true
+    },
 
     xwayland = {
         force_zero_scaling = true
