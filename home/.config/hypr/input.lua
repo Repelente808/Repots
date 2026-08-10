@@ -45,6 +45,7 @@ hl.config({
         zoom_rigid = false,
         zoom_disable_aa = true,
         hotspot_padding = 1,
+        no_hardware_cursors = true,
         inactive_timeout = 2    
     },
 
