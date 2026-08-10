@@ -49,7 +49,8 @@ hl.config({
         inactive_timeout = 2    
     },
     render = {
-    new_render_scheduling = true
+    new_render_scheduling = true,
+    direct_scanout = false
     },
 
     xwayland = {
