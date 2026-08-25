@@ -14,7 +14,7 @@ hl.layer_rule({
 
 hl.curve("menu_decel", { type = "bezier", points = { {0.1, 1}, {0, 1} } })
 
-hl.animation({ leaf = "layers", enabled = true, speed = 7, bezier = "menu_decel", style = 1 })
+hl.animation({ leaf = "layers", enabled = true, speed = 7.0, bezier = "menu_decel" })
 
 hl.layer_rule({
     match = {
