@@ -65,6 +65,11 @@ hl.window_rule({
     size = { 512, 288 },
     move = { 1400, 780 },
 })
+hl.window_rule({
+    match = { title = "^(satty)$" },
+    float = true,
+    pin = true,
+})
 hl.layer_rule({
     match = {
         namespace = "^rofi.*$"
