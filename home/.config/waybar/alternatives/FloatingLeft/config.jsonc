@@ -56,7 +56,7 @@
     "player-icons": {
         "default": "󰽱",
         "mpv": "🎵",
-        "spotify": ""
+        "spotify": " "
     },
     "status-icons": {
         "paused": ""
