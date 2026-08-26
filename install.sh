@@ -113,6 +113,7 @@ PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     xdg-utils
     xorg-server
     xorg-xinit
+    cliphist
     xsettingsd
     zram-generator
     zsh
