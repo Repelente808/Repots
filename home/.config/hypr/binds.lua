@@ -35,7 +35,7 @@ hl.bind(mainMod .. " + " .. "C", hl.dsp.exec_cmd("vscodium"))
 
 hl.bind(mainMod .. " + " .. "W", hl.dsp.exec_cmd("zen-browser"))
 
-hl.bind("SUPER + SHIFT" .. " + " .. "S", hl.dsp.exec_cmd("bash -c 'grim -g \"$(slurp)\" - | satty --early-exit --action-on-enter save-to-file --right-click-copy --filename - --output-filename ~/Pictures/screenshots/$(date \"+%y-%d:%m-%H:%M\").png'"))
+hl.bind("SUPER + SHIFT" .. " + " .. "S", hl.dsp.exec_cmd("bash -c 'grim -g \"$(slurp)\" - | satty --early-exit --action-on-enter save-to-file --right-click-copy --filename - --copy-command \"wl-copy --type image/png\" --output-filename ~/Pictures/screenshots/$(date \"+%y-%d:%m-%H:%M\").png'"))
 
 hl.bind("Print", hl.dsp.exec_cmd("grimblast copy output"))
 
