@@ -56,6 +56,7 @@ PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     fastfetch
     fish
     font-manager
+    tesseract-data-eng
     git
     gnome-system-monitor
     gnome-themes-extra
