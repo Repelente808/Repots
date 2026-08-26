@@ -35,15 +35,11 @@ hl.bind(mainMod .. " + " .. "C", hl.dsp.exec_cmd("vscodium"))
 
 hl.bind(mainMod .. " + " .. "W", hl.dsp.exec_cmd("zen-browser"))
 
-hl.bind("SUPER + SHIFT" .. " + " .. "S", hl.dsp.exec_cmd("hyprshot -z -m region --clipboard-only"))
+hl.bind("SUPER + SHIFT" .. " + " .. "S", hl.dsp.exec_cmd("bash -c 'grim -g \"$(slurp)\" - | satty --early-exit --action-on-enter save-to-file --right-click-copy --filename - --output-filename ~/Pictures/screenshots/$(date \"+%y-%d:%m-%H:%M\").png'"))
 
 hl.bind("Print", hl.dsp.exec_cmd("grimblast copy output"))
 
-hl.bind("SUPER + D", hl.dsp.workspace.toggle_special("QuickApps"))
-
-hl.bind("SUPER + SHIFT + D", hl.dsp.window.move({ workspace = "special:QuickApps" }))
-
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "T", hl.dsp.exec_cmd("quickshell -c QuickSnip -n"))
+hl.bind("SUPER + SHIFT" .. " + " .. "T", hl.dsp.exec_cmd("bash -c 'grim -g \"$(slurp)\" - | tesseract - - | wl-copy'"))
 
 hl.bind("SUPER" .. " + " .. "SUPER_L", hl.dsp.exec_cmd("(pkill rofi && pw-play --volume=0.2 ~/.config/swaync/roficlose.wav) || (pw-play --volume=0.2 ~/.config/swaync/rofiopen.wav & rofi -show drun -show-icons)"), { repeating = true })
 
@@ -58,16 +54,14 @@ hl.bind("SUPER" .. " + " .. "M", hl.dsp.exit())
 -- dwindle
 
 --Workspaces
+local smw = require("plugins.split-monitor-workspaces")
 local mainMod = "SUPER"
-
-for i = 1, 10 do
-    local key = i == 10 and "0" or tostring(i)
-    
-    hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = tostring(i) }))
-    
-    hl.bind(mainMod .. " + ALT + " .. key, hl.dsp.window.move({ workspace = tostring(i) }))
+for i = 1, smw.get_amount_of_workspaces() do
+    local n = tostring(i)
+    if n == "10" then n = "0" end 
+    hl.bind(mainMod .. " + " .. n, smw.workspace(n), { description = "Workspace: Focus " .. i })
+    hl.bind(mainMod .. " + ALT + " .. n, smw.move_to_workspace(n), { description = "Window: Send to workspace " .. i })
 end
-
 
 hl.bind("SUPER" .. " + " .. "Left",  hl.dsp.window.move({ direction = "left" }))
 hl.bind("SUPER" .. " + " .. "Right", hl.dsp.window.move({ direction = "right" }))
@@ -110,9 +104,9 @@ hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tru
 
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd('swayosd-client --monitor "$(hyprctl monitors -j | jq -r \'.[] | select(.focused == true).name\')" --output-volume raise'))
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("swayosd-client --output-volume raise"))
 
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd('swayosd-client --monitor "$(hyprctl monitors -j | jq -r \'.[] | select(.focused == true).name\')" --output-volume lower'))
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("swayosd-client --output-volume lower"))
 
 hl.bind("XF86AudioMute", hl.dsp.exec_cmd("pactl set-sink-mute @DEFAULT_SINK@ toggle"))
 
