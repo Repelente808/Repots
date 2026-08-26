@@ -35,11 +35,11 @@ hl.bind(mainMod .. " + " .. "C", hl.dsp.exec_cmd("vscodium"))
 
 hl.bind(mainMod .. " + " .. "W", hl.dsp.exec_cmd("zen-browser"))
 
-hl.bind("SUPER + SHIFT" .. " + " .. "S", hl.dsp.exec_cmd("quickshell -c HyprQuickFrame -n && sleep 0.1 && hyprctl dispatch focuswindow class:org.quickshell.HyprQuickFrame"))
+hl.bind("SUPER + SHIFT" .. " + " .. "S", hl.dsp.exec_cmd("bash -c 'grim -g \"$(slurp)\" - | satty --early-exit --action-on-enter save-to-file --right-click-copy --filename - --copy-command \"wl-copy --type image/png\" --output-filename ~/Pictures/screenshots/$(date \"+%y-%d:%m-%H:%M\").png'"))
 
 hl.bind("Print", hl.dsp.exec_cmd("grimblast copy output"))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "T", hl.dsp.exec_cmd("quickshell -c QuickSnip -n"))
+hl.bind(mainMod .. " + SHIFT + T", hl.dsp.exec_cmd([[sh -c 'grim -g "$(slurp)" - | tesseract stdin stdout | wl-copy']]))
 
 hl.bind("SUPER" .. " + " .. "SUPER_L", hl.dsp.exec_cmd("(pkill rofi && pw-play --volume=0.2 ~/.config/swaync/roficlose.wav) || (pw-play --volume=0.2 ~/.config/swaync/rofiopen.wav & rofi -show drun -show-icons)"), { repeating = true })
 
