@@ -92,3 +92,10 @@ hl.window_rule({
     match = { class = "kitty" },
     opacity = "0.7 0.7"
 })
+
+hl.layer_rule({
+    match = {
+        namespace = "^selection$"
+    },
+    animation = "none"
+})
