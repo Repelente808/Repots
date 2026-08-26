@@ -20,6 +20,7 @@ PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     ntfsprogs
     ntfs-3g
     exfatprogs
+    grimblast
     gnome-calculator
     gnome-weather
     wf-recorder
