@@ -22,6 +22,7 @@ while IFS= read -r WALLPAPER_PATH; do
 done <<<"$WALLPAPER_FILES"
 
 SELECTED_WALLPAPER=$(echo -e "$ROFI_MENU" | rofi -dmenu \
+ -theme-str 'element-icon { size: 96px; } listview { columns: 1; lines: 4; }' \
   -display-dmenu "WALLPAPERS" \
   -p "Select:" \
   -show-icons \
