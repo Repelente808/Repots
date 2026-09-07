@@ -130,15 +130,12 @@ Two Rofi Styles to select and a button to change SwayNC location!
 <summary>🎦 Work from other people that get modded or implemented in the dots</summary>
   
 - SwayNC - https://github.com/zDyant/HyprNova
-- Waybar & Custom Rofi Menu - https://www.youtube.com/@saneAspect
+- Waybar & Custom Rofi Menu - https://www.youtube.com/@saneAspect 
 - Wlogout & Hyprlock - https://github.com/binnewbs/arch-hyprland
 - Fastfetch - https://github.com/m3tozz/FastCat
 - Rofi Theme - https://github.com/newmanls/rofi-themes-collection
 - Font - https://qwerasd205.github.io/PixelCode
 - Momoisay - https://github.com/Mon4sm/momoisay
-- Qs Overview - https://github.com/Shanu-Kumawat/quickshell-overview (not using anymore)
-- HyprQuickFrame - https://github.com/Ronin-CK/HyprQuickFrame (not using anymore)
-- QuickSnip - https://github.com/Ronin-CK/QuickSnip
 - Starship and Animations - https://github.com/end-4/dots-hyprland
 - Miku image - https://pt.pinterest.com/pin/737675613997663987/ (idk the original creator)
 - Teto image - https://open.spotify.com/intl-pt/track/4SAhUJaWyiOgLgZq31DyGK (idk the original creator)
