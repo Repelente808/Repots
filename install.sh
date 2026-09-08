@@ -256,8 +256,6 @@ rm -rf "$TMP" && \
 fc-cache -f
 clear
 rm -rf ~/.config/optionals
-awww-daemon
-awww img ~/.config/hypr/hyprlock_assets/current_wallpaper.jpg 
 echo "Instalation done!"
 echo "Now the system will reboot, just login again! (it is to make sure everything will work)"
 sleep 8
