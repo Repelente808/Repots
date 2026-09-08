@@ -102,7 +102,7 @@ Two Rofi Styles to select and a button to change SwayNC location!
 - Open Menu (from Rofi, you can see what it does in preview) - ```Super``` + ```S```
 - Open SwayNC - ```Super``` + ```N```
 - Open Grim (Take a screenshot of some part of the screen) - ```Super``` + ```Shift``` + ```S```
-- Open QuickSnip (Google Lens and OCR) ```Super``` + ```Shift``` +```T```
+- OCR - ```Super``` + ```Shift``` +```T```
 - Change Workspace - ```Super``` + ```#``` (# means any number)
 - Put Window in another Workspace - ```Super``` + ```Alt``` + ```#```
 - Split Windows - ```Super``` + ```J```
@@ -130,7 +130,7 @@ Two Rofi Styles to select and a button to change SwayNC location!
 <summary>🎦 Work from other people that get modded or implemented in the dots</summary>
   
 - SwayNC - https://github.com/zDyant/HyprNova
-- Waybar & Custom Rofi Menu - https://www.youtube.com/@saneAspect 
+- Base for learning Waybar & Custom Rofi Menu - https://www.youtube.com/@saneAspect 
 - Wlogout & Hyprlock - https://github.com/binnewbs/arch-hyprland
 - Fastfetch - https://github.com/m3tozz/FastCat
 - Rofi Theme - https://github.com/newmanls/rofi-themes-collection
@@ -145,4 +145,3 @@ Two Rofi Styles to select and a button to change SwayNC location!
 - the packages could be seen in install.sh
   
 </details>
-I DID A 120 COMMITS BC I DIDNT SEE THE PREVIEW TAB FOR THE README OMG IM SO DUMB
