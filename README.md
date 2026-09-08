@@ -1,10 +1,7 @@
 <img width="1920" height="1080" alt="New Project" src="https://github.com/user-attachments/assets/b20b405d-eed7-4497-b428-339d7ebd67cc" />
 
 
-https://github.com/user-attachments/assets/321bf0a4-a24c-4ad3-a119-5fb5db8b7e69
-
-
-[Better quality preview ](https://youtu.be/pCixawp8YvA) (its not the same video, but show the same things and a bit more)
+[Video Preview ](https://youtu.be/pCixawp8YvA)
 
 The Repo for my hyprland dots, includes an script to automatically install everything!
 
