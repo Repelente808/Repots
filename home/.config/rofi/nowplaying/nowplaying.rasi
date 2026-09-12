@@ -125,7 +125,7 @@ element {
     padding:                     12px;
     border-radius:               100%;
     cursor:                      pointer;
-    background-color:            @background-alt;
+    background-color:            @surface-container-high;
     text-color:                  @foreground;
     orientation:                 horizontal;
 }
