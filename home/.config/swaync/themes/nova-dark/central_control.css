@@ -251,7 +251,7 @@ progressbar {
 }
 
 .widget-mpris-album-art {
-  border-radius: 66px;
+  border-radius: 6px;
 }
  
 .widget-mpris-title {
@@ -265,8 +265,9 @@ progressbar {
 }
 
 picture.mpris-background {
-  opacity: 0.15;
-  filter: blur(10px);	
+  opacity: 0.9;
+  background: @background-sec;
+  filter: blur(20px);	
 }
 .widget-volume {
   background: @background-sec;
