@@ -14,7 +14,7 @@ button {
     margin: 20px;
     color: @inverse_surface;
     border-color: @inverse_surface;
-    background-color: @surface;
+    background-color: transparent;
     outline-style: none;
     border-style: solid;
     background-size: 20%;
