@@ -7,7 +7,7 @@
   "modules-center": [ "clock","custom/recorder","hyprland/workspaces","mpris","custom/backlight-desktop",  "backlight", "battery", "network","custom/swaync", "custom/power"],
   "modules-right": ["tray"],
 "custom/archicon": {
-    "format": "",
+    "format": "",
     "tooltip": false
 },
 "custom/recorder": {
