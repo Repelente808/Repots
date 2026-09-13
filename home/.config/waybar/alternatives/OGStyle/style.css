@@ -1,0 +1,189 @@
+@import "colors.css";
+
+* {
+    font-family: "Google Sans";
+    font-weight:  Bold;
+    font-size: 14px;
+    min-height: 28px;
+    border-radius: 33px;
+}
+
+
+
+#custom-recorder {
+   background-color: @surface_container;
+   color: @primary_fixed_dim;
+    margin: 0 0px 0 5px;
+    padding: 0 10px 0 10px;
+   min-width: 40px;
+}
+#tray {
+    background-color: @primary;
+    color: @inverse_on_surface;
+    margin: 0 5px 0 5px;
+    padding: 0 10px;
+}
+#window {
+    background-color: @background;
+    color: @color2;
+    margin: 0 5px 0 0px;
+    padding: 0 10px;
+    min-width: 0px;
+}
+window#waybar.empty #window {
+    background-color: transparent;
+    color: transparent;
+}
+#custom-backlight-desktop,
+#custom-swaync {
+    background-color: @background;	
+    font-size: 14px;
+    padding: 0 10px;
+    margin: 0 0px 0 5px;
+    color: @secondary_fixed_dim;
+}
+
+#custom-swaync.notification {
+    color: @tertiary_fixed_dim;
+}
+
+#custom-power {
+    background-color: @background;
+    color: @primary_fixed_dim;
+    margin: 0 0px 0 5px;
+    padding: 0 15px 0 15px;
+}
+
+#mpris {
+    background-color: @primary;
+    padding: 0 16;
+    color: @inverse_on_surface;
+    margin: 0 5px 0 5px;
+    border-radius: 33px;
+    font-size: 14px;
+}
+mpris#waybar.empty #mpris {
+    background-color: transparent;
+    color: transparent;
+}
+window#waybar {
+    background-color: transparent;
+    color: @background;
+    padding: 5 0px;
+    margin: 0 5px 0 5px;
+    min-height: 40px;
+}
+
+#workspaces button.active {
+    all: unset;
+    background: linear-gradient(45deg,
+                    alpha(@primary_fixed_dim, 0.7),
+                    alpha(@secondary_fixed_dim, 0.5),
+                    alpha(@tertiary_fixed_dim, 0.3));
+    border-radius: 33px;
+    border: none;
+    color: @secondary_fixed_dim;
+    padding: 0 15px;
+    margin: 5px 2px;
+    min-width: 20px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+tooltip {
+    background: @surface_container;
+    border: 1px solid @primary_fixed_dim;
+    border-radius: 15px;
+}
+
+tooltip label {
+    padding: 10px;
+}
+#workspaces button {
+    color: @secondary_fixed_dim;
+    margin: 5px 0px;
+    padding: 0 5px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#workspaces {
+    background-color: @surface_container;
+    padding: 0 5px;
+    margin: 0;
+}
+
+.modules-left {
+    margin-left: 12px;    
+}
+
+.modules-right {
+    margin-right: 12px;    
+}
+#custom-backlight-desktop{
+    background-color: @surface_container;
+    color: @primary_fixed_dim;
+    font-size: 14px;
+    padding: 0 15px 0 15px;
+}
+#custom-swaync{
+    background-color: @surface_container;
+    color: @primary_fixed_dim;
+    font-size: 14px;
+    padding: 0 15px 0 15px;
+} 
+#battery{
+    background-color: @surface_container;
+    color: @primary_fixed_dim;
+    font-size: 14px;
+    padding: 0 15px 0 15px;
+}
+#pulseaudio{
+    background-color: @surface_container;
+    color: @primary_fixed_dim;
+    font-size: 14px;
+    padding: 0 15px 0 15px;
+}
+#backlight{
+    background-color: @surface_container;
+    color: @primary_fixed_dim;
+    font-size: 14px;
+    padding: 0 15px 0 15px;
+}
+#network{
+    background-color: @surface_container;
+    color: @primary_fixed_dim;
+    font-size: 14px;
+    padding: 0 15px 0 15px;
+}
+
+#custom-power{
+    color: @primary_fixed_dim;
+    background-color: @surface_container;
+    margin: 0px 0px;
+    border-radius: 0;
+    padding: 0 15px 0 15px;
+    border: 0px solid @color10;
+}
+
+#custom-power {
+    border-radius: 33px 33 33 33px;
+    margin-right: 5px;
+}
+#clock {
+    background-color: @surface_container;
+    color: @primary_fixed_dim;
+    font-size: 14px;
+    padding: 0 15px 0 15px;
+}
+
+#network {
+    color: @secondary_fixed_dim;
+}
+
+#pulseaudio {
+    color: @tertiary_fixed_dim;
+}
+
+#backlight {
+    color: @primary_fixed_dim;
+}
+
+
