@@ -87,7 +87,7 @@ element selected normal, element selected active {
 }
 
 element-icon {
-    size:           1.5em;
+    size:           1.4em;
     vertical-align: 0.5;
 }
 
