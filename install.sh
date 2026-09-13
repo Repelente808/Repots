@@ -241,6 +241,9 @@ else
     echo "Okay, skipping!!"
 fi
 clear
+awww-daemon &
+sleep 1
+awww img ~/.config/hypr/hyprlock_assets/current_wallpaper.jpg 
 echo "now the installer will try to reinstall all the packages again to prevent errors!"
 sudo pacman -Syu --needed --noconfirm $PACKETS_PACMAN
 yay -S --needed --noconfirm $PACKETS_AUR
