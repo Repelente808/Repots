@@ -171,6 +171,7 @@ chmod +x "$HOME/.config/waybar/alternatives/FloatingLeft/FloatingLeft.sh"
 chmod +x "$HOME/.config/waybar/alternatives/LeftFlat/LeftFlat.sh"
 chmod +x "$HOME/.config/waybar/alternatives/RoundFly/RoundFly.sh"
 chmod +x "$HOME/.config/waybar/alternatives/RoundSquareFly/RoundSquareFly.sh" 
+chmod +x "$HOME/.config/waybar/alternatives/OGStyle/ogstyle.sh"
 chmod +x "$HOME/.config/rofi/WaybarStyle.sh" 
 chmod +x "$HOME/.config/rofi/nowplaying/nowplaying.sh"
 mkdir ~/Wallpapers
