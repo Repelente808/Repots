@@ -71,7 +71,7 @@
       "image-radius": 18,
       "autohide": true, 
       "max-visible": 1,
-      "blacklist": ["YoutubeMusic"]
+      "blacklist": ["YoutubeMusic", "spotify", "firefox", "chromium", "brave", "discord", "kdeconnect"]
     },
     "volume": {
       "label": "󰕾",
