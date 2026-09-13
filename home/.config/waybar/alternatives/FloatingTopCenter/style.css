@@ -9,20 +9,13 @@
 }
 
 
-#custom-archicon {
-   background-color: @surface_container;
-   color: @primary_fixed_dim;
-    margin: 0 5px 0 5px;
-    padding: 0 10px 0 10px;
-   min-width: 40px;
-}
 #custom-recorder {
    background-color: @surface_container;
    color: @primary_fixed_dim;
    min-width: 40px;
 }
 #tray {
-    background-color: @on_secondary_fixed_variant;
+    background-color: @primary;
     color: @secondary_fixed_dim;
     border-radius: 33px 33px;	
     margin: 0 5px 0 5px;
