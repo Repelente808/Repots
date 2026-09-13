@@ -50,7 +50,7 @@ window#waybar.empty #window {
 #custom-power {
     background-color: @background;
     color: @primary_fixed_dim;
-    margin: 0 0px 0 5px;
+    margin: 0 5px 0 5px;
     padding: 0 15px 0 15px;
 }
 
@@ -58,7 +58,7 @@ window#waybar.empty #window {
     background-color: @primary;
     padding: 0 16;
     color: @inverse_on_surface;
-    margin: 0 5px 0 5px;
+    margin: 0 6px;
     border-radius: 33px;
     font-size: 14px;
 }
@@ -120,24 +120,28 @@ tooltip label {
 #custom-backlight-desktop{
     background-color: @surface_container;
     color: @primary_fixed_dim;
+    margin: 0px 2.5px;
     font-size: 14px;
     padding: 0 15px 0 15px;
 }
 #custom-swaync{
     background-color: @surface_container;
     color: @primary_fixed_dim;
+    margin: 0px 2.5px;
     font-size: 14px;
     padding: 0 15px 0 15px;
 } 
 #battery{
     background-color: @surface_container;
     color: @primary_fixed_dim;
+    margin: 0px 2.5px;
     font-size: 14px;
     padding: 0 15px 0 15px;
 }
 #pulseaudio{
     background-color: @surface_container;
     color: @primary_fixed_dim;
+    margin: 0px 2.5px;
     font-size: 14px;
     padding: 0 15px 0 15px;
 }
@@ -145,19 +149,21 @@ tooltip label {
     background-color: @surface_container;
     color: @primary_fixed_dim;
     font-size: 14px;
+    margin: 0px 2.5px;
     padding: 0 15px 0 15px;
 }
 #network{
     background-color: @surface_container;
     color: @primary_fixed_dim;
     font-size: 14px;
+    margin: 0px 2.5px;
     padding: 0 15px 0 15px;
 }
 
 #custom-power{
     color: @primary_fixed_dim;
     background-color: @surface_container;
-    margin: 0px 0px;
+    margin: 0px 2.5px;
     border-radius: 0;
     padding: 0 15px 0 15px;
     border: 0px solid @color10;
@@ -165,7 +171,6 @@ tooltip label {
 
 #custom-power {
     border-radius: 33px 33 33 33px;
-    margin-right: 5px;
 }
 #clock {
     background-color: @surface_container;
