@@ -159,7 +159,7 @@ progressbar {
 
 .widget-title button {
   background: @surface_container_high;
-  border-radius: 6px;
+  border-radius: 33px;
   padding: 4px 16px;
 }
 
@@ -172,16 +172,16 @@ progressbar {
 }
 
 .widget-dnd {
-  margin: 6px;
-  font-size: 1.2rem;
+  margin: 8px;
+  font-size: 1.4rem;
 }
 
 .widget-dnd > switch {
   background:  @surface_container_high;
   font-size: initial;
-  border-radius: 8px;
+  border-radius: 44px;
   box-shadow: none;
-  padding: 2px;
+  padding: 4px;
 }
 
 .widget-dnd > switch:hover {
@@ -198,14 +198,14 @@ progressbar {
 
 .widget-dnd > switch slider {
   background: @primary_fixed;
-  border-radius: 6px;
+  border-radius: 33px;
 }
 
 .widget-buttons-grid {
   font-size: x-large;
   padding: 6px 2px;
   margin: 6px;
-  border-radius: 12px;
+  border-radius: 16px;
   background: @surface_container_high;
 }
 
@@ -213,7 +213,7 @@ progressbar {
   margin: 4px 10px;
   padding: 6px 12px;
   background: transparent;
-  border-radius: 8px;
+  border-radius: 12px;
   color: @text;
 }
 
