@@ -4,7 +4,7 @@
     "margin-top": 10,
     "margin-left": 15,
     "margin-right": 15,
-    "height": 45,
+    "height": 20,
   "modules-left": ["custom/archicon", "clock","mpris","custom/recorder"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["tray", "custom/backlight-desktop","backlight", "pulseaudio#microphone", "pulseaudio", "battery", "network","custom/swaync", "custom/power"],
