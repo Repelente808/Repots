@@ -242,7 +242,7 @@ progressbar {
 }
  
 .widget-mpris button {
-  color: alpha(@primary, .6);
+  color: alpha(@text, .6);
   font-weight: 500;
 }
 
