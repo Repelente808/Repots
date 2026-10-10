@@ -15,6 +15,8 @@ fi
 
 PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
 # PACMAN
+    thunar
+    thunar-archive-plugina
     adw-gtk-theme
     swayosd
     ntfsprogs
@@ -72,7 +74,6 @@ PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     iwd
     libnotify
     nano
-    nautilus
     ncdu
     neovim
     noto-fonts
