@@ -16,6 +16,7 @@ fi
 PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
 # PACMAN
     thunar
+    tumbler
     thunar-archive-plugin
     adw-gtk-theme
     swayosd
