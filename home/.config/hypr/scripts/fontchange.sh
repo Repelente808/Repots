@@ -1,6 +1,6 @@
 #!/bin/bash
 
-F1="Pixel Code"
+F1="Monocraft"
 S1="14"
 F2="Google Sans"
 S2="14"
