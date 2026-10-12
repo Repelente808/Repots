@@ -129,6 +129,7 @@ clear
 sudo pacman -S  pipewire-pulse
 
 PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
+    otf-monocraft
     overskride
     grimblast-git
     hyprlax-bin
