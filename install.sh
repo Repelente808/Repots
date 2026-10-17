@@ -15,76 +15,37 @@ fi
 
 PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
 # PACMAN
-    thunar
-    tumbler
-    thunar-archive-plugin
+    hyprland
+    kitty
     adw-gtk-theme
     swayosd
-    ntfsprogs
-    ntfs-3g
-    exfatprogs
-    gnome-calculator
-    gnome-weather
-    wf-recorder
-    gnome-clocks
-    gnome-calendar
     btop
-    gvfs-mtp
-    mtpfs
     power-profiles-daemon
-    gnome-disk-utility
     brightnessctl
-    ffmpegthumbnailer
     wtype
-    gnome-themes-extra
     speech-dispatcher
     starship
     less
     unzip
-    unrar	
-    mousepad
-    file-roller
-    vlc
-    vlc-plugin-ffmpeg
-    asciiquarium
-    base
-    cmatrix
+    unrar
     base-devel
-    blueman
-    cava
     dkms
     cmake
-    efibootmgr
     fastfetch
     fish
-    font-manager
     tesseract-data-eng
     git
-    gnome-system-monitor
-    gnome-themes-extra
-    gnome-tweaks
     grim
-    grub
-    htop
     hyprlock
     hypridle
     hyprpolkitagent
     hyprpicker
     imagemagick
-    intel-ucode
-    iwd
     libnotify
-    nano
     ncdu
-    neovim
     noto-fonts
     noto-fonts-emoji
-    nwg-displays
-    openssh
     pavucontrol
-    polkit-kde-agent
-    pipewire-pulse
-    qbittorrent
     qt5-wayland
     qt5ct
     qt6-wayland
@@ -93,9 +54,6 @@ PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     rofi-emoji
     satty
     slurp
-    smartmontools
-    starship
-    sudo
     swaync
     awww
     ttf-bitstream-vera
@@ -104,29 +62,22 @@ PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     ttf-liberation
     ttf-nerd-fonts-symbols
     uwsm
-    vim
     waybar
     wget
-    wireless_tools
     wl-clipboard
-    wofi
     tesseract
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     xdg-utils
-    xorg-server
-    xorg-xinit
     cliphist
     xsettingsd
     zram-generator
-    zsh
 EOF
 )
 
 echo "Starting pacman package installation..."
 sudo pacman -Syu --needed --noconfirm $PACKETS_PACMAN
 clear
-sudo pacman -S  pipewire-pulse
 
 PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     otf-monocraft
@@ -175,8 +126,9 @@ read -r OptionalPackage
 
 if [[ "$OptionalPackage" =~ ^[Yy]$ ]]; then
     echo "Installing some apps..."
+   sudo pacman -Syu --needed --noconfirm thunar tumbler thunar-archive-plugin ntfsprogs ntfs-3g exfatprogs gnome-calculator gnome-weather gnome-clocks gnome-calendar gvfs-mtp mtpfs gnome-disk-utility
+   sudo pacman -Syu --needed --noconfirm ffmpegthumbnailer mousepad vlc vlc-plugin-ffmpeg asciiquarium cmatrix blueman cava font-manager nwg-displays qbittorrent
    yay -S --needed --noconfirm vscodium-bin zen-browser-bin pear-desktop-bin vesktop-bin overskride pipes.sh terminal-rain-lightning tty-clock
-   sudo pacman -Syu --needed --noconfirm 
    echo "Installing Momoisay..."
    git clone https://github.com/Mon4sm/Momoisay.git /tmp/Momoisay
    cd /tmp/Momoisay && yes | sudo sh ./install/linux.sh && cd -
