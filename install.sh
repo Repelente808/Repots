@@ -251,18 +251,11 @@ echo "now the installer will try to reinstall all the packages again to prevent 
 sudo pacman -Syu --needed --noconfirm $PACKETS_PACMAN
 yay -S --needed --noconfirm $PACKETS_AUR
 unzip ~/.icons/Tela-circle-black.zip -d ~/.icons
-echo "Installing PixelCode font..."
-D="$HOME/.local/share/fonts/PixelCode" && \
-mkdir -p "$D" && \
-TMP=$(mktemp -d) && \
-curl -sL $(curl -sL https://api.github.com/repos/qwerasd205/PixelCode/releases/latest \
-  | grep "browser_download_url.*zip" | head -n1 | cut -d '"' -f4) -o "$TMP/pixelcode.zip" && \
-unzip -q "$TMP/pixelcode.zip" -d "$TMP/pc" && \
-find "$TMP/pc" -type f \( -iname "*.otf" -o -iname "*.ttf" \) -exec cp {} "$D/" \; && \
-rm -rf "$TMP" && \
-fc-cache -f
 clear
 rm -rf ~/.config/optionals
+sudo rm -rf /var/cache/pacman/pkg/
+sudo mkdir -p /var/cache/pacman/pkg/
+rm -rf ~/.cache/yay/
 echo "Instalation done!"
 echo "Now the system will reboot, just login again! (it is to make sure everything will work)"
 sleep 8
