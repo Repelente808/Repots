@@ -94,7 +94,7 @@ Two Rofi Styles to select and a button to change SwayNC location!
 - Open App Launcher (Rofi) - ```Super```
 - Open Terminal - ```Super``` + ```T```
 - Open VsCodium - ```Super``` + ```C```
-- Open Nautilus (file explorer) - ```Super``` + ```E```
+- Open Thunar (file explorer) - ```Super``` + ```E```
 - Open Zen Browser - ```Super``` + ```W```
 - Open Menu (from Rofi, you can see what it does in preview) - ```Super``` + ```S```
 - Open SwayNC - ```Super``` + ```N```
@@ -107,6 +107,8 @@ Two Rofi Styles to select and a button to change SwayNC location!
 - Make window fly - ```Super``` + ```Space```
 - Fullscreen ```Super``` + ```F```
 - Reload Waybar ```Super``` + ```CTRL``` + ```R```
+
+Feel free to change it in ```~/.config/hypr/binds.lua```
 </details>
 
 ## Suggestions!
