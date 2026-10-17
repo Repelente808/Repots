@@ -181,7 +181,7 @@ mkdir ~/Wallpapers
 mkdir ~/Recordings
 clear
 
-echo -n "Want to install optional package? (zen-browser, vesktop, youtube music, and vscodium) (y/n): "
+echo -n "Want to install optional package? (you can see the list in the install.sh locally or in github) (y/n): "
 read -r OptionalPackage
 
 if [[ "$OptionalPackage" =~ ^[Yy]$ ]]; then
