@@ -130,28 +130,17 @@ sudo pacman -S  pipewire-pulse
 
 PACKETS_AUR=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
     otf-monocraft
-    overskride
     grimblast-git
     hyprlax-bin
-    google-breakpad
-    hyprshade
-    python-imageio-ffmpegs
     matugen-bin
-    python-screeninfo
-    tty-clock
     wlogout
-    bibata-cursor-theme
+    bibata-cursor-theme-bin
     ttf-google-sans
-    pipes.sh
-    terminal-rain-lightning
 EOF
 )
 echo "Starting yay package installation..."
 yay -S --needed --noconfirm $PACKETS_AUR
-echo "Installing Momoisay..."
-git clone https://github.com/Mon4sm/Momoisay.git /tmp/Momoisay
-cd /tmp/Momoisay && yes | sudo sh ./install/linux.sh && cd -
-rm -rf /tmp/Momoisay
+
 echo "Installing Repots..."
 cp -rf home/* home/.[!.]* home/..?* "$HOME/"
 chmod +x "$HOME/.config/waybar/alternatives/FloatingTopCenter/FloatingTopCenter.sh"
@@ -186,12 +175,18 @@ read -r OptionalPackage
 
 if [[ "$OptionalPackage" =~ ^[Yy]$ ]]; then
     echo "Installing some apps..."
-   yay -S --needed --noconfirm vscodium-bin zen-browser-bin pear-desktop-bin vesktop-bin
-
+   yay -S --needed --noconfirm vscodium-bin zen-browser-bin pear-desktop-bin vesktop-bin overskride pipes.sh terminal-rain-lightning tty-clock
+   sudo pacman -Syu --needed --noconfirm 
+   echo "Installing Momoisay..."
+   git clone https://github.com/Mon4sm/Momoisay.git /tmp/Momoisay
+   cd /tmp/Momoisay && yes | sudo sh ./install/linux.sh && cd -
+   rm -rf /tmp/Momoisay
 else
     echo "Okay, skipping!!"
 fi
 clear
+
+
 echo -n "Want to remove some package? (Firefox and Dolphin (kde file explorer)) (y/n): "
 read -r RemoveOptionalPackage
 
@@ -203,6 +198,8 @@ else
     echo "Okay, skipping!!"
 fi
 clear
+
+
 echo -n "make keyboard layout abnt2? (ignore, just press n, its just me being lazy in INSANE LEVELS) (y/n): "
 read -r ChangeKbLayout
 
@@ -215,6 +212,8 @@ else
     echo "Okay, skipping!! put your kb layout in   ~/.config/hypr/input.lua"
 fi
 clear
+
+
 echo -n "Want to install and enable split-monitor-workspaces plugin ? (Only type Y if you have multiple monitors in your setup, and before, search what it actually do) (y/n): "
 read -r SplitMW
 
@@ -232,6 +231,7 @@ else
 fi
 clear
 
+
 echo -n "Want to install and enable ddcutil? (make you capable of changing brightness on hdmi/dp monitors directly through the system, dont do if you're in a laptop) (y/n): "
 read -r brightnessUtl
 
@@ -244,6 +244,8 @@ else
     echo "Okay, skipping!!"
 fi
 clear
+
+
 awww-daemon &
 sleep 1
 awww img ~/.config/hypr/hyprlock_assets/current_wallpaper.jpg 
