@@ -127,7 +127,7 @@ read -r OptionalPackage
 if [[ "$OptionalPackage" =~ ^[Yy]$ ]]; then
     echo "Installing some apps..."
    sudo pacman -Syu --needed --noconfirm thunar tumbler thunar-archive-plugin ntfsprogs ntfs-3g exfatprogs gnome-calculator gnome-weather gnome-clocks gnome-calendar gvfs-mtp mtpfs gnome-disk-utility
-   sudo pacman -Syu --needed --noconfirm ffmpegthumbnailer mousepad vlc vlc-plugin-ffmpeg asciiquarium cmatrix blueman cava font-manager nwg-displays qbittorrent file-roller
+   sudo pacman -Syu --needed --noconfirm ffmpegthumbnailer mousepad vlc vlc-plugin-ffmpeg asciiquarium cmatrix blueman cava font-manager nwg-displays qbittorrent file-roller os-prober
    yay -S --needed --noconfirm vscodium-bin zen-browser-bin pear-desktop-bin vesktop-bin overskride pipes.sh terminal-rain-lightning tty-clock
    echo "Installing Momoisay..."
    git clone https://github.com/Mon4sm/Momoisay.git /tmp/Momoisay
