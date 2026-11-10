@@ -1,12 +1,12 @@
 {
   "layer": "top",
   "position": "top",
-    "margin-top": 10,
-    "margin-left": 15,
-    "margin-right": 15,
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
     "height": 20,
   "modules-left": ["custom/archicon", "clock","mpris","custom/recorder"],
-  "modules-center": ["hyprland/workspaces"],
+  "modules-center": ["ext/workspaces"],
   "modules-right": ["tray", "custom/backlight-desktop","backlight", "pulseaudio#microphone", "pulseaudio", "battery", "network","custom/swaync", "custom/power"],
 "custom/archicon": {
     "format": "",
@@ -144,27 +144,15 @@
 		"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
 	],
 },
-  "hyprland/workspaces": { 
-   "persistent-workspaces": {
-     "HDMI-A-1": [1, 2, 3, 4, 5]
-    }, 
- "ignore-workspaces": [
-        "11", "12", "13", "14", "15",
-        "16", "17", "18", "19", "20",
-    ],
+   "ext/workspaces": {
     "format": "{icon}",
-    "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1",
     "on-click": "activate",
+    "ignore-hidden": true,
     "format-icons": {
-      "urgent": "󰀨",
-      "active": "󰮯",
-      "default": "",	
-      "empty": "󱙝"
-    },
-    "sort-by-number": true
-  },
-
+        "active": "󰮯",
+        "default": ""
+    }
+},
   "backlight": {
     "device": "intel_backlight",
     "format": "{icon}   {percent}%",

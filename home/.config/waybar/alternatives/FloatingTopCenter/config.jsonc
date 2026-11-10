@@ -4,7 +4,7 @@
   "margin-top": 13, 
   "height": 20,
   "modules-left": [],
-  "modules-center": [ "clock","custom/recorder","hyprland/workspaces","mpris","custom/backlight-desktop",  "backlight", "battery", "network","custom/swaync", "custom/power"],
+  "modules-center": [ "clock","custom/recorder","ext/workspaces","mpris","custom/backlight-desktop",  "backlight", "battery", "network","custom/swaync", "custom/power"],
   "modules-right": ["tray"],
 "custom/archicon": {
     "format": "",
@@ -17,17 +17,6 @@
     "exec": "echo '{\"class\": \"recording\"}'",
     "exec-if": "pgrep wf-recorder",
 },
-"custom/backlight-desktop": {
-    "format": "{icon}  {percentage}",
-    "format-icons": ["󰃞", "󰃟", "󰃠"],
-    "exec": "bash -c 'v=$(ddcutil getvcp 10 | grep -oP \"current value =\\s*\\K[0-9]+\"); echo \"{\\\"percentage\\\": ${v:-0}}\"'",
-    "return-type": "json",
-    "on-scroll-up": "ddcutil setvcp 10 + 10",
-    "on-scroll-down": "ddcutil setvcp 10 - 10",
-    "interval": 15,
-    "tooltip": false
-},
-
 "custom/weather": {
     "exec": "curl -s 'https://wttr.in?format=1'",
     "interval": 3600,
@@ -142,35 +131,18 @@
 		"󰤯", "󰤟", "󰤢", "󰤥", "󰤨"
 	],
 },
-  "hyprland/workspaces": { 
-   "persistent-workspaces": {
-     "HDMI-A-1": [1, 2, 3, 4, 5]
-    }, 
-      "ignore-workspaces": [
-        "11", "12", "13", "14", "15",
-        "16", "17", "18", "19", "20",
-    ],
+  "ext/workspaces": {
     "format": "{icon}",
-    "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1",
     "on-click": "activate",
+    "ignore-hidden": true,
     "format-icons": {
-      "urgent": "󰀨",
-      "active": "󰮯",
-      "default": "",	
-      "empty": "󱙝"
-    },
-    "sort-by-number": true
-  },
-
+        "active": "󰮯",
+        "default": ""
+    }
+},
   "backlight": {
     "device": "intel_backlight",
     "format": "{icon}   {percent}%",
     "format-icons": ["󰃞", "󰃟", "󰃠"]
   }
-}
-"hyprland/window": {
-    "format": "{:^10}", "{title}",
-    "max-length": 10,
-    "separate-outputs": true
 }
