@@ -21,39 +21,45 @@
   margin: 18px;
   padding: 12px;
 }
-.widget-volume {
+.widget-volume,
+.widget-slider {
   background-color: @surface_container;
-  border-radius: 16px; 
-  margin: 10px 18px; 
+  border-radius: 16px;
+  margin: 10px 18px;
   padding: 15px;
   min-height: 40px;
 }
 
-.widget-volume box {
+.widget-volume box,
+.widget-slider box {
   margin: 5px;
 }
 
-.widget-volume label {
+.widget-volume label,
+.widget-slider label {
   font-size: 1.9rem;
   color: @secondary_fixed_dim;
   margin-right: 10px;
 }
 
-.widget-volume scale {
+.widget-volume scale,
+.widget-slider scale {
   -gtk-icon-shadow: none;
   box-shadow: none;
   background-image: none;
   min-height: 40px;
 }
 
-.widget-volume highlight {
-  background: @primary_fixed_dim; 
+.widget-volume highlight,
+.widget-slider highlight {
+  background: @primary_fixed_dim;
   border-radius: 33px;
   min-height: 40px;
 }
 
-.widget-volume trough {
-  background: rgba(255, 255, 255, 0.1); 
+.widget-volume trough,
+.widget-slider trough {
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 33px;
   min-height: 40px;
 }

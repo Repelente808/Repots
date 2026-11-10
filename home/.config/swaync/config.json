@@ -1,14 +1,14 @@
-	{
+{
   "$schema": "/etc/xdg/swaync/configSchema.json",
-  "positionX": "right",
+  "positionX": "center",
   "positionY": "top",
-	"cssPriority": "user",
+        "cssPriority": "user",
 
   "control-center-width": 420,
-  "control-center-height": 740, 
-  "control-center-margin-top": 2,
-  "control-center-margin-bottom": 2,
-  "control-center-margin-right": 1,
+  "control-center-height": 890,
+  "control-center-margin-top": 1,
+  "control-center-margin-bottom": 1,
+  "control-center-margin-right": 0,
   "control-center-margin-left": 0,
 
   "notification-window-width": 400,
@@ -19,8 +19,8 @@
   "timeout": 4,
   "timeout-low": 2,
   "timeout-critical": 6,
-  
-  "fit-to-screen": false,
+
+  "fit-to-screen": true,
   "keyboard-shortcuts": true,
   "image-visibility": "when-available",
   "tr/ansition-time": 200,
@@ -43,6 +43,7 @@
   "widgets": [
     "label",
     "buttons-grid",
+    "buttons-grid#brightness",
     "volume",
     "mpris",
     "title",
@@ -62,6 +63,20 @@
     "dnd": {
       "text": "Do not disturb"
     },
+    "buttons-grid#brightness": {
+      "buttons-per-row": 2,
+      "actions": [
+        {
+          "label": "  󰃟  -10%",
+          "command": "ddcutil --noverify setvcp 10 - 10"
+        },
+        {
+          "label": " 󰃠  +10%",
+          "command": "ddcutil --noverify setvcp 10 + 10"
+        }
+      ]
+    },
+
     "label": {
       "max-lines": 1,
       "text": " "
@@ -69,7 +84,7 @@
     "mpris": {
       "image-size": 96,
       "image-radius": 18,
-      "autohide": true, 
+      "autohide": true,
       "max-visible": 1,
       "blacklist": ["YoutubeMusic", "spotify", "firefox", "chromium", "brave", "discord", "kdeconnect"]
     },
@@ -97,14 +112,13 @@
         },
         {
           "label": "󰈸",
-          "command": "~/.config/swaync/power.sh & swaync-client -cp"       
+          "command": "~/.config/swaync/power.sh & swaync-client -cp"
         },
         {
           "label": "",
           "command": "~/.config/rofi/menu.sh & swaync-client -cp"
-	}
+        }
       ]
     }
   }
 }
-
