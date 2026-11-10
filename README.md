@@ -3,7 +3,7 @@
 
 [Video Preview ](https://youtu.be/pCixawp8YvA)
 
-The Repo for my hyprland dots, includes an script to automatically install everything!
+The Repo for my Hyprland/Mango dots, includes an script to automatically install everything!
 
 This dots isn't fully my creation, i grab a bunch of code of people and changed to apply pywal (yeah like a material you based on your wallpaper) and adjusted to my likings, the codes i remember ill put in the end with some links.
 
