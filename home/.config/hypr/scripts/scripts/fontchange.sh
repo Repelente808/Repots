@@ -1,0 +1,74 @@
+#!/bin/bash
+
+F1="Monocraft"
+S1="14"
+F2="Google Sans"
+S2="14"
+
+WAYBAR_CSS=(
+    "$HOME/.config/waybar/style.css"
+    "$HOME/.config/waybar/alternatives/FlatRound/style.css"
+    "$HOME/.config/waybar/alternatives/FlatSquare/style.css"
+    "$HOME/.config/waybar/alternatives/FloatingLeft/style.css"
+    "$HOME/.config/waybar/alternatives/LeftFlat/style.css"
+    "$HOME/.config/waybar/alternatives/RoundFly/style.css"
+    "$HOME/.config/waybar/alternatives/RoundSquareFly/style.css"
+    "$HOME/.config/waybar/alternatives/FloatingTopCenter/style.css"
+)
+
+SWAYNC_FILES=(
+    "$HOME/.config/swaync/themes/nova-dark/central_control.css"
+    "$HOME/.config/swaync/themes/nova-dark/notifications.css"
+)
+ROFI_CONFIG=(
+    "$HOME/.config/rofi/themes/template/rounded-template.rasi"
+    "$HOME/.config/rofi/variants/withoutwallpaper/rounded-template.rasi"
+    "$HOME/.config/rofi/variants/withwallpaper/rounded-template.rasi"    
+)
+HYPRLOCK_CONF="$HOME/.config/hypr/hyprlock.conf"
+WLOGOUT_CSS="$HOME/.config/wlogout/style.css"
+
+CURRENT_FONT=$(grep "font-family:" "${WAYBAR_CSS[0]}" | head -n 1 | cut -d'"' -f2)
+
+if [ "$CURRENT_FONT" == "$F1" ]; then
+    NEW_FONT=$F2
+    SIZE=$S2
+else
+    NEW_FONT=$F1
+    SIZE=$S1
+fi
+
+echo "changing to: $NEW_FONT ($SIZE px)"
+
+for file in "${WAYBAR_CSS[@]}"; do
+    if [ -f "$file" ]; then
+        sed -i "s/font-family: .*;$/font-family: \"$NEW_FONT\";/" "$file"
+        sed -i "s/font-size: .*;$/font-size: ${SIZE}px;/" "$file"
+    fi
+done
+pkill -USR2 waybar
+
+for file in "${SWAYNC_FILES[@]}"; do
+    if [ -f "$file" ]; then
+        sed -i "s/font-family: .*;$/font-family: \"$NEW_FONT\";/" "$file"
+    fi
+done
+swaync-client -R && swaync-client -rs
+
+for config in "${ROFI_CONFIG[@]}"; do
+    sed -i "s/font:.*;/font: \"$NEW_FONT $SIZE\";/" "$config"
+done
+
+if [ -f "$KITTY_CONF" ]; then
+    sed -i "s/^font_family .*/font_family $NEW_FONT/" "$KITTY_CONF"
+    sed -i "s/^font_size .*/font_size $SIZE/" "$KITTY_CONF"
+    kill -USR1 $(pgrep kitty) 2>/dev/null
+fi
+
+if [ -f "$HYPRLOCK_CONF" ]; then
+    sed -i "s/font_family = .*/font_family = $NEW_FONT/g" "$HYPRLOCK_CONF"
+fi
+
+if [ -f "$WLOGOUT_CSS" ]; then
+    sed -i "s/font-family: .*;$/font-family: \"$NEW_FONT\";/" "$WLOGOUT_CSS"
+fi
