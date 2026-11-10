@@ -2,7 +2,9 @@
 
 WALLPAPER_DIR="$HOME/Wallpapers/"
 WALLPAPER_FILES=$(find "$WALLPAPER_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" \))
-CURRENT_WALLPAPER_FILE=$(basename "$(swww query | awk '{print $NF}')")
+
+CURRENT_WALLPAPER_PATH=$((awww query 2>/dev/null || swww query 2>/dev/null) | head -n 1 | awk '{print $NF}')
+CURRENT_WALLPAPER_FILE=$(basename "$CURRENT_WALLPAPER_PATH")
 ROFI_MENU=""
 
 while IFS= read -r WALLPAPER_PATH; do
@@ -22,7 +24,7 @@ while IFS= read -r WALLPAPER_PATH; do
 done <<<"$WALLPAPER_FILES"
 
 SELECTED_WALLPAPER=$(echo -e "$ROFI_MENU" | rofi -dmenu \
- -theme-str 'element-icon { size: 96px; } listview { columns: 1; lines: 4; }' \
+  -theme-str 'element-icon { size: 96px; } listview { columns: 1; lines: 4; }' \
   -display-dmenu "WALLPAPERS" \
   -p "Select:" \
   -show-icons \
@@ -35,10 +37,17 @@ if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
 
   FULL_PATH=$(find "$WALLPAPER_DIR" -name "$SELECTED_WALLPAPER_NAME" -print -quit)
 
-  MONITOR_LIST=$(hyprctl monitors -j | jq -r '.[] | .name')
-  MONITOR_COUNT=$(echo "$MONITOR_LIST" | wc -l)
+  if command -v wlr-randr >/dev/null 2>&1; then
+    MONITOR_LIST=$(wlr-randr | grep -E '^[^[:space:]]' | awk '{print $1}')
+  fi
 
-  if [ "$MONITOR_COUNT" -eq 1 ]; then
+  if [[ -z "$MONITOR_LIST" ]]; then
+    MONITOR_LIST=$(grep -l '^connected$' /sys/class/drm/card*-*/status 2>/dev/null | sed -E 's|/sys/class/drm/card[0-9]+-([^/]+)/status|\1|')
+  fi
+
+  MONITOR_COUNT=$(echo "$MONITOR_LIST" | grep -c .)
+
+  if [ "$MONITOR_COUNT" -le 1 ]; then
     SELECTED_MONITOR="$MONITOR_LIST"
   else
     ROFI_MONITOR_MENU="ALL\n$MONITOR_LIST"
@@ -52,16 +61,16 @@ if [[ -n "$SELECTED_WALLPAPER_NAME" ]]; then
     fi
   fi
 
-  if [[ "$SELECTED_MONITOR" == "ALL" ]]; then
+  if [[ "$SELECTED_MONITOR" == "ALL" || -z "$SELECTED_MONITOR" ]]; then
     OUTPUT_ARG=""
   else
     OUTPUT_ARG="-o $SELECTED_MONITOR"
   fi
-  
+
   matugen image "$FULL_PATH" -m dark --source-color-index 0 --type scheme-content
-  
+
   awww img "$FULL_PATH" $OUTPUT_ARG --transition-type outer --transition-duration 1.2 --transition-fps 144 --transition-pos $(awk 'BEGIN {srand(); printf "%.2f,%.2f\n", rand(), rand()}')
-  
+
   cp "$FULL_PATH" "$HOME/.config/hypr/hyprlock_assets/current_wallpaper.jpg"
   swaync-client -R && swaync-client -rs
   cp ~/.cache/wal/cava-config ~/.config/cava/config
