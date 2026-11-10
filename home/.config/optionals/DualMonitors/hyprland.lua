@@ -45,7 +45,8 @@ end)
 package.path = package.path .. ";./?.lua;./?/init.lua"
 local smw = require("plugins.split-monitor-workspaces")
 smw.setup({
-    workspace_count = 0,
+    workspace_count = 5,
+    enable_persistent_workspaces = false,
 })
 hl.config({
   cursor = { no_hardware_cursors = true },
