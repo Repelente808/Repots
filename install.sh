@@ -16,6 +16,7 @@ fi
 PACKETS_PACMAN=$(cat <<EOF | awk '$1 !~ /^#/ {print $1}'
 # PACMAN
     hyprland
+    hyprpm
     kitty
     adw-gtk-theme
     swayosd
