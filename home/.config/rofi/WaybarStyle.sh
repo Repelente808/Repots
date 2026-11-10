@@ -1,29 +1,29 @@
 #! /bin/bash
 
-option=$(printf "   Flat Round\n   Flat Square\n   Floating Left\n   Left Flat\n   Round Fly\n   Round Square Fly\n   Floating Top Centered\n   OGStyle" | rofi -dmenu -p " " -theme "~/.config/rofi/themes/rounded-gray-dark.rasi")
+option=$(printf "   Flat Round\n   Flat Square\n   Floating Left\n   Left Flat\n   Round Fly\n   Round Square Fly\n   Floating Top Centered\n   OGStyle" | rofi -dmenu -p " " -theme "~/.config/rofi/themes/rounded-gray-dark.rasi")
 case "$option" in
-    "   Flat Round")
+    "   Flat Round")
         bash $HOME/.config/waybar/alternatives/FlatRound/FlatRound.sh
         ;;
-    "   Flat Square")
+    "   Flat Square")
         bash $HOME/.config/waybar/alternatives/FlatSquare/FlatSquare.sh
         ;;
-    "   Floating Left")
+    "   Floating Left")
 	bash $HOME/.config/waybar/alternatives/FloatingLeft/FloatingLeft.sh
 	;;
-    "   Left Flat")
+    "   Left Flat")
         bash $HOME/.config/waybar/alternatives/LeftFlat/LeftFlat.sh
         ;;
-    "   Round Fly")
+    "   Round Fly")
         bash $HOME/.config/waybar/alternatives/RoundFly/RoundFly.sh
 	;;
-    "   Round Square Fly")
+    "   Round Square Fly")
         bash $HOME/.config/waybar/alternatives/RoundSquareFly/RoundSquareFly.sh
         ;;
-    "   Floating Top Centered")
+    "   Floating Top Centered")
         bash $HOME/.config/waybar/alternatives/FloatingTopCenter/FloatingTopCenter.sh
 	;;
-    "   OGStyle")
+    "   OGStyle")
         bash $HOME/.config/waybar/alternatives/OGStyle/ogstyle.sh
         ;;
 esac
