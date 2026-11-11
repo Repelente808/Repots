@@ -67,11 +67,11 @@
       "buttons-per-row": 2,
       "actions": [
         {
-          "label": "      -10%",
+          "label": "  󰃟    -10%",
           "command": "sh -c 'ddcutil --display 1 --noverify setvcp 10 - 10; ddcutil --display 2 --noverify setvcp 10 - 10'"
         },
         {
-          "label": "     +10%",
+          "label": "  󰃠    +10%",
           "command": "sh -c 'ddcutil --display 1 --noverify setvcp 10 + 10; ddcutil --display 2 --noverify setvcp 10 + 10'"
         }
       ]
