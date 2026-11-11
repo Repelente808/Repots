@@ -4,24 +4,24 @@ option=$(printf "  Change Font\n󰗘  Animations toggle\n󰗌  Blur toggle\n�
 
 case "$option" in
     "  Change Font")
-	 bash $HOME/.config/hypr/scripts/fontchange.sh
+	 bash $HOME/.config/scripts/fontchange.sh
         ;;
     "󰗘  Animations toggle")
-         bash $HOME/.config/hypr/scripts/disableanimations.sh
+         bash $HOME/.config/scripts/disableanimations.sh
         ;;
     "󰗌  Blur toggle")
-         bash $HOME/.config/hypr/scripts/DisableBlur.sh
+         bash $HOME/.config/scripts/DisableBlur.sh
         ;;
     "󰗌  Change Opacity")
-         bash $HOME/.config/hypr/scripts/changeopacity.sh
+         bash $HOME/.config/scripts/changeopacity.sh
         ;;
     "  Change SwayNC Position")
-         bash $HOME/.config/hypr/scripts/SwayNCPosition.sh
+         bash $HOME/.config/scripts/SwayNCPosition.sh
         ;;
     "  Rofi Theme 1 Wpp")
-         bash $HOME/.config/hypr/scripts/RofiThemeChanger1.sh
+         bash $HOME/.config/scripts/RofiThemeChanger1.sh
         ;;
     "  Rofi Theme 2 Dyn")
-         bash $HOME/.config/hypr/scripts/RofiThemeChanger.sh
+         bash $HOME/.config/scripts/RofiThemeChanger.sh
         ;;
 esac

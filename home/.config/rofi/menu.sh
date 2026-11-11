@@ -10,7 +10,7 @@ case "$option" in
         rofi -modi emoji -show emoji
         ;;
     "󰸉  Hyprlax (Parallax) Toggle")
-        bash $HOME/.config/hypr/scripts/hyprlaxtog.sh
+        bash $HOME/.config/scripts/hyprlaxtog.sh
         ;;
     "󰨇  BTOP (System Monitor)" )
         kitty btop
