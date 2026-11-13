@@ -4,7 +4,7 @@
   "margin-top": 13, 
   "height": 20,
   "modules-left": [],
-  "modules-center": [ "clock","custom/recorder","ext/workspaces","mpris","custom/backlight-desktop",  "backlight", "battery", "network","custom/swaync", "custom/power"],
+  "modules-center": [ "clock","custom/recorder","ext/workspaces","mpris", "battery", "network","custom/swaync", "custom/power"],
   "modules-right": ["tray"],
 "custom/archicon": {
     "format": "",
